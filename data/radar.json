@@ -2,6 +2,13 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GLM-5.2",
+      "creator": "Z AI",
+      "max_intel": 50.7,
+      "release_date": "2026-06-16",
+      "newer_than_our": "2026-04-07"
+    },
+    {
       "base": "Qwen3.7 Max",
       "creator": "Alibaba",
       "max_intel": 46,
