@@ -825,7 +825,7 @@ async function load(){
   const salesDateBit=salesSrc.snapshot_date?' (snapshot '+fmt(salesSrc.snapshot_date)+')':'';
   // Radar lives on the SAME line as Data Sources (one logical span; wraps within itself if needed).
   const radarBit=radar?` · <span class="warn">🛰 ${radar} new model(s) flagged</span>`:'';
-  $('#meta').innerHTML=`<span><span class="ds-prefix">Data Sources:</span> Artificial Analysis · Epoch · OpenRouter · Arena · salesevals${radarBit}</span>`;
+  $('#meta').innerHTML=`<span><span class="ds-prefix">Data Sources:</span> Artificial Analysis · Epoch · OpenRouter · LMArena · salesevals${radarBit}</span>`;
   readState();
   // Seed the floor-undo baseline AFTER readState so the initial loaded value isn't pushed onto the history.
   lastCapturedFloor=$('#floor').value;
