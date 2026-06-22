@@ -1276,15 +1276,13 @@ const TAB_AGENTIC=()=>`<h4>What is "agentic scoring"?</h4>
 const TAB_PICK=()=>`<h4>Find the quality floor for your feature in 3 questions</h4>
   <p style="color:var(--dim);font-size:var(--fs-button)">Answer these, and we'll suggest a floor. The right answer is "good enough for the stakes" — not "the highest number."</p>
   <div id="qwiz-body"></div>`;
-const TAB_HOWTO=()=>`<h4>Three steps to get an answer</h4>
+const TAB_HOWTO=()=>{const badge=n=>`<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">${n}</span>`;
+  const row=(n,title,body)=>`<tr><td style="padding-right:14px;vertical-align:top;width:32px">${badge(n)}</td><td style="padding:0"><b>${title}</b><div style="color:var(--dim);margin-top:2px">${body}</div></td></tr>`;
+  return `<h4>Three steps to get an answer</h4>
   <table style="font-size:var(--fs-body);margin:8px 0;border-collapse:separate;border-spacing:0 8px">
-    <tr><td style="padding-right:14px;vertical-align:top;width:32px">
-      <span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">1</span>
-    </td><td style="padding:0"><b>Tell us what you're building</b><div style="color:var(--dim);margin-top:2px">Click <b style="color:var(--ink)">💰 Costing</b> above — pick the scenario that sounds like your AI feature (chatbot, email drafter, CRM enrichment, etc.). The cost model presets and cache/batch settings get inferred for you.</div></td></tr>
-    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">2</span></td>
-    <td><b>Pick your quality bar</b><div style="color:var(--dim);margin-top:2px">Use the <b style="color:var(--ink)">Quality floor</b> slider on the recommender card. Not sure what level to set? Click <b style="color:var(--ink)">📏 Quality floor</b> above for a 3-question wizard that picks one based on your stakes.</div></td></tr>
-    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">3</span></td>
-    <td><b>Read the top-3</b><div style="color:var(--dim);margin-top:2px">The recommender shows the <b style="color:var(--ink)">cheapest models that clear your bar</b>, with savings vs. defaulting to the frontier and trade-off receipts (origin, train policy, cheapest host, hallucination, uptime). Tap any <b style="color:var(--ink)">ⓘ</b> for more.</div></td></tr>
+    ${row(1,"Tell us what you're building",`Click <b style="color:var(--ink)">💰 Costing</b> above — pick the scenario that sounds like your AI feature (chatbot, email drafter, CRM enrichment, etc.). The cost model presets and cache/batch settings get inferred for you.`)}
+    ${row(2,"Pick your quality bar",`Use the <b style="color:var(--ink)">Quality floor</b> slider on the recommender card. Not sure what level to set? Click <b style="color:var(--ink)">📏 Quality floor</b> above for a 3-question wizard that picks one based on your stakes.`)}
+    ${row(3,"Read the top-3",`The recommender shows the <b style="color:var(--ink)">cheapest models that clear your bar</b>, with savings vs. defaulting to the frontier and trade-off receipts (origin, train policy, cheapest host, hallucination, uptime). Tap any <b style="color:var(--ink)">ⓘ</b> for more.`)}
   </table>
   <h4>What the header buttons do</h4>
   <p><b>📖 How to use</b> — this guide.<br>
@@ -1292,7 +1290,7 @@ const TAB_HOWTO=()=>`<h4>Three steps to get an answer</h4>
   <b>🎯 Scoring</b> — explains how each task score is calculated, what each score level means, and how agentic scoring works.<br>
   <b>📏 Quality floor</b> — 3-question wizard that picks a quality floor based on who sees the output, what happens if it's wrong, and how often it runs.</p>
   <h4>Best practice</h4>
-  <p>Ask these questions <b>per feature of your product</b>, not for the company overall. A live customer chatbot and an overnight CRM enrichment job have very different floors — same product, different routing.</p>`;
+  <p>Ask these questions <b>per feature of your product</b>, not for the company overall. A live customer chatbot and an overnight CRM enrichment job have very different floors — same product, different routing.</p>`;};
 const TAB_COSTING=()=>`<h4>How the cost model works</h4>
   <p>The dashboard's "effective cost" combines four levers that stack on each other:</p>
   <table style="font-size:var(--fs-button);margin:8px 0">
