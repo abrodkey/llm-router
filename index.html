@@ -321,6 +321,9 @@
     .fc-tablewrap{display:none}
     .fc-mobile{display:block}
     .fc-task-chip{display:block;margin:6px 0 0 0;width:fit-content}
+    /* Active-filters is redundant on mobile — task lives in the title chip, constraints
+       live in the sticky chip bar at the top of the page. Hide to reclaim space. */
+    #fc-card .active-filters{display:none}
     /* Quartile band cards tighter */
     .floor-band{font-size:var(--fs-caption);padding:7px 9px}
     /* Workload profiler in cost panel — already responsive enough */
