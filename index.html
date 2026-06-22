@@ -201,6 +201,8 @@
   .pop{position:fixed;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:14px 16px 16px;font-size:var(--fs-button);max-width:380px;box-shadow:0 12px 36px rgba(0,0,0,.6);z-index:200;display:none;line-height:1.55}
   .pop.on{display:block}
   .pop h4{margin:0 0 6px;font-size:var(--fs-body);color:var(--accent)}
+  .pop.warn{border-color:var(--warn)}
+  .pop.warn h4{color:var(--warn)}
   .pop p{margin:6px 0;color:var(--ink)}
   .pop .row{display:flex;justify-content:space-between;gap:10px;font-size:var(--fs-caption);border-bottom:1px solid var(--line);padding:4px 0;color:var(--dim)}
   .pop .row b{color:var(--ink);font-weight:500}
@@ -1272,6 +1274,8 @@ function showPop(key,trigger){
   const c=POP_CONTENT[key]; if(!c)return;
   $('#pop-body').innerHTML=c;
   pop.classList.add('on');
+  // Radar uses the warn (yellow) palette to match its trigger link colour.
+  pop.classList.toggle('warn',key==='radar');
   popKey=key;
   const r=trigger.getBoundingClientRect();
   let left=r.right+10, top=r.top-5;
