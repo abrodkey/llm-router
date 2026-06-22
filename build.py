@@ -508,12 +508,16 @@ def merge_one(alias, aa_rows, epoch_rows, or_catalog, arena_data, or_usage, hall
     # Country: prefer Epoch's organization-country field, fall back to PROVIDER_TO_COUNTRY
     # so models without an Epoch row (newer releases) still get tagged correctly.
     country = (epoch or {}).get("Country (of organization)") or PROVIDER_TO_COUNTRY.get(prov.get("provider"))
+    # Release date: AA -> Epoch -> alias's manual release_date_override. The manual override
+    # is the escape hatch for closed-weights models like Claude (Anthropic doesn't publish
+    # to HF, Epoch tracks them only post-benchmark, AA hasn't scored some yet).
+    release_date = (aa or {}).get("release_date") or (epoch or {}).get("Publication date") or alias.get("release_date_override")
     out["provenance"] = {
         "provider":      prov.get("provider"),
         "country":       country,
         "open_weights":  (epoch or {}).get("Open model weights?"),
         "accessibility": (epoch or {}).get("Model accessibility"),
-        "release_date":  (aa or {}).get("release_date") or (epoch or {}).get("Publication date"),
+        "release_date":  release_date,
     }
     out["policy"] = {
         "train_policy":     prov.get("train_policy"),

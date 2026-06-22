@@ -241,7 +241,9 @@
       "openrouter_slug": "anthropic/claude-fable-5",
       "vectara_name": null,
       "salesevals_name": "Claude Fable 5 (high)",
-      "provider_key": "anthropic-fable-5"
+      "provider_key": "anthropic-fable-5",
+      "_note": "Anthropic doesn't publish to HF/Epoch, and AA hasn't benchmarked Fable 5 yet — release_date_override is the manual fallback. UPDATE THIS to the real release date when known.",
+      "release_date_override": "2026-06-10"
     }
   ]
 }

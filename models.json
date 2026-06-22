@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T19:11:08+00:00",
+  "generated_at": "2026-06-22T19:45:30+00:00",
   "sources": {
     "aa": {
       "url": "https://artificialanalysis.ai/api/v2/data/llms/models",
@@ -6331,7 +6331,7 @@
         "country": "United States of America",
         "open_weights": null,
         "accessibility": null,
-        "release_date": null
+        "release_date": "2026-06-10"
       },
       "policy": {
         "train_policy": "no-train-default",
