@@ -21,6 +21,7 @@ Sanity-checks fail loudly (non-zero exit) so upstream schema changes get noticed
 import csv
 import json
 import os
+import re
 import statistics
 import sys
 import urllib.request
@@ -93,6 +94,30 @@ PROVIDERS = json.loads((ROOT / "providers.json").read_text())
 # New-model radar config
 TRACKED_CREATORS = {"OpenAI", "Anthropic", "Google", "DeepSeek", "Kimi", "Moonshot", "Alibaba", "Z AI", "Zhipu"}
 RADAR_INTEL_THRESHOLD = 45
+
+# Auto-promotion (Tier 1 — "PREVIEW"): see PROMOTION_POLICY.md
+# When a new model appears in AA from a known creator, auto-include it in models.json
+# with staging:true so it shows up in scatter/table within 24h. Excluded from recommender
+# top-3 until a human graduates it to aliases.json.
+PREVIEW_INTEL_THRESHOLD = 35   # below this it's not interesting enough to surface
+
+# Creator name (as it appears in AA) -> base of providers.json key. We pick the most-recent
+# providers.json entry matching this prefix as the metadata template for the preview model.
+CREATOR_TO_PROVIDER_PREFIX = {
+    "OpenAI":   "openai-",
+    "Anthropic":"anthropic-",
+    "Google":   "google-",
+    "DeepSeek": "deepseek-",
+    "Moonshot": "moonshot-",
+    "Kimi":     "moonshot-",
+    "Alibaba":  "alibaba-",
+    "Z AI":     "zhipu-",
+    "Zhipu":    "zhipu-",
+}
+
+# Maintainer veto list — canonicals that should NEVER auto-promote (typos, duplicates, abandoned releases)
+_BLOCKLIST_PATH = ROOT / "radar_blocklist.json"
+RADAR_BLOCKLIST = set(json.loads(_BLOCKLIST_PATH.read_text())) if _BLOCKLIST_PATH.exists() else set()
 
 # Per-task quality mapping. Each task -> list of (aa_evaluation_key, scale_to_100).
 # Index keys are already 0-100 (scale 1); raw benchmarks are 0-1 fractions (scale 100).
@@ -525,6 +550,88 @@ def new_model_radar(aa_rows):
     (DATA / "radar.json").write_text(json.dumps({"threshold": RADAR_INTEL_THRESHOLD, "candidates": ranked}, indent=2))
     return ranked
 
+def _canonical_from_name(name: str) -> str:
+    """Turn an AA model name into a kebab-case canonical id (matches aliases.json convention)."""
+    return re.sub(r"[^a-z0-9.-]+", "-", name.lower()).strip("-")
+
+def _pick_template_provider_key(creator: str):
+    """Find the most-recent providers.json key for this creator. We use it as the metadata
+    template for the auto-promoted preview model (train policy, multilingual tier, etc.).
+    Returns None if no template exists — we won't auto-promote in that case."""
+    prefix = CREATOR_TO_PROVIDER_PREFIX.get(creator)
+    if not prefix:
+        return None
+    candidates = [k for k in PROVIDERS if not k.startswith("_") and k.startswith(prefix)]
+    if not candidates:
+        return None
+    # Prefer the lexically-greatest key (e.g. "openai-gpt-5.5" beats "openai-gpt-5.4") as a rough
+    # proxy for "most-recent generation" — same train policy / fine-tuning support is more likely.
+    return sorted(candidates)[-1]
+
+def promote_radar_to_preview(radar_candidates, aa_rows, arena_data, or_catalog, or_usage, hallu_data, arena_cat_data, arena_cat_sizes, salesevals, epoch_rows):
+    """Auto-promote radar candidates to Tier 1 PREVIEW per PROMOTION_POLICY.md.
+    Returns a list of synthetic model entries (each with staging=True) ready to merge into models.json."""
+    aa_by_name = {r.get("name"): r for r in aa_rows}
+    previews = []
+    notes = []
+    for c in radar_candidates:
+        name = c["base"]
+        canonical = _canonical_from_name(name)
+        if canonical in RADAR_BLOCKLIST:
+            notes.append(f"  • {name}: blocked (in radar_blocklist.json)")
+            continue
+        if (c.get("max_intel") or 0) < PREVIEW_INTEL_THRESHOLD:
+            notes.append(f"  • {name}: intel {c.get('max_intel')} < threshold {PREVIEW_INTEL_THRESHOLD}")
+            continue
+        template_key = _pick_template_provider_key(c["creator"])
+        if not template_key:
+            notes.append(f"  • {name}: no providers.json template for creator '{c['creator']}'")
+            continue
+        # Find the AA row whose name matches this radar base (radar's `base` is base_name()-stripped)
+        aa_row = None
+        for r in aa_rows:
+            if base_name(r.get("name","")) == name:
+                aa_row = r
+                break
+        if not aa_row:
+            notes.append(f"  • {name}: no AA row found")
+            continue
+        # Synthesize a minimal alias dict and let merge_one do the rest.
+        alias = {
+            "canonical": canonical,
+            "display":   name,
+            "aa_name":   aa_row["name"],
+            "epoch_name": name,                  # likely miss; non-fatal
+            "arena_name": canonical,             # best guess; non-fatal
+            "openrouter_slug": None,             # no auto-mapping — OR data fills in later when human graduates
+            "vectara_name":  None,
+            "salesevals_name": None,
+            "provider_key":  template_key,
+        }
+        entry = merge_one(alias, aa_rows, epoch_rows, or_catalog, arena_data, or_usage, hallu_data, arena_cat_data, arena_cat_sizes, salesevals)
+        entry["staging"] = True
+        entry["staging_provenance"] = {
+            "promoted_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "creator": c["creator"],
+            "template_provider": template_key,
+            "release_date": c.get("release_date"),
+            "max_intel": c.get("max_intel"),
+            "data_coverage": [src for src,present in [
+                ("aa", entry.get("intelligence_index") is not None),
+                ("arena", entry.get("arena") is not None),
+                ("openrouter", entry.get("openrouter") is not None),
+            ] if present],
+        }
+        previews.append(entry)
+        notes.append(f"  ✓ {name}: promoted as PREVIEW (template={template_key}, coverage={entry['staging_provenance']['data_coverage']})")
+    # Also write radar_auto.json — machine-generated suggestions for the maintainer review queue.
+    (ROOT / "radar_auto.json").write_text(json.dumps({
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "promoted": [{"canonical": p["canonical"], "display": p["display"], **p["staging_provenance"]} for p in previews],
+        "decisions": notes,
+    }, indent=2))
+    return previews, notes
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -561,6 +668,14 @@ def main():
         print(f"\n🛰  NEW-MODEL RADAR — {len(radar)} candidate(s) >{RADAR_INTEL_THRESHOLD} intel not in aliases.json:", file=sys.stderr)
         for c in radar:
             print(f"      • {c['base']} ({c['creator']}, intel {c['max_intel']}, {c['release_date']})", file=sys.stderr)
+
+    # Tier 1 auto-promotion — see PROMOTION_POLICY.md
+    previews, preview_notes = promote_radar_to_preview(radar, aa_rows, arena_data, or_catalog, or_usage, hallu_data, arena_cat_data, arena_cat_sizes, salesevals, epoch_rows)
+    if preview_notes:
+        print(f"\n📋  TIER 1 AUTO-PROMOTION:", file=sys.stderr)
+        for n in preview_notes:
+            print(n, file=sys.stderr)
+    merged.extend(previews)
 
     out = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

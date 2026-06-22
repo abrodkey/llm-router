@@ -186,6 +186,7 @@
   .fc-row-m b{color:var(--ink);font-weight:500}
   .tag{display:inline-block;padding:2px 6px;border-radius:3px;font-size:var(--fs-eyebrow);font-weight:600}
   .tag.frontier{background:#3a1f23;color:#fca5a5}.tag.value{background:#1c2a40;color:#93c5fd}
+  .tag.preview{background:#3a2a10;color:var(--warn);border:1px solid var(--warn);letter-spacing:.04em}
   .tag.cheap{background:#1c3327;color:#6ee7b7}.tag.floor{background:#2a2240;color:#c4b5fd}
   .tag.ok{background:#1c3327;color:#6ee7b7}.tag.bad{background:#3a1f23;color:#fca5a5}.tag.unk{background:#2a2f37;color:var(--dim)}
   .yes{color:var(--good)}.no{color:#5b626c}
@@ -845,7 +846,10 @@ async function load(){
 function renderRecommender(){
   const task=taskSel(), C=constraints(), floor=+$('#floor').value, cF=cacheFrac(), bF=batchFrac();
   const box=$('#recs'); box.innerHTML='';
-  const scored=MODELS.filter(m=>passes(m,C)).map(m=>({m,cap:capValue(m,task),eff:effective(m,cF,bF)}))
+  // Recommender top-3 excludes PREVIEW models (Tier 1, staging:true) — they have thin
+  // upstream data and shouldn't drive routing decisions. They still appear in scatter + table.
+  // See PROMOTION_POLICY.md.
+  const scored=MODELS.filter(m=>!m.staging && passes(m,C)).map(m=>({m,cap:capValue(m,task),eff:effective(m,cF,bF)}))
                      .filter(x=>x.cap!=null&&x.eff!=null);
   const frontier=scored.slice().sort((a,b)=>b.cap-a.cap)[0];
   const clearing=scored.filter(x=>x.cap>=floor).sort((a,b)=>a.eff.blended-b.eff.blended);
@@ -1053,7 +1057,7 @@ function renderTable(){
   aug.sort((a,b)=>{const av=pick(a,sortKey)??-1e9,bv=pick(b,sortKey)??-1e9;return typeof av==='string'?sortDir*av.localeCompare(bv):sortDir*(av-bv);});
   for(const m of aug){const tr=document.createElement('tr');if(!keep.has(m.canonical))tr.classList.add('dim');
     const sp=m.openrouter&&m.openrouter.spread;
-    tr.innerHTML=`<td>${m.display}</td><td><span class="tag ${m.tier}">${m.tier}</span></td>
+    tr.innerHTML=`<td>${m.display}${m.staging?' <span class="tag preview" title="PREVIEW — auto-promoted, thin data, excluded from recommender">PREVIEW</span>':''}</td><td><span class="tag ${m.tier}">${m.tier}</span></td>
       <td class="num">${m._cap?.toFixed?.(0)??'—'}</td><td class="num">${m.intelligence_index??'—'}</td>
       <td class="num">${m._eff!=null?'$'+m._eff.toFixed(2):'—'}</td>
       <td class="num">${pick(m,'cost.direct_blended_3_to_1')??'—'}</td>
@@ -1078,8 +1082,9 @@ function renderTable(){
     const hallTxt=m._hall!=null?m._hall+'% hall':'';
     const origin=m.provenance.country?(m.provenance.country.includes('United States')?'🇺🇸 US':m.provenance.country.includes('China')?'🇨🇳 China':m.provenance.country):'';
     const meta=[`<b>${effTxt}</b>`,arenaTxt,upTxt,hallTxt,origin].filter(Boolean).join(' · ');
+    const previewBadge=m.staging?`<span class="tag preview" title="Auto-promoted PREVIEW model — thin upstream data; not used by the recommender. See PROMOTION_POLICY.md." style="font-size:9px;vertical-align:1px;flex:0 0 auto;margin-left:4px">PREVIEW</span>`:'';
     mob.insertAdjacentHTML('beforeend',
-      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n"><span class="fc-row-name" title="${m.display}">${m.display}</span><span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px;flex:0 0 auto">${m.tier}</span></div><div class="fc-row-s">${score}</div></div><div class="fc-row-m">${meta}</div></div>`);
+      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n"><span class="fc-row-name" title="${m.display}">${m.display}</span><span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px;flex:0 0 auto">${m.tier}</span>${previewBadge}</div><div class="fc-row-s">${score}</div></div><div class="fc-row-m">${meta}</div></div>`);
   }
 }
 

@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-22T16:14:46+00:00",
+  "promoted": [
+    {
+      "canonical": "qwen3.7-plus",
+      "display": "Qwen3.7 Plus",
+      "promoted_at": "2026-06-22",
+      "creator": "Alibaba",
+      "template_provider": "alibaba-qwen-3.6-max",
+      "release_date": "2026-06-01",
+      "max_intel": 53.3,
+      "data_coverage": [
+        "aa"
+      ]
+    },
+    {
+      "canonical": "qwen3.7-max",
+      "display": "Qwen3.7 Max",
+      "promoted_at": "2026-06-22",
+      "creator": "Alibaba",
+      "template_provider": "alibaba-qwen-3.6-max",
+      "release_date": "2026-05-19",
+      "max_intel": 56.6,
+      "data_coverage": [
+        "aa"
+      ]
+    },
+    {
+      "canonical": "qwen3.6-27b",
+      "display": "Qwen3.6 27B",
+      "promoted_at": "2026-06-22",
+      "creator": "Alibaba",
+      "template_provider": "alibaba-qwen-3.6-max",
+      "release_date": "2026-04-22",
+      "max_intel": 45.8,
+      "data_coverage": [
+        "aa"
+      ]
+    }
+  ],
+  "decisions": [
+    "  \u2713 Qwen3.7 Plus: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa'])",
+    "  \u2713 Qwen3.7 Max: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa'])",
+    "  \u2713 Qwen3.6 27B: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa'])"
+  ]
+}
