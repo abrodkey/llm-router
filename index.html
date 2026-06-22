@@ -243,14 +243,23 @@
   .fc-name{font-weight:600;font-size:var(--fs-button);color:inherit}
   .feature-area-h{color:var(--accent);font-size:var(--fs-body);margin:18px 0 8px;font-weight:600;letter-spacing:.01em}
   /* Active feature chip — top of recommender */
-  .af-chip{background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:11px 14px;margin-bottom:14px;font-size:var(--fs-button);display:flex;align-items:flex-start;gap:10px;line-height:1.45}
+  #active-feature.af-chip{display:block;background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:var(--fs-button);line-height:1.45;min-width:0;overflow:hidden;white-space:normal}
+  #active-feature.af-chip *{white-space:normal}
   .af-chip.hidden{display:none}
-  .af-chip .af-icon{font-size:18px;line-height:1}
-  .af-chip .af-content{flex:1}
-  .af-chip .af-name{font-weight:600;color:var(--ink)}
-  .af-chip .af-meta{color:var(--accent);font-size:var(--fs-caption);margin-top:2px}
-  .af-chip .af-notes{color:var(--dim);font-size:var(--fs-caption);margin-top:3px;font-style:italic}
-  .af-chip .af-clear{background:none;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:4px 9px;font-size:var(--fs-caption);cursor:pointer;flex-shrink:0}
+  .af-chip .af-head{display:flex;align-items:flex-start;gap:10px;min-width:0}
+  .af-chip .af-icon{font-size:18px;line-height:1;flex:0 0 auto}
+  .af-chip .af-title{flex:1 1 auto;min-width:0}
+  .af-chip .af-name{font-weight:600;color:var(--ink);font-size:var(--fs-body);overflow:hidden;text-overflow:ellipsis;white-space:nowrap !important}
+  .af-chip .af-v{white-space:nowrap !important}
+  .af-chip .af-area{color:var(--dim);font-size:var(--fs-caption);margin-top:2px;line-height:1.3}
+  .af-chip .af-attrs{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:10px 0 2px;font-size:var(--fs-caption);min-width:0}
+  .af-chip .af-attr{display:flex;flex-direction:column;min-width:0}
+  .af-chip .af-k{color:var(--dim);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.04em;line-height:1.2}
+  .af-chip .af-v{color:var(--ink);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .af-chip .af-notes{color:var(--dim);font-size:var(--fs-caption);margin-top:8px;font-style:italic;line-height:1.45}
+  .af-chip .af-derivation{color:var(--accent);font-size:var(--fs-caption);margin-top:8px;padding:7px 9px;background:rgba(110,231,183,.06);border-left:2px solid var(--accent);border-radius:0 4px 4px 0;line-height:1.45}
+  .af-chip .af-derivation b{color:var(--ink)}
+  .af-chip .af-clear{background:none;border:1px solid var(--line);color:var(--dim);border-radius:50%;width:28px;height:28px;font-size:var(--fs-button);cursor:pointer;flex:0 0 auto;padding:0;line-height:1}
   .af-chip .af-clear:hover{color:var(--accent);border-color:var(--accent)}
   .af-derivation{color:var(--dim);font-size:var(--fs-caption);margin-top:8px;padding-top:7px;border-top:1px solid var(--accent-dim);line-height:1.5}
   .af-derivation b{color:var(--ink);font-weight:600}
@@ -324,10 +333,11 @@
     input[type=range]{height:24px}
     /* Active filters chip row — smaller and wraps cleaner */
     .active-filters{font-size:var(--fs-caption);padding:8px 10px;line-height:1.7}
-    .af-chip{font-size:var(--fs-eyebrow);padding:2px 6px}
-    /* Feature chip — compact, allow clear button to fit */
-    .af-chip{padding:9px 11px;font-size:var(--fs-caption);gap:8px;flex-wrap:wrap}
-    .af-chip .af-clear{font-size:var(--fs-eyebrow);padding:3px 7px}
+    /* Filter chips in the active-filters row stay tiny on mobile */
+    .active-filters .af-chip{font-size:var(--fs-eyebrow);padding:2px 6px;display:inline-block}
+    /* Feature card: single-column attrs on very narrow phones */
+    #active-feature.af-chip{padding:11px 12px}
+    #active-feature .af-attrs{grid-template-columns:1fr 1fr}
     /* Mobile: replace horizontal-scroll table with stacked one-card-per-model list */
     .fc-tablewrap{display:none}
     .fc-mobile{display:block}
@@ -342,9 +352,6 @@
     .floor-band{font-size:var(--fs-caption);padding:7px 9px}
     /* Workload profiler in cost panel — already responsive enough */
     .prof-scn{grid-template-columns:1fr}
-    /* Active feature chip wraps cleanly on small screens */
-    #active-feature{flex-wrap:wrap}
-    #active-feature .af-clear{align-self:flex-start;margin-top:-2px}
     /* Sidebar sections tighter on mobile */
     .sec{margin-bottom:16px}
     .sec-h{margin-bottom:8px}
@@ -1564,14 +1571,22 @@ function renderActiveFeature(){
   const derivLine=d?(d.pct>0
     ? `<div class="af-derivation">ⓘ Quality floor set to <b>${d.floor}</b>: "${d.intelLabel}" maps to <b>top ${100-d.pct}%</b> of ${d.totalModels} tracked models for ${d.taskLabel}. Drag the slider below to override.</div>`
     : `<div class="af-derivation">ⓘ Quality floor set to <b>0</b>: "${d.intelLabel}" intelligence requires no minimum filter. Drag the slider below to tighten.</div>`):'';
-  chip.innerHTML=`<div class="af-icon">📋</div>
-    <div class="af-content">
-      <div><span class="af-name">${f.name}</span> <span style="color:var(--dim);font-size:var(--fs-caption)">· ${area}</span></div>
-      <div class="af-meta">${f.frequency} freq · ${f.intelligence_required} intelligence required · ${f.cost_sensitivity} cost sensitivity · routed to <b style="color:var(--ink)">${TASK_LABEL[f.task_bucket]||f.task_bucket}</b></div>
-      ${f.notes?`<div class="af-notes">${f.notes}</div>`:''}
-      ${derivLine}
+  chip.innerHTML=`<div class="af-head">
+      <div class="af-icon">📋</div>
+      <div class="af-title">
+        <div class="af-name" title="${f.name}">${f.name}</div>
+        <div class="af-area">${area}</div>
+      </div>
+      <button class="af-clear" id="clear-feature" aria-label="Clear feature">✕</button>
     </div>
-    <button class="af-clear" id="clear-feature">✕ clear</button>`;
+    <div class="af-attrs">
+      <div class="af-attr"><span class="af-k">Routed to</span><span class="af-v">${TASK_LABEL[f.task_bucket]||f.task_bucket}</span></div>
+      <div class="af-attr"><span class="af-k">Intelligence</span><span class="af-v">${f.intelligence_required}</span></div>
+      <div class="af-attr"><span class="af-k">Cost sensitivity</span><span class="af-v">${f.cost_sensitivity}</span></div>
+      <div class="af-attr"><span class="af-k">Frequency</span><span class="af-v">${f.frequency}</span></div>
+    </div>
+    ${f.notes?`<div class="af-notes">${f.notes}</div>`:''}
+    ${derivLine}`;
   document.getElementById('clear-feature').addEventListener('click',clearFeatureProfile);
 }
 function bindModalCostingWizard(){
