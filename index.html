@@ -1006,7 +1006,7 @@ function renderScatter(){
   const isSales=task==='sales_coaching';
   $('#scatter-title').innerHTML=`Effective cost vs. ${TASK_LABEL[task]} <button class="info-btn" data-pop="scatter">i</button>`;
   const xLabel=isSales?'$/call (salesevals real measured cost)':`effective $/1M (cache ${$('#cache').value}%, batch ${$('#batch').value}%)`;
-  $('#scatter-sub').textContent=`X: ${xLabel}. Y: ${task==='overall'?'AA intelligence index':TASK_LABEL[task]+' score'}.`;
+  $('#scatter-sub').innerHTML=`Scored by <b>${scoreSourceLabel(task)}</b> · X: ${xLabel}.`;
   const W=svg.clientWidth,H=svg.clientHeight,P={l:54,r:22,t:20,b:44};
   const allData=MODELS.map(m=>({m,x:effective(m,cF,bF)?.blended,y:capValue(m,task)})).filter(d=>d.x!=null&&d.y!=null);
   if(!allData.length)return;
@@ -1017,7 +1017,9 @@ function renderScatter(){
   // frontier, plus the next-best models that almost beat it, plus a few good runner-ups.
   // Excludes deeply-dominated models (e.g. 5+ models that beat them on both axes) — they
   // contribute noise, not signal.
-  const TARGET_VISIBLE = 22;
+  // On mobile, restrict the chart to ONLY models on the Pareto frontier — desktop has
+  // room for k-dominated neighbours, mobile doesn't.
+  const isMobileChart = window.innerWidth <= 780;
   const domCount = allData.map(d=>{
     let n=0;
     for(const o of allData){
@@ -1027,12 +1029,9 @@ function renderScatter(){
     return {d,n};
   });
   domCount.sort((a,b)=>a.n-b.n || b.d.y-a.d.y);
-  const data = domCount.slice(0, TARGET_VISIBLE).map(x=>x.d);
-  const hiddenCount = allData.length - data.length;
-  if(hiddenCount>0){
-    const sub=$('#scatter-sub');
-    sub.innerHTML+=` <span style="color:var(--dim)">Showing top <b>${data.length}</b> of ${allData.length} models by Pareto proximity (${hiddenCount} dominated models hidden).</span>`;
-  }
+  const data = isMobileChart
+    ? domCount.filter(x=>x.n===0).map(x=>x.d)        // strict Pareto frontier only
+    : domCount.slice(0, 22).map(x=>x.d);             // desktop: top 22 by Pareto proximity
   const xMax=Math.max(...data.map(d=>d.x))*1.06, yMax=Math.max(...data.map(d=>d.y))*1.08, yMin=Math.max(0,Math.min(...data.map(d=>d.y))-6);
   const xs=v=>P.l+(v/xMax)*(W-P.l-P.r), ys=v=>H-P.b-((v-yMin)/(yMax-yMin))*(H-P.t-P.b);
   const ns='http://www.w3.org/2000/svg', el=(t,a,x)=>{const e=document.createElementNS(ns,t);for(const k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;};
