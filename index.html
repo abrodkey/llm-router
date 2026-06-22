@@ -167,8 +167,9 @@
   .fc-mobile{display:none}
   .fc-row{padding:11px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel)}
   .fc-row.dim{opacity:.35}
-  .fc-row-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:5px}
-  .fc-row-n{font-size:var(--fs-body);font-weight:600;color:var(--ink)}
+  .fc-row-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:5px;min-width:0}
+  .fc-row-n{font-size:var(--fs-body);font-weight:600;color:var(--ink);display:flex;align-items:baseline;gap:8px;min-width:0;flex:1 1 auto;overflow:hidden}
+  .fc-row-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
   .fc-row-sw{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
   .fc-row-s{font-size:var(--fs-metric);font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);line-height:1}
   .fc-row-s small{font-size:var(--fs-caption);color:var(--dim);font-weight:400;margin-left:2px}
@@ -1014,7 +1015,7 @@ function renderTable(){
     const origin=m.provenance.country?(m.provenance.country.includes('United States')?'🇺🇸 US':m.provenance.country.includes('China')?'🇨🇳 China':m.provenance.country):'';
     const meta=[`<b>${effTxt}</b>`,arenaTxt,upTxt,hallTxt,origin].filter(Boolean).join(' · ');
     mob.insertAdjacentHTML('beforeend',
-      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n">${m.display} <span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px">${m.tier}</span></div><div class="fc-row-s">${score}</div></div><div class="fc-row-m">${meta}</div></div>`);
+      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n"><span class="fc-row-name" title="${m.display}">${m.display}</span><span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px;flex:0 0 auto">${m.tier}</span></div><div class="fc-row-s">${score}</div></div><div class="fc-row-m">${meta}</div></div>`);
   }
 }
 
