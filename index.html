@@ -9,53 +9,60 @@
     --bg:#0b0d10; --panel:#14171c; --panel2:#1c2026; --ink:#e6e8eb; --dim:#9aa1ab; --line:#2a2f37;
     --accent:#6ee7b7; --accent-dim:#0f2a22; --warn:#fbbf24; --bad:#f87171; --good:#34d399; --info:#60a5fa;
     --frontier:#f87171; --value:#60a5fa; --cheap:#34d399; --floor:#a78bfa;
+    /* Type scale — single source of truth. Override per-breakpoint below. */
+    --fs-h1:21px; --fs-h2:15px; --fs-h3:13px;
+    --fs-body:13px; --fs-caption:11.5px; --fs-eyebrow:10.5px;
+    --fs-metric:22px; --fs-button:12px;
+    --fw-regular:400; --fw-bold:600;
   }
+  @media (max-width:780px){:root{--fs-h1:17px; --fs-h2:14px; --fs-body:12.5px; --fs-caption:11px; --fs-metric:19px; --fs-button:11.5px}}
+  @media (max-width:420px){:root{--fs-h1:15.5px; --fs-metric:17px}}
   *{box-sizing:border-box}
-  html,body{background:var(--bg);color:var(--ink);margin:0;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;line-height:1.45;font-size:14px}
+  html,body{background:var(--bg);color:var(--ink);margin:0;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;line-height:1.45;font-size:var(--fs-body)}
   a{color:var(--accent)}
   button{font-family:inherit}
 
   header{padding:22px 32px 12px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
-  header .ttl h1{margin:0 0 3px;font-size:21px;font-weight:600;letter-spacing:-.01em}
-  header .ttl .meta{color:var(--dim);font-size:11.5px;margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}
+  header .ttl h1{margin:0 0 3px;font-size:var(--fs-h1);font-weight:600;letter-spacing:-.01em}
+  header .ttl .meta{color:var(--dim);font-size:var(--fs-caption);margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}
   header .ttl .meta .warn{color:var(--warn)}
   header .ttl .meta .ds-prefix{color:var(--ink);font-weight:600}
   /* Freshness badge: prominent "auto-refreshed daily" indicator with live data date. */
-  header .ttl .freshness{display:inline-flex;align-items:center;gap:8px;margin-top:9px;padding:5px 11px;background:var(--accent-dim);border:1px solid var(--accent);border-radius:14px;font-size:12px;color:var(--ink)}
+  header .ttl .freshness{display:inline-flex;align-items:center;gap:8px;margin-top:9px;padding:5px 11px;background:var(--accent-dim);border:1px solid var(--accent);border-radius:14px;font-size:var(--fs-button);color:var(--ink)}
   header .ttl .freshness .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(110,231,183,.18);animation:pulse 2s ease-in-out infinite}
   header .ttl .freshness b{color:var(--accent);font-weight:600}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
   header .hdr-act{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-  header .hdr-act button{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:6px 10px;font-size:11.5px;cursor:pointer;white-space:nowrap}
+  header .hdr-act button{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:6px 10px;font-size:var(--fs-button);cursor:pointer;white-space:nowrap}
   header .hdr-act button:hover{color:var(--accent);border-color:var(--accent)}
   header .hdr-act button.on{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
 
   main{display:grid;grid-template-columns:300px 1fr;min-height:calc(100vh - 80px)}
-  aside{background:var(--panel);border-right:1px solid var(--line);padding:18px 16px;font-size:13px;overflow-y:auto;position:relative}
+  aside{background:var(--panel);border-right:1px solid var(--line);padding:18px 16px;font-size:var(--fs-body);overflow-y:auto;position:relative}
 
   /* SIDEBAR SECTIONS — consistent grouping */
   .sec{margin-bottom:22px}
-  .sec-h{display:flex;align-items:center;gap:7px;margin:0 0 10px;font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--line);padding-bottom:6px}
-  .sec-h .em{font-size:13px}
+  .sec-h{display:flex;align-items:center;gap:7px;margin:0 0 10px;font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sec-h .em{font-size:var(--fs-body)}
   .sec-h .ttl{flex:1;color:var(--ink)}
-  .info-btn{background:none;border:1px solid var(--line);color:var(--dim);width:18px;height:18px;border-radius:50%;font-size:10px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1}
+  .info-btn{background:none;border:1px solid var(--line);color:var(--dim);width:18px;height:18px;border-radius:50%;font-size:var(--fs-eyebrow);font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1}
   .info-btn:hover{color:var(--accent);border-color:var(--accent)}
 
-  .sec label{display:flex;align-items:center;gap:8px;padding:4px 0;cursor:pointer;user-select:none;font-size:13px}
+  .sec label{display:flex;align-items:center;gap:8px;padding:4px 0;cursor:pointer;user-select:none;font-size:var(--fs-body)}
   .sec label:hover{color:var(--accent)}
   .sec input[type=checkbox],.sec input[type=radio]{accent-color:var(--accent)}
   .sec select{flex:0 0 150px;margin-left:auto;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:5px}
 
   /* UNIFIED BUTTON STYLES — consistent across sidebar */
   .btn-row{display:flex;gap:5px;flex-wrap:wrap}
-  .btn{flex:1;min-width:60px;background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:6px 8px;font-size:11px;cursor:pointer;line-height:1.25;text-align:center}
+  .btn{flex:1;min-width:60px;background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:6px 8px;font-size:var(--fs-caption);cursor:pointer;line-height:1.25;text-align:center}
   .btn:hover{color:var(--accent);border-color:var(--accent)}
   .btn.sel,.btn.active{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
-  .btn-block{display:block;width:100%;text-align:left;margin-top:8px;padding:8px 10px;font-size:12px;background:var(--panel2);color:var(--accent);border:1px dashed var(--accent);border-radius:6px;cursor:pointer}
+  .btn-block{display:block;width:100%;text-align:left;margin-top:8px;padding:8px 10px;font-size:var(--fs-button);background:var(--panel2);color:var(--accent);border:1px dashed var(--accent);border-radius:6px;cursor:pointer}
   .btn-block:hover{background:var(--accent-dim)}
 
   .slider-row{margin:9px 0}
-  .slider-row .lab{display:flex;justify-content:space-between;font-size:12px;color:var(--dim)}
+  .slider-row .lab{display:flex;justify-content:space-between;font-size:var(--fs-button);color:var(--dim)}
   .slider-row .lab b{color:var(--ink);font-variant-numeric:tabular-nums}
   input[type=range]{width:100%;accent-color:var(--accent)}
 
@@ -63,145 +70,145 @@
      position:fixed instead of absolute -> dodges varying header heights without breaking other layout. */
   .wiz{position:fixed;left:0;top:0;bottom:0;width:300px;background:var(--panel);border-right:1px solid var(--line);padding:20px 16px;display:none;flex-direction:column;overflow:hidden;z-index:50}
   .wiz.on{display:flex}
-  .wiz-step{font-size:10.5px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;flex-shrink:0}
-  .wiz-q{font-size:14px;font-weight:600;margin-bottom:12px;flex-shrink:0}
-  .wiz-help{font-size:11.5px;color:var(--dim);margin-bottom:12px;line-height:1.5;flex-shrink:0}
+  .wiz-step{font-size:var(--fs-eyebrow);color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;flex-shrink:0}
+  .wiz-q{font-size:var(--fs-h2);font-weight:600;margin-bottom:12px;flex-shrink:0}
+  .wiz-help{font-size:var(--fs-caption);color:var(--dim);margin-bottom:12px;line-height:1.5;flex-shrink:0}
   .wiz-opts{display:flex;flex-direction:column;gap:7px;flex:1 1 auto;min-height:0;overflow-y:auto;padding-right:4px}
-  .wiz-opts button{text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:9px 11px;font-size:12.5px;cursor:pointer;line-height:1.35;flex-shrink:0}
+  .wiz-opts button{text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:9px 11px;font-size:var(--fs-button);cursor:pointer;line-height:1.35;flex-shrink:0}
   .wiz-opts button:hover{border-color:var(--accent);color:var(--accent)}
-  .wiz-opts button .sub{display:block;color:var(--dim);font-size:11px;margin-top:3px}
+  .wiz-opts button .sub{display:block;color:var(--dim);font-size:var(--fs-caption);margin-top:3px}
   .wiz-nav{display:flex;justify-content:space-between;padding-top:12px;gap:8px;border-top:1px solid var(--line);margin-top:12px;flex-shrink:0;background:var(--panel)}
-  .wiz-nav button{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:7px 12px;font-size:12px;cursor:pointer}
+  .wiz-nav button{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:7px 12px;font-size:var(--fs-button);cursor:pointer}
   .wiz-nav button:hover{color:var(--accent);border-color:var(--accent)}
   .wiz-nav button.primary{background:var(--accent);color:#04110b;border-color:var(--accent);font-weight:600}
 
   /* CONTENT cards */
   .content{padding:22px 28px;overflow-x:hidden}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:22px}
-  .card h2{margin:0 0 4px;font-size:15px;font-weight:600;display:flex;align-items:center;gap:8px}
-  .card .h-sub{color:var(--dim);font-size:12px;margin-bottom:14px}
+  .card h2{margin:0 0 4px;font-size:var(--fs-h2);font-weight:600;display:flex;align-items:center;gap:8px}
+  .card .h-sub{color:var(--dim);font-size:var(--fs-button);margin-bottom:14px}
 
   /* ONBOARDING card */
   .onb{background:linear-gradient(180deg,#152922 0%,var(--panel) 100%);border:1px solid var(--accent);border-radius:10px;padding:16px 20px 18px;margin-bottom:22px;position:relative}
   .onb.hidden{display:none}
-  .onb h2{margin:0 0 4px;font-size:15px;color:var(--accent)}
+  .onb h2{margin:0 0 4px;font-size:var(--fs-h2);color:var(--accent)}
   .onb .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
-  .onb .step{font-size:12.5px;color:var(--dim);line-height:1.45}
-  .onb .step b{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
-  .onb .step .n{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;font-size:11px;line-height:18px;margin-right:5px}
-  .onb .dismiss{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--dim);cursor:pointer;font-size:14px}
+  .onb .step{font-size:var(--fs-button);color:var(--dim);line-height:1.45}
+  .onb .step b{display:block;color:var(--ink);font-size:var(--fs-body);margin-bottom:2px}
+  .onb .step .n{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;font-size:var(--fs-caption);line-height:18px;margin-right:5px}
+  .onb .dismiss{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--dim);cursor:pointer;font-size:var(--fs-h2)}
   .onb .dismiss:hover{color:var(--accent)}
 
   /* RECOMMENDER */
   .rec-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}
   .rec-head .floor{flex:1;min-width:200px}
-  .floor-bar{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--dim)}
+  .floor-bar{display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-button);color:var(--dim)}
   .floor-bar a{cursor:pointer;text-decoration:underline;text-decoration-style:dotted}
   /* Editable floor value — large bold number that doubles as an input. */
-  #floorV{background:transparent;border:none;border-bottom:1px dashed var(--line);color:var(--ink);font-size:22px;font-weight:700;width:56px;padding:1px 4px;font-family:inherit;text-align:center;cursor:pointer;-moz-appearance:textfield;margin-left:4px;vertical-align:-3px}
+  #floorV{background:transparent;border:none;border-bottom:1px dashed var(--line);color:var(--ink);font-size:var(--fs-metric);font-weight:700;width:56px;padding:1px 4px;font-family:inherit;text-align:center;cursor:pointer;-moz-appearance:textfield;margin-left:4px;vertical-align:-3px}
   #floorV::-webkit-inner-spin-button,#floorV::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
   #floorV:hover{border-bottom-color:var(--accent);color:var(--accent)}
   #floorV:focus{border-bottom-color:var(--accent);outline:none;color:var(--accent)}
   .recs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   .rec{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:13px 14px;position:relative}
   .rec.win{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
-  .rec .rank{position:absolute;top:-9px;left:12px;background:var(--accent);color:#04110b;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px}
-  .rec .name{font-weight:600;font-size:14px;margin-bottom:2px}
-  .rec .big{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;margin:6px 0 2px}
-  .rec .big small{font-size:12px;color:var(--dim);font-weight:400}
+  .rec .rank{position:absolute;top:-9px;left:12px;background:var(--accent);color:#04110b;font-size:var(--fs-eyebrow);font-weight:700;padding:2px 7px;border-radius:10px}
+  .rec .name{font-weight:600;font-size:var(--fs-h2);margin-bottom:2px}
+  .rec .big{font-size:var(--fs-metric);font-weight:700;font-variant-numeric:tabular-nums;margin:6px 0 2px}
+  .rec .big small{font-size:var(--fs-button);color:var(--dim);font-weight:400}
   /* Side-by-side Score | Cost metrics — both get prominent treatment so the score is legible when switching tasks. */
   .rec-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .rec-metric .m-lab{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
-  .rec-metric .m-big{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-  .rec-metric .m-big small{font-size:11px;color:var(--dim);font-weight:400;margin-left:2px}
-  .rec-metric .m-sub{font-size:10.5px;color:var(--dim);margin-top:3px;line-height:1.3}
+  .rec-metric .m-lab{font-size:var(--fs-eyebrow);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+  .rec-metric .m-big{font-size:var(--fs-metric);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .rec-metric .m-big small{font-size:var(--fs-caption);color:var(--dim);font-weight:400;margin-left:2px}
+  .rec-metric .m-sub{font-size:var(--fs-eyebrow);color:var(--dim);margin-top:3px;line-height:1.3}
   .rec-metric.q-high .m-big{color:var(--accent)}
   .rec-metric.q-mid .m-big{color:var(--ink)}
   .rec-metric.q-low .m-big{color:var(--warn)}
   .rec-metric.q-none .m-big{color:var(--dim)}
-  .rec .save{font-size:12px;color:var(--good);font-weight:600}
+  .rec .save{font-size:var(--fs-button);color:var(--good);font-weight:600}
   .rec .save.none{color:var(--dim)}
   .rec .chips{margin-top:9px;display:flex;flex-direction:column;gap:4px}
-  .rec .chip{font-size:11px;color:var(--dim)}
-  .rec-empty{color:var(--warn);font-size:13px;padding:8px 0}
-  .arena-note{color:var(--info);font-size:11.5px;margin-top:10px}
+  .rec .chip{font-size:var(--fs-caption);color:var(--dim)}
+  .rec-empty{color:var(--warn);font-size:var(--fs-body);padding:8px 0}
+  .arena-note{color:var(--info);font-size:var(--fs-caption);margin-top:10px}
 
   /* SCATTER */
   svg{width:100%;height:500px;display:block}
-  .axis-label{fill:var(--dim);font-size:11px}
+  .axis-label{fill:var(--dim);font-size:var(--fs-caption)}
   .grid-line{stroke:var(--line);stroke-width:1;stroke-dasharray:2,3;opacity:.5}
   .dot{cursor:pointer;transition:opacity .15s}
   .dot.dim{opacity:.12}
-  .dot-label{fill:var(--ink);font-size:10px;pointer-events:none}
+  .dot-label{fill:var(--ink);font-size:var(--fs-eyebrow);pointer-events:none}
   .pareto{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:4,3;opacity:.55;cursor:help}
-  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;color:var(--dim)}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:var(--fs-caption);color:var(--dim)}
   .legend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 
   /* TABLE */
-  table{width:100%;border-collapse:collapse;font-size:12px}
+  table{width:100%;border-collapse:collapse;font-size:var(--fs-button)}
   th,td{padding:7px 9px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-  th{color:var(--dim);font-weight:500;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer}
+  th{color:var(--dim);font-weight:500;font-size:var(--fs-eyebrow);letter-spacing:.04em;text-transform:uppercase;cursor:pointer}
   th:hover{color:var(--accent)}
   td.num{text-align:right;font-variant-numeric:tabular-nums}
   tr.dim{opacity:.3}
   tr:hover{background:var(--panel2)}
-  .tag{display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600}
+  .tag{display:inline-block;padding:2px 6px;border-radius:3px;font-size:var(--fs-eyebrow);font-weight:600}
   .tag.frontier{background:#3a1f23;color:#fca5a5}.tag.value{background:#1c2a40;color:#93c5fd}
   .tag.cheap{background:#1c3327;color:#6ee7b7}.tag.floor{background:#2a2240;color:#c4b5fd}
   .tag.ok{background:#1c3327;color:#6ee7b7}.tag.bad{background:#3a1f23;color:#fca5a5}.tag.unk{background:#2a2f37;color:var(--dim)}
   .yes{color:var(--good)}.no{color:#5b626c}
 
   /* TOOLTIPS (dot hover) */
-  .tooltip{position:fixed;pointer-events:none;background:#000;border:1px solid var(--line);padding:9px 11px;border-radius:6px;font-size:11.5px;max-width:300px;box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transition:opacity .12s;z-index:100}
+  .tooltip{position:fixed;pointer-events:none;background:#000;border:1px solid var(--line);padding:9px 11px;border-radius:6px;font-size:var(--fs-caption);max-width:300px;box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transition:opacity .12s;z-index:100}
   .tooltip strong{color:var(--accent)}
   .tooltip .r{display:flex;justify-content:space-between;gap:14px;margin-top:3px}
   .tooltip .r .l{color:var(--dim)}
 
   /* POPOVER (ⓘ click) */
-  .pop{position:fixed;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:14px 16px 16px;font-size:12.5px;max-width:380px;box-shadow:0 12px 36px rgba(0,0,0,.6);z-index:200;display:none;line-height:1.55}
+  .pop{position:fixed;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:14px 16px 16px;font-size:var(--fs-button);max-width:380px;box-shadow:0 12px 36px rgba(0,0,0,.6);z-index:200;display:none;line-height:1.55}
   .pop.on{display:block}
-  .pop h4{margin:0 0 6px;font-size:13.5px;color:var(--accent)}
+  .pop h4{margin:0 0 6px;font-size:var(--fs-body);color:var(--accent)}
   .pop p{margin:6px 0;color:var(--ink)}
-  .pop .row{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;border-bottom:1px solid var(--line);padding:4px 0;color:var(--dim)}
+  .pop .row{display:flex;justify-content:space-between;gap:10px;font-size:var(--fs-caption);border-bottom:1px solid var(--line);padding:4px 0;color:var(--dim)}
   .pop .row b{color:var(--ink);font-weight:500}
-  .pop .close{position:absolute;top:6px;right:10px;background:none;border:none;color:var(--dim);cursor:pointer;font-size:14px}
+  .pop .close{position:absolute;top:6px;right:10px;background:none;border:none;color:var(--dim);cursor:pointer;font-size:var(--fs-h2)}
 
   /* QUALITY GUIDE MODAL */
   .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:300;padding:30px}
   .modal-bg.on{display:flex}
   .modal{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;width:760px;max-width:100%;max-height:90vh;overflow:hidden;display:flex;flex-direction:column}
   .modal-h{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-  .modal-h h3{margin:0;font-size:16px}
+  .modal-h h3{margin:0;font-size:var(--fs-h2)}
   .modal-h button{background:none;border:none;color:var(--dim);font-size:18px;cursor:pointer}
   .modal-h button:hover{color:var(--accent)}
   .tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel2)}
-  .tabs button{flex:1;background:none;border:none;color:var(--dim);padding:11px 14px;font-size:12px;cursor:pointer;border-bottom:2px solid transparent}
+  .tabs button{flex:1;background:none;border:none;color:var(--dim);padding:11px 14px;font-size:var(--fs-button);cursor:pointer;border-bottom:2px solid transparent}
   .tabs button:hover{color:var(--accent)}
   .tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
   .modal-body{padding:18px 22px 22px;overflow-y:auto}
-  .modal-body h4{margin:14px 0 6px;font-size:13px;color:var(--accent)}
+  .modal-body h4{margin:14px 0 6px;font-size:var(--fs-body);color:var(--accent)}
   .modal-body h4:first-child{margin-top:0}
-  .modal-body p{margin:6px 0;font-size:13px}
-  .modal-body table{font-size:12.5px;margin:8px 0}
+  .modal-body p{margin:6px 0;font-size:var(--fs-body)}
+  .modal-body table{font-size:var(--fs-button);margin:8px 0}
   .modal-body td{padding:6px 10px;white-space:normal;vertical-align:top}
-  .formula{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12px;color:var(--ink);margin:8px 0;line-height:1.55}
+  .formula{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:var(--fs-button);color:var(--ink);margin:8px 0;line-height:1.55}
   .formula .out{color:var(--accent);font-weight:600}
-  .floor-band{padding:8px 10px;border-radius:6px;margin:5px 0;font-size:12.5px;border-left:3px solid}
-  .floor-band b{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
-  .qwiz-q{margin:14px 0 6px;font-weight:600;font-size:13px}
+  .floor-band{padding:8px 10px;border-radius:6px;margin:5px 0;font-size:var(--fs-button);border-left:3px solid}
+  .floor-band b{display:block;color:var(--ink);font-size:var(--fs-body);margin-bottom:2px}
+  .qwiz-q{margin:14px 0 6px;font-weight:600;font-size:var(--fs-body)}
   .qwiz-opts{display:flex;flex-direction:column;gap:6px}
-  .qwiz-opts button{text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:12.5px;cursor:pointer}
+  .qwiz-opts button{text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:var(--fs-button);cursor:pointer}
   .qwiz-opts button:hover{border-color:var(--accent);color:var(--accent)}
   .qwiz-opts button.sel{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
-  .qwiz-result{background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:13px 16px;margin-top:14px;font-size:13px}
+  .qwiz-result{background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:13px 16px;margin-top:14px;font-size:var(--fs-body)}
   .qwiz-result b{font-size:18px;color:var(--accent)}
-  .qwiz-result button{margin-top:8px;background:var(--accent);color:#04110b;border:none;border-radius:5px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer}
+  .qwiz-result button{margin-top:8px;background:var(--accent);color:#04110b;border:none;border-radius:5px;padding:6px 12px;font-size:var(--fs-button);font-weight:600;cursor:pointer}
 
   /* Active filters chip row — shows what's currently narrowing the comparison so the dimmed rows have context */
-  .active-filters{margin:0 0 12px;padding:9px 12px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;font-size:11.5px;line-height:1.8}
+  .active-filters{margin:0 0 12px;padding:9px 12px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;font-size:var(--fs-caption);line-height:1.8}
   .active-filters .af-prefix{color:var(--ink);font-weight:600;margin-right:8px}
   .active-filters .af-none{color:var(--dim)}
-  .af-chip{display:inline-block;padding:2px 8px;margin:2px;background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);border-radius:4px;font-size:11px;font-weight:500;white-space:nowrap}
+  .af-chip{display:inline-block;padding:2px 8px;margin:2px;background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);border-radius:4px;font-size:var(--fs-caption);font-weight:500;white-space:nowrap}
   .af-chip.task{background:#1c2a40;color:#93c5fd;border-color:#93c5fd}
   /* Feature profile library (Intelligent Noise routing taxonomy) — compact name-only buttons; details show in the active chip once clicked. */
   .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0 14px}
@@ -209,28 +216,28 @@
   .feature-card:hover{border-color:var(--accent);color:var(--accent)}
   .feature-card:disabled{opacity:.4;cursor:not-allowed}
   .feature-card.active{background:var(--accent-dim);border-color:var(--accent)}
-  .fc-name{font-weight:600;font-size:12.5px;color:inherit}
-  .feature-area-h{color:var(--accent);font-size:13px;margin:18px 0 8px;font-weight:600;letter-spacing:.01em}
+  .fc-name{font-weight:600;font-size:var(--fs-button);color:inherit}
+  .feature-area-h{color:var(--accent);font-size:var(--fs-body);margin:18px 0 8px;font-weight:600;letter-spacing:.01em}
   /* Active feature chip — top of recommender */
-  .af-chip{background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:11px 14px;margin-bottom:14px;font-size:12.5px;display:flex;align-items:flex-start;gap:10px;line-height:1.45}
+  .af-chip{background:var(--accent-dim);border:1px solid var(--accent);border-radius:8px;padding:11px 14px;margin-bottom:14px;font-size:var(--fs-button);display:flex;align-items:flex-start;gap:10px;line-height:1.45}
   .af-chip.hidden{display:none}
   .af-chip .af-icon{font-size:18px;line-height:1}
   .af-chip .af-content{flex:1}
   .af-chip .af-name{font-weight:600;color:var(--ink)}
-  .af-chip .af-meta{color:var(--accent);font-size:11.5px;margin-top:2px}
-  .af-chip .af-notes{color:var(--dim);font-size:11.5px;margin-top:3px;font-style:italic}
-  .af-chip .af-clear{background:none;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:4px 9px;font-size:11px;cursor:pointer;flex-shrink:0}
+  .af-chip .af-meta{color:var(--accent);font-size:var(--fs-caption);margin-top:2px}
+  .af-chip .af-notes{color:var(--dim);font-size:var(--fs-caption);margin-top:3px;font-style:italic}
+  .af-chip .af-clear{background:none;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:4px 9px;font-size:var(--fs-caption);cursor:pointer;flex-shrink:0}
   .af-chip .af-clear:hover{color:var(--accent);border-color:var(--accent)}
-  .af-derivation{color:var(--dim);font-size:11.5px;margin-top:8px;padding-top:7px;border-top:1px solid var(--accent-dim);line-height:1.5}
+  .af-derivation{color:var(--dim);font-size:var(--fs-caption);margin-top:8px;padding-top:7px;border-top:1px solid var(--accent-dim);line-height:1.5}
   .af-derivation b{color:var(--ink);font-weight:600}
   /* Near-miss callout — surface a cheaper model just below the floor */
-  .near-miss{margin-top:14px;padding:11px 14px;background:var(--panel2);border:1px solid var(--warn);border-radius:8px;font-size:12.5px;line-height:1.5;display:flex;gap:10px;align-items:flex-start}
+  .near-miss{margin-top:14px;padding:11px 14px;background:var(--panel2);border:1px solid var(--warn);border-radius:8px;font-size:var(--fs-button);line-height:1.5;display:flex;gap:10px;align-items:flex-start}
   .near-miss.hidden{display:none}
-  .near-miss .nm-icon{font-size:16px;line-height:1.1}
+  .near-miss .nm-icon{font-size:var(--fs-h2);line-height:1.1}
   .near-miss .nm-content{flex:1}
   .near-miss b{color:var(--warn);font-weight:600}
   .near-miss .nm-strong{color:var(--ink);font-weight:600}
-  .near-miss button{background:none;border:1px solid var(--warn);color:var(--warn);border-radius:4px;padding:5px 11px;font-size:11.5px;cursor:pointer;flex-shrink:0;align-self:center}
+  .near-miss button{background:none;border:1px solid var(--warn);color:var(--warn);border-radius:4px;padding:5px 11px;font-size:var(--fs-caption);cursor:pointer;flex-shrink:0;align-self:center}
   .near-miss button:hover{background:var(--warn);color:#04110b}
   .findings ul{margin:0;padding-left:18px;color:var(--dim)}
   .findings li{margin:5px 0}.findings li b{color:var(--ink);font-weight:600}
@@ -239,24 +246,24 @@
   @media (max-width:780px){
     /* Stack the two-column grid into one — sidebar above content */
     main{grid-template-columns:1fr}
-    aside{padding:14px 14px 6px;border-right:none;border-bottom:1px solid var(--line);font-size:13px}
+    aside{padding:14px 14px 6px;border-right:none;border-bottom:1px solid var(--line);font-size:var(--fs-body)}
     .content{padding:16px 14px 22px}
     /* Header: title block then button row */
     header{padding:14px 16px 10px;flex-direction:column;gap:10px;align-items:stretch}
-    header .ttl h1{font-size:17px;margin:0 0 2px}
-    header .ttl .meta{font-size:11px;gap:8px}
-    header .ttl .freshness{font-size:11px;padding:4px 9px}
+    header .ttl h1{font-size:var(--fs-h1);margin:0 0 2px}
+    header .ttl .meta{font-size:var(--fs-caption);gap:8px}
+    header .ttl .freshness{font-size:var(--fs-caption);padding:4px 9px}
     header .hdr-act{width:100%;justify-content:flex-start}
-    header .hdr-act button{font-size:11px;padding:5px 9px}
+    header .hdr-act button{font-size:var(--fs-button);padding:5px 9px}
     /* Recommender cards stack vertically — phone screen too narrow for 3 columns */
     .recs{grid-template-columns:1fr;gap:10px}
     .rec{padding:12px 14px}
-    .rec .name{font-size:13.5px}
-    .rec-metric .m-big{font-size:19px}
+    .rec .name{font-size:var(--fs-body)}
+    .rec-metric .m-big{font-size:var(--fs-metric)}
     .rec-metric .m-sub{display:none}
     /* Receipt chips: pack inline with dot separators to shrink card height */
     .rec .chips{flex-direction:row;flex-wrap:wrap;gap:0;column-gap:0;line-height:1.55;margin-top:7px}
-    .rec .chip{display:inline;font-size:11.5px}
+    .rec .chip{display:inline;font-size:var(--fs-caption)}
     .rec .chip:not(:last-child)::after{content:" · ";color:var(--dim);margin:0 2px}
     /* Onboarding steps stack on mobile (was 3 columns) */
     .onb .steps{grid-template-columns:1fr;gap:10px}
@@ -264,38 +271,38 @@
     .feature-grid{grid-template-columns:1fr;gap:5px}
     /* Cards tighter */
     .card{padding:14px 16px;margin-bottom:16px}
-    .card h2{font-size:14px}
+    .card h2{font-size:var(--fs-h2)}
     /* Scatter shorter and labels smaller — saves vertical space */
     svg{height:340px}
-    .axis-label{font-size:10px}
-    .dot-label{font-size:9px}
+    .axis-label{font-size:var(--fs-eyebrow)}
+    .dot-label{font-size:var(--fs-eyebrow)}
     /* Cost preset buttons more compact */
-    .btn{font-size:10.5px;padding:5px 4px;min-width:48px}
+    .btn{font-size:var(--fs-eyebrow);padding:5px 4px;min-width:48px}
     /* Modal goes near-fullscreen on mobile */
     .modal-bg{padding:10px}
     .modal{max-height:94vh}
     .modal-h{padding:14px 16px}
-    .modal-h h3{font-size:14px}
-    .tabs button{font-size:11px;padding:9px 10px}
+    .modal-h h3{font-size:var(--fs-h2)}
+    .tabs button{font-size:var(--fs-caption);padding:9px 10px}
     .modal-body{padding:14px 16px 18px}
-    .modal-body h4{font-size:12.5px}
-    .modal-body p,.modal-body table{font-size:12.5px}
+    .modal-body h4{font-size:var(--fs-button)}
+    .modal-body p,.modal-body table{font-size:var(--fs-button)}
     /* Wizard takeover (in costing modal) — fits modal width */
     .wiz{width:100%}
     /* Quality floor input + slider — touch friendly */
-    #floorV{font-size:20px;width:54px}
+    #floorV{font-size:var(--fs-h1);width:54px}
     input[type=range]{height:24px}
     /* Active filters chip row — smaller and wraps cleaner */
-    .active-filters{font-size:11px;padding:8px 10px;line-height:1.7}
-    .af-chip{font-size:10px;padding:2px 6px}
+    .active-filters{font-size:var(--fs-caption);padding:8px 10px;line-height:1.7}
+    .af-chip{font-size:var(--fs-eyebrow);padding:2px 6px}
     /* Feature chip — compact, allow clear button to fit */
-    .af-chip{padding:9px 11px;font-size:11.5px;gap:8px;flex-wrap:wrap}
-    .af-chip .af-clear{font-size:10.5px;padding:3px 7px}
+    .af-chip{padding:9px 11px;font-size:var(--fs-caption);gap:8px;flex-wrap:wrap}
+    .af-chip .af-clear{font-size:var(--fs-eyebrow);padding:3px 7px}
     /* Full comparison table already has overflow-x:auto, just shrink type */
-    table{font-size:11px}
+    table{font-size:var(--fs-caption)}
     th,td{padding:5px 6px}
     /* Quartile band cards tighter */
-    .floor-band{font-size:11.5px;padding:7px 9px}
+    .floor-band{font-size:var(--fs-caption);padding:7px 9px}
     /* Workload profiler in cost panel — already responsive enough */
     .prof-scn{grid-template-columns:1fr}
     /* Active feature chip wraps cleanly on small screens */
@@ -316,9 +323,9 @@
     #mobile-summary{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;position:sticky;top:0;z-index:60;background:var(--bg);padding:10px 14px 8px;margin:-16px -14px 10px;border-bottom:1px solid var(--line)}
     .mob-chip{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 9px;color:var(--text);cursor:pointer;font-family:inherit;min-width:0;text-align:left;position:relative}
     .mob-chip:hover,.mob-chip:focus{border-color:var(--accent)}
-    .mob-chip .mob-lbl{color:var(--dim);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;line-height:1}
-    .mob-chip .mob-val{color:var(--text);font-weight:600;font-size:12px;line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:10px}
-    .mob-chip .mob-caret{position:absolute;right:7px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:9px}
+    .mob-chip .mob-lbl{color:var(--dim);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.05em;line-height:1}
+    .mob-chip .mob-val{color:var(--text);font-weight:600;font-size:var(--fs-button);line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:10px}
+    .mob-chip .mob-caret{position:absolute;right:7px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:var(--fs-eyebrow)}
     /* When a sheet is open: show sidebar as a fixed bottom sheet, with backdrop */
     body.sheet-open .mob-sheet-bg{display:block;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:90}
     body.sheet-open aside{display:block;position:fixed;left:0;right:0;bottom:0;top:auto;max-height:82vh;overflow:auto;z-index:100;border:none;border-top:1px solid var(--line);border-radius:18px 18px 0 0;padding:14px 16px 80px;background:var(--panel);box-shadow:0 -8px 30px rgba(0,0,0,.5);animation:sheetUp .22s ease-out}
@@ -330,19 +337,16 @@
     body.sheet-open aside .wiz{display:none}
     /* Sheet "Done" button */
     .mob-sheet-done{display:none}
-    body.sheet-open .mob-sheet-done{display:flex;position:fixed;left:14px;right:14px;bottom:14px;justify-content:center;z-index:101;background:var(--accent);color:#04140a;border:none;border-radius:10px;padding:13px 16px;font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.4);font-family:inherit}
+    body.sheet-open .mob-sheet-done{display:flex;position:fixed;left:14px;right:14px;bottom:14px;justify-content:center;z-index:101;background:var(--accent);color:#04140a;border:none;border-radius:10px;padding:13px 16px;font-weight:700;font-size:var(--fs-h2);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.4);font-family:inherit}
     /* Tighten sidebar sections in sheet form */
     body.sheet-open aside .sec{margin-bottom:0}
-    body.sheet-open aside label{padding:8px 4px;font-size:13.5px}
+    body.sheet-open aside label{padding:8px 4px;font-size:var(--fs-body)}
     body.sheet-open aside input[type=radio],body.sheet-open aside input[type=checkbox]{transform:scale(1.15);margin-right:6px}
   }
-  /* Very narrow phones — tighten further */
+  /* Very narrow phones — tighten further (font sizes already shrunk via :root vars) */
   @media (max-width:420px){
-    header .ttl h1{font-size:15.5px}
-    .rec-metric .m-big{font-size:17px}
     svg{height:300px}
     .feature-card{padding:7px 9px}
-    .fc-name{font-size:11.5px}
   }
 </style>
 </head>
@@ -390,7 +394,7 @@
     <!-- TASK -->
     <div class="sec" data-sec="task">
       <div class="sec-h"><span class="em">🎯</span><span class="ttl">Task</span><button class="info-btn" data-pop="task">i</button></div>
-      <div style="font-size:10px;color:var(--dim);letter-spacing:.04em;text-transform:uppercase;margin:0 0 4px">General</div>
+      <div style="font-size:var(--fs-eyebrow);color:var(--dim);letter-spacing:.04em;text-transform:uppercase;margin:0 0 4px">General</div>
       <label><input type="radio" name="task" value="overall" checked> Overall intelligence</label>
       <label><input type="radio" name="task" value="research"> Research</label>
       <label><input type="radio" name="task" value="data_synthesis"> Data synthesis</label>
@@ -400,7 +404,7 @@
       <label><input type="radio" name="task" value="writing_email"> Email / writing</label>
       <label><input type="radio" name="task" value="classification"> Classification</label>
       <label><input type="radio" name="task" value="summarization"> Summarization</label>
-      <div style="font-size:10px;color:var(--dim);letter-spacing:.04em;text-transform:uppercase;margin:14px 0 4px;display:flex;align-items:center;gap:6px">Industry verticals <button class="info-btn" data-pop="verticals" style="width:14px;height:14px;font-size:8px">i</button></div>
+      <div style="font-size:var(--fs-eyebrow);color:var(--dim);letter-spacing:.04em;text-transform:uppercase;margin:14px 0 4px;display:flex;align-items:center;gap:6px">Industry verticals <button class="info-btn" data-pop="verticals" style="width:14px;height:14px;font-size:8px">i</button></div>
       <label><input type="radio" name="task" value="business"> 💼 Business / RevOps</label>
       <label><input type="radio" name="task" value="legal"> ⚖️ Legal</label>
       <label><input type="radio" name="task" value="healthcare"> 🏥 Healthcare</label>
@@ -412,24 +416,24 @@
     <!-- CONSTRAINTS -->
     <div class="sec" data-sec="constraints">
       <div class="sec-h"><span class="em">🚧</span><span class="ttl">Constraints</span><button class="info-btn" data-pop="constraints">i</button></div>
-      <div style="font-size:11px;color:var(--dim);margin-bottom:6px">Capabilities the model must support</div>
+      <div style="font-size:var(--fs-caption);color:var(--dim);margin-bottom:6px">Capabilities the model must support</div>
       <label><input type="checkbox" class="cap" value="vision"> Vision required <span class="cap-count" data-cap="vision"></span></label>
       <label><input type="checkbox" class="cap" value="function_calling"> Function calling <span class="cap-count" data-cap="function_calling"></span></label>
       <label><input type="checkbox" class="cap" value="structured_output"> Structured output <span class="cap-count" data-cap="structured_output"></span></label>
       <label><input type="checkbox" class="cap" value="fine_tuning"> Fine-tunable <span class="cap-count" data-cap="fine_tuning"></span></label>
-      <div style="font-size:11px;color:var(--dim);margin:12px 0 6px">Policy &amp; latency</div>
+      <div style="font-size:var(--fs-caption);color:var(--dim);margin:12px 0 6px">Policy &amp; latency</div>
       <label><input type="checkbox" id="usonly"> US-origin only</label>
       <label><input type="checkbox" id="notrain"> No-train policy only</label>
       <label><input type="checkbox" id="ushosted"> US-hosted option</label>
       <label><input type="checkbox" id="fastchat"> Chat-fast (TTFT &lt; 5s)</label>
-      <div style="font-size:11px;color:var(--dim);margin:12px 0 6px">Reliability &amp; truthfulness <button class="info-btn" data-pop="reliability" style="margin-left:4px">i</button></div>
+      <div style="font-size:var(--fs-caption);color:var(--dim);margin:12px 0 6px">Reliability &amp; truthfulness <button class="info-btn" data-pop="reliability" style="margin-left:4px">i</button></div>
       <label>Min uptime (24h, best host)
         <select id="upfilter"><option value="0">any</option><option value="99">≥ 99%</option><option value="99.9">≥ 99.9%</option></select>
       </label>
       <label>Max hallucination rate
         <select id="hfilter"><option value="100">any</option><option value="10">≤ 10% (good)</option><option value="6">≤ 6% (excellent)</option><option value="4">≤ 4% (best-in-class)</option></select>
       </label>
-      <div style="font-size:11px;color:var(--dim);margin:12px 0 6px">Pricing tier</div>
+      <div style="font-size:var(--fs-caption);color:var(--dim);margin:12px 0 6px">Pricing tier</div>
       <label><input type="checkbox" class="tier" value="frontier" checked> <span class="tag frontier">Frontier</span></label>
       <label><input type="checkbox" class="tier" value="value" checked> <span class="tag value">Value</span></label>
       <label><input type="checkbox" class="tier" value="cheap" checked> <span class="tag cheap">Cheap-open</span></label>
@@ -700,7 +704,7 @@ async function load(){
     if(!r.ok)throw new Error('models.json HTTP '+r.status);
     d=await r.json();
   }catch(err){
-    const msg=`<div style="padding:20px;color:var(--warn);font-size:13px;line-height:1.6">⚠️ Couldn't load <code>models.json</code> (${err.message}). The dashboard data may still be deploying — try refreshing in 30 seconds. If this persists, the GitHub Actions data pipeline likely failed.</div>`;
+    const msg=`<div style="padding:20px;color:var(--warn);font-size:var(--fs-body);line-height:1.6">⚠️ Couldn't load <code>models.json</code> (${err.message}). The dashboard data may still be deploying — try refreshing in 30 seconds. If this persists, the GitHub Actions data pipeline likely failed.</div>`;
     document.querySelector('.content').insertAdjacentHTML('afterbegin',msg);
     throw err;
   }
@@ -714,8 +718,8 @@ async function load(){
     const cap=span.dataset.cap;
     const supporting=MODELS.filter(m=>m.capabilities[cap]===true).length;
     const total=MODELS.length;
-    if(supporting===total)span.innerHTML=` <span style="color:var(--dim);font-size:11px;font-style:italic">(${total}/${total} models)</span>`;
-    else span.innerHTML=` <span style="color:var(--dim);font-size:11px">(${supporting}/${total} models)</span>`;
+    if(supporting===total)span.innerHTML=` <span style="color:var(--dim);font-size:var(--fs-caption);font-style:italic">(${total}/${total} models)</span>`;
+    else span.innerHTML=` <span style="color:var(--dim);font-size:var(--fs-caption)">(${supporting}/${total} models)</span>`;
   });
   const radar=(d.radar||[]).length;
   const arenaN=MODELS.filter(m=>m.arena).length;
@@ -1208,7 +1212,7 @@ const TAB_HOW=()=>{
     <p>Each task score is the <b>average of 2–3 underlying benchmarks</b>, normalized to a 0–100 scale. No weights, no magic. Benchmarks reported as 0–1 fractions get multiplied by 100; index metrics (already 0–100) are used as-is.</p>
     <h4>For "${TASK_LABEL[task]||task}" specifically</h4>
     <p>Inputs: <b>${info.metrics.join(' · ')}</b></p>
-    <p style="color:var(--dim);font-size:12.5px">${info.note}</p>
+    <p style="color:var(--dim);font-size:var(--fs-button)">${info.note}</p>
     <h4>Worked example: ${ex?ex.display:'—'}${score==null?' (no data for this task)':''}</h4>
     ${score!=null?renderWorkedExample(ex,task):`<p style="color:var(--warn)">No data for this combination — try a different model or task.</p>`}
     <h4>Honest limitations</h4>
@@ -1232,9 +1236,9 @@ const TAB_LEVELS=()=>{
     {label:`Bottom 25% — score &lt; ${q.q1.toFixed(0)}`,color:'var(--warn)',body:'Floor tier for this specific task. Use only when occasional misses are acceptable and rock-bottom cost matters.',examples:bottom},
   ];
   return `<h4>What scores mean for "${TASK_LABEL[task]||task}"</h4>
-    <p style="color:var(--warn);font-size:12.5px;background:var(--panel2);border-left:3px solid var(--warn);padding:9px 11px;border-radius:4px;margin:8px 0 14px;line-height:1.5">⚠ <b>Score scales differ by task.</b> Overall intelligence tops out near 60 in practice; data synthesis tops out near 90; sales coaching is compressed between 80–92 because every tested model is decent. The bands below are <b>quartiles within the tracked dataset for THIS task</b>, not absolute quality thresholds — they update automatically as data shifts.</p>
-    <p style="font-size:12.5px;color:var(--dim)">Current distribution for ${TASK_LABEL[task]||task}: <b style="color:var(--ink)">min ${q.min.toFixed(0)} · median ${q.q2.toFixed(0)} · max ${q.max.toFixed(0)}</b>, across ${q.items.length} tracked models with data on this task.</p>
-    ${bands.map(b=>`<div class="floor-band" style="border-color:${b.color}"><b>${b.label}</b>${b.body}<div style="color:var(--dim);font-size:11.5px;margin-top:4px">Examples: ${b.examples.length?b.examples.join(', '):'<i>—</i>'}</div></div>`).join('')}
+    <p style="color:var(--warn);font-size:var(--fs-button);background:var(--panel2);border-left:3px solid var(--warn);padding:9px 11px;border-radius:4px;margin:8px 0 14px;line-height:1.5">⚠ <b>Score scales differ by task.</b> Overall intelligence tops out near 60 in practice; data synthesis tops out near 90; sales coaching is compressed between 80–92 because every tested model is decent. The bands below are <b>quartiles within the tracked dataset for THIS task</b>, not absolute quality thresholds — they update automatically as data shifts.</p>
+    <p style="font-size:var(--fs-button);color:var(--dim)">Current distribution for ${TASK_LABEL[task]||task}: <b style="color:var(--ink)">min ${q.min.toFixed(0)} · median ${q.q2.toFixed(0)} · max ${q.max.toFixed(0)}</b>, across ${q.items.length} tracked models with data on this task.</p>
+    ${bands.map(b=>`<div class="floor-band" style="border-color:${b.color}"><b>${b.label}</b>${b.body}<div style="color:var(--dim);font-size:var(--fs-caption);margin-top:4px">Examples: ${b.examples.length?b.examples.join(', '):'<i>—</i>'}</div></div>`).join('')}
     <h4>How to read the bands</h4>
     <p>The recommender card's <b>score color</b> uses the same quartile logic — mint = top 25%, white = upper-half, warn-amber = lower-half. Same model can be mint on one task and amber on another (e.g., DeepSeek V4 Flash is bottom-quartile overall but top-quartile on data synthesis). Always check the per-task score for the bucket you actually care about.</p>`;
 };
@@ -1244,7 +1248,7 @@ const TAB_AGENTIC=()=>`<h4>What is "agentic scoring"?</h4>
   <p>For the agentic-flavored task buckets (<b>Web research, Coding, Software engineering, Expert reasoning</b>, and the verticals), the score blends AA's agentic sub-indices — <code>tau2</code> (tool-use), <code>terminalbench_hard</code> (multi-step terminal tasks), <code>livecodebench</code> — with the <b>LMArena</b> human-preference rank for the matching industry. AA gives you the benchmark number; Arena tells you whether humans actually prefer the model's output in real work.</p>
   <h4>Agent Arena's methodology (<a href="https://arena.ai/blog/agent-arena-methodology/" target="_blank">arena.ai</a>)</h4>
   <p>Arena's agent leaderboard uses <b>causal tracing</b>, not pairwise voting. Instead of asking "which response do you prefer?", it tracks real user sessions on arena.ai (~160K agent tasks in a recent week — coding, financial analysis, research, doc creation) and measures five concrete signals:</p>
-  <table style="font-size:12.5px;margin:8px 0">
+  <table style="font-size:var(--fs-button);margin:8px 0">
     <tr><td style="color:var(--accent);font-weight:600;padding-right:12px">Confirmed success</td><td>Did the user explicitly approve the task outcome?</td></tr>
     <tr><td style="color:var(--accent);font-weight:600">Praise vs. complaint</td><td>Verbal satisfaction in the conversation</td></tr>
     <tr><td style="color:var(--accent);font-weight:600">Steerability</td><td>How well the agent responds to user corrections</td></tr>
@@ -1254,18 +1258,18 @@ const TAB_AGENTIC=()=>`<h4>What is "agentic scoring"?</h4>
   <p>Statistically it's a multi-intervention randomized controlled trial: sessions randomly sample different orchestrator models and the system computes <b>net improvement</b> with 95% confidence intervals, weighted toward recent data.</p>
   <h4>Why this matters for routing</h4>
   <p>An agentic score isn't just "smarter model = better." A frontier model that <i>doesn't recover well from bash errors</i> loses to a cheaper model that does. That's why <b>DeepSeek V4 Flash</b> can rank surprisingly well for web research despite being floor-tier on overall intelligence — it's measured on the right things for the task.</p>
-  <p style="color:var(--dim);font-size:12px">⚠ As of this snapshot, agent-specific Elos aren't separately exposed in the LMArena public dataset we pull — we use the closest industry/use-case categories instead. When agent-specific data lands, we'll wire it in.</p>`;
+  <p style="color:var(--dim);font-size:var(--fs-button)">⚠ As of this snapshot, agent-specific Elos aren't separately exposed in the LMArena public dataset we pull — we use the closest industry/use-case categories instead. When agent-specific data lands, we'll wire it in.</p>`;
 const TAB_PICK=()=>`<h4>Find the quality floor for your feature in 3 questions</h4>
-  <p style="color:var(--dim);font-size:12.5px">Answer these, and we'll suggest a floor. The right answer is "good enough for the stakes" — not "the highest number."</p>
+  <p style="color:var(--dim);font-size:var(--fs-button)">Answer these, and we'll suggest a floor. The right answer is "good enough for the stakes" — not "the highest number."</p>
   <div id="qwiz-body"></div>`;
 const TAB_HOWTO=()=>`<h4>Three steps to get an answer</h4>
-  <table style="font-size:13px;margin:8px 0;border-collapse:separate;border-spacing:0 8px">
+  <table style="font-size:var(--fs-body);margin:8px 0;border-collapse:separate;border-spacing:0 8px">
     <tr><td style="padding-right:14px;vertical-align:top;width:32px">
-      <span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:11px">1</span>
+      <span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">1</span>
     </td><td style="padding:0"><b>Tell us what you're building</b><div style="color:var(--dim);margin-top:2px">Click <b style="color:var(--ink)">💰 Costing</b> above — pick the scenario that sounds like your AI feature (chatbot, email drafter, CRM enrichment, etc.). The cost model presets and cache/batch settings get inferred for you.</div></td></tr>
-    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:11px">2</span></td>
+    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">2</span></td>
     <td><b>Pick your quality bar</b><div style="color:var(--dim);margin-top:2px">Use the <b style="color:var(--ink)">Quality floor</b> slider on the recommender card. Not sure what level to set? Click <b style="color:var(--ink)">📏 Quality floor</b> above for a 3-question wizard that picks one based on your stakes.</div></td></tr>
-    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:11px">3</span></td>
+    <tr><td style="vertical-align:top"><span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04110b;text-align:center;font-weight:700;line-height:22px;font-size:var(--fs-caption)">3</span></td>
     <td><b>Read the top-3</b><div style="color:var(--dim);margin-top:2px">The recommender shows the <b style="color:var(--ink)">cheapest models that clear your bar</b>, with savings vs. defaulting to the frontier and trade-off receipts (origin, train policy, cheapest host, hallucination, uptime). Tap any <b style="color:var(--ink)">ⓘ</b> for more.</div></td></tr>
   </table>
   <h4>What the header buttons do</h4>
@@ -1277,7 +1281,7 @@ const TAB_HOWTO=()=>`<h4>Three steps to get an answer</h4>
   <p>Ask these questions <b>per feature of your product</b>, not for the company overall. A live customer chatbot and an overnight CRM enrichment job have very different floors — same product, different routing.</p>`;
 const TAB_COSTING=()=>`<h4>How the cost model works</h4>
   <p>The dashboard's "effective cost" combines four levers that stack on each other:</p>
-  <table style="font-size:12.5px;margin:8px 0">
+  <table style="font-size:var(--fs-button);margin:8px 0">
     <tr><td style="color:var(--accent);font-weight:600;padding-right:12px;width:130px">List price</td><td>Public per-token rate the provider charges by default. The starting point.</td></tr>
     <tr><td style="color:var(--accent);font-weight:600">Enterprise discount</td><td>Illustrative negotiated rate (Anthropic ~22% off, OpenAI ~32%, Google ~25%). Toggle "Enterprise (committed) base" in the cost-model panel. Open-weight models don't change.</td></tr>
     <tr><td style="color:var(--accent);font-weight:600">Cache savings</td><td>~90% off the input portion that repeats across calls (system prompt, tool defs). The "Input cached" slider.</td></tr>
@@ -1287,19 +1291,19 @@ const TAB_COSTING=()=>`<h4>How the cost model works</h4>
   <h4>Preset shortcuts</h4>
   <p>The 4 preset buttons set both sliders to a typical workload:</p>
   <p><b>List</b> 0% / 0%   ·   <b>Chat</b> 50% / 0%   ·   <b>Agent loop</b> 80% / 0%   ·   <b>Bulk</b> 50% / 100%</p>
-  <p style="color:var(--dim);font-size:12.5px;margin-top:14px">Not sure what to pick? Switch to the <b style="color:var(--accent)">Walk me through it</b> tab for a 3-question guided form.</p>`;
+  <p style="color:var(--dim);font-size:var(--fs-button);margin-top:14px">Not sure what to pick? Switch to the <b style="color:var(--accent)">Walk me through it</b> tab for a 3-question guided form.</p>`;
 // Step counter for the in-modal costing wizard (separate from the legacy sidebar wizard's wizStep).
 let modalWizStep=0, modalWizSnapshot=null;
 const TAB_COSTING_WIZARD=()=>{
   const step=WIZ_STEPS[modalWizStep];
-  const intro=modalWizStep===0?`<div style="margin:0 0 14px;padding:10px 12px;background:var(--accent-dim);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.5">This 3-question form asks about your AI feature and infers the right <b>cache/batch settings</b> to estimate which model is sufficient for your use case. Then select the correct <b>task</b> and <b>quality floor</b> to find the right model.</div>`:'';
+  const intro=modalWizStep===0?`<div style="margin:0 0 14px;padding:10px 12px;background:var(--accent-dim);border-left:3px solid var(--accent);border-radius:4px;font-size:var(--fs-body);line-height:1.5">This 3-question form asks about your AI feature and infers the right <b>cache/batch settings</b> to estimate which model is sufficient for your use case. Then select the correct <b>task</b> and <b>quality floor</b> to find the right model.</div>`:'';
   const back=modalWizStep>0?`<button class="profbtn" id="modal-wiz-back" style="margin-top:14px;background:var(--panel2);color:var(--dim);border-color:var(--line)">← Back</button>`:'';
   return `${intro}
-    <div class="wiz-step" style="font-size:10.5px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Step ${modalWizStep+1} of 3</div>
-    <div class="wiz-q" style="font-size:15px;font-weight:600;margin-bottom:12px">${step.q}</div>
-    <div class="wiz-help" style="font-size:12.5px;color:var(--dim);margin-bottom:14px;line-height:1.5">${step.help}</div>
+    <div class="wiz-step" style="font-size:var(--fs-eyebrow);color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Step ${modalWizStep+1} of 3</div>
+    <div class="wiz-q" style="font-size:var(--fs-h2);font-weight:600;margin-bottom:12px">${step.q}</div>
+    <div class="wiz-help" style="font-size:var(--fs-button);color:var(--dim);margin-bottom:14px;line-height:1.5">${step.help}</div>
     <div class="wiz-opts" id="modal-wiz-opts" style="display:flex;flex-direction:column;gap:7px">
-      ${step.opts.map((o,i)=>`<button data-i="${i}" style="text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:11px 13px;font-size:13px;cursor:pointer;line-height:1.4">${o.label}<span class="sub" style="display:block;color:var(--dim);font-size:11.5px;margin-top:4px">${o.sub}</span></button>`).join('')}
+      ${step.opts.map((o,i)=>`<button data-i="${i}" style="text-align:left;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:11px 13px;font-size:var(--fs-body);cursor:pointer;line-height:1.4">${o.label}<span class="sub" style="display:block;color:var(--dim);font-size:var(--fs-caption);margin-top:4px">${o.sub}</span></button>`).join('')}
     </div>
     ${back}`;
 };
@@ -1312,7 +1316,7 @@ const TAB_FEATURES=()=>{
   const fp=META.feature_profiles;
   if(!fp)return `<p style="color:var(--warn)">Feature profiles not loaded — run <code>python3 build.py</code> to regenerate <code>models.json</code>.</p>`;
   return `<h4>Pick a feature to auto-configure the recommender</h4>
-    <p style="color:var(--dim);font-size:12.5px;margin:6px 0 12px">Each Intelligent Noise feature maps to a task bucket + quality floor + pricing-tier filters based on Ryan's routing taxonomy. Clicking a card applies the profile; you can override any individual setting manually afterward. Mapping is a first-pass — flag any feature where the task bucket feels wrong.</p>
+    <p style="color:var(--dim);font-size:var(--fs-button);margin:6px 0 12px">Each Intelligent Noise feature maps to a task bucket + quality floor + pricing-tier filters based on Ryan's routing taxonomy. Clicking a card applies the profile; you can override any individual setting manually afterward. Mapping is a first-pass — flag any feature where the task bucket feels wrong.</p>
     ${fp.groups.map(g=>`<div class="feature-area-h">${g.area}</div>
       <div class="feature-grid">
         ${g.features.map(f=>{
@@ -1325,7 +1329,7 @@ const TAB_FEATURES=()=>{
           </button>`;
         }).join('')}
       </div>`).join('')}
-    <p style="color:var(--dim);font-size:11.5px;margin-top:14px"><b style="color:var(--ink)">Honest caveat:</b> "Sufficient" here means "the task score in the top X% of tracked models for the matching task bucket" — derived from public benchmarks, not from Intelligent Noise's own evals. For high-stakes features, validate the top-3 recommendations against your own prompts before shipping.</p>`;
+    <p style="color:var(--dim);font-size:var(--fs-caption);margin-top:14px"><b style="color:var(--ink)">Honest caveat:</b> "Sufficient" here means "the task score in the top X% of tracked models for the matching task bucket" — derived from public benchmarks, not from Intelligent Noise's own evals. For high-stakes features, validate the top-3 recommendations against your own prompts before shipping.</p>`;
 };
 const SCENES={
   howto:{title:'👋 How to use this tool',
@@ -1388,7 +1392,7 @@ function maybeShowResult(){
   document.querySelector('#qwiz-body').insertAdjacentHTML('beforeend',`
     <div class="qwiz-result">
       Suggested quality floor: <b>${floor}</b>
-      <div style="color:var(--dim);font-size:12px;margin-top:4px">That lands in the <b style="color:var(--ink)">"${band.label}"</b> band.</div>
+      <div style="color:var(--dim);font-size:var(--fs-button);margin-top:4px">That lands in the <b style="color:var(--ink)">"${band.label}"</b> band.</div>
       <button id="qwiz-apply">Apply ${floor} to the recommender →</button>
     </div>`);
   // Use the just-inserted button explicitly (avoids stale-ID collisions if user re-clicks fast)
@@ -1477,7 +1481,7 @@ function renderActiveFeature(){
     : `<div class="af-derivation">ⓘ Quality floor set to <b>0</b>: "${d.intelLabel}" intelligence requires no minimum filter. Drag the slider below to tighten.</div>`):'';
   chip.innerHTML=`<div class="af-icon">📋</div>
     <div class="af-content">
-      <div><span class="af-name">${f.name}</span> <span style="color:var(--dim);font-size:11px">· ${area}</span></div>
+      <div><span class="af-name">${f.name}</span> <span style="color:var(--dim);font-size:var(--fs-caption)">· ${area}</span></div>
       <div class="af-meta">${f.frequency} freq · ${f.intelligence_required} intelligence required · ${f.cost_sensitivity} cost sensitivity · routed to <b style="color:var(--ink)">${TASK_LABEL[f.task_bucket]||f.task_bucket}</b></div>
       ${f.notes?`<div class="af-notes">${f.notes}</div>`:''}
       ${derivLine}
@@ -1530,7 +1534,7 @@ function renderWorkedExample(m,task){
     Inputs: ${info.metrics.map(x=>`<b>${x}</b>`).join(' · ')}<br>
     Computed: average of these → <span class="out">${score?.toFixed(1)}</span>
   </div>
-  <p style="font-size:12px;color:var(--dim)">e.g. for ${m.display}, the underlying metrics are read from Artificial Analysis. Any missing metric is skipped, not penalized.</p>`;
+  <p style="font-size:var(--fs-button);color:var(--dim)">e.g. for ${m.display}, the underlying metrics are read from Artificial Analysis. Any missing metric is skipped, not penalized.</p>`;
 }
 $('#modal-close').addEventListener('click',closeModal);
 $('#modal-bg').addEventListener('click',e=>{if(e.target===$('#modal-bg'))closeModal();});
