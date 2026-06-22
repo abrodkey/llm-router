@@ -935,12 +935,14 @@ function renderScatter(){
   const yCy = (P.t + H - P.b) / 2;
   svg.appendChild(el('text',{x:16,y:yCy,class:'axis-label','text-anchor':'middle',transform:`rotate(-90, 16, ${yCy})`},yLabel));
   const sorted=[...data].sort((a,b)=>a.x-b.x);let best=-1e9;const par=sorted.filter(d=>{if(d.y>best){best=d.y;return true}return false});
+  const paretoSet=new Set(par.map(d=>d.m.canonical));
   if(par.length>1){
     const path=el('path',{d:par.map((d,i)=>`${i?'L':'M'}${xs(d.x)},${ys(d.y)}`).join(' '),class:'pareto'});
     const ttl=document.createElementNS(ns,'title');ttl.textContent='Pareto frontier: the "best-in-class" line. Models on it cannot be beaten on both cost and quality at the current settings — anything below is dominated.';
     path.appendChild(ttl);svg.appendChild(path);
   }
   const keep=new Set(MODELS.filter(m=>passes(m,C)).map(m=>m.canonical));
+  const isMobile=window.innerWidth<=780;
   for(const d of data){
     const ipd=d.m.intel_per_dollar||5, r=Math.min(13,3+Math.sqrt(ipd)*.6);
     const dot=el('circle',{cx:xs(d.x),cy:ys(d.y),r,fill:TIER_COLOR[d.m.tier],stroke:'#000','stroke-width':1.1,class:'dot'+(keep.has(d.m.canonical)?'':' dim')});
@@ -949,7 +951,12 @@ function renderScatter(){
     dot.addEventListener('mouseleave',hideTip);
     dot.addEventListener('click',e=>{e.stopPropagation();showTip(e,d.m,task);});
     svg.appendChild(dot);
-    if(keep.has(d.m.canonical)&&(d.m.tier==='frontier'||ipd>30||r>8))svg.appendChild(el('text',{x:xs(d.x)+r+4,y:ys(d.y)+3,class:'dot-label'},d.m.display));
+    // Label rule: on mobile, ONLY label models on the Pareto curve (others reveal name on tap).
+    // On desktop, keep the existing rule (frontier tier OR very high intel/$ OR large dot).
+    const showLabel = keep.has(d.m.canonical) && (isMobile
+      ? paretoSet.has(d.m.canonical)
+      : (d.m.tier==='frontier'||ipd>30||r>8));
+    if(showLabel)svg.appendChild(el('text',{x:xs(d.x)+r+4,y:ys(d.y)+3,class:'dot-label'},d.m.display));
   }
 }
 function showTip(e,m,task){
