@@ -115,3 +115,70 @@ The dashboard labels every preview model so users don't confuse provisional
 data with verified data. The point is to surface comparison *quickly* without
 pretending we have full coverage. If you ship a screenshot to a stakeholder
 and a preview model is the answer, mention it's preview.
+
+---
+
+## How to add a new closed-weights model (Claude, GPT, Gemini, Grok)
+
+These models are the only manual case. Anthropic and OpenAI don't publish to
+Hugging Face, Epoch tracks them only after benchmarking, and AA usually takes
+1–3 weeks to score a frontier closed model. Until AA picks it up, you have to
+hand-add a stub. Sixty seconds of work.
+
+### 60-second flow
+
+1. **See the announcement.** Anthropic blog, OpenAI / xAI / Google announcement,
+   X post, etc.
+2. **Open `aliases.json`**, copy the closest existing entry from the same
+   creator (e.g. copy `claude-opus-4-8` when adding `claude-opus-4-9`).
+3. **Update these fields**:
+   - `canonical` — kebab-case id, e.g. `claude-opus-4-9`
+   - `display` — what shows in the UI, e.g. `Claude Opus 4.9`
+   - `aa_name` — the EXACT string AA will use once they score it
+     (best guess; the maintainer fixes it later if wrong)
+   - `epoch_name`, `arena_name`, `openrouter_slug`, `salesevals_name` — same
+     pattern, all best-guess strings
+   - `provider_key` — almost always the same as the previous-generation entry
+     (e.g. `anthropic-opus`), unless pricing changed
+   - **`release_date_override`** — ISO date `YYYY-MM-DD`. This makes the model
+     appear in "Recently fielded" even before AA scores it.
+   - `_note` — one line for future-you: "AA hadn't scored this yet on
+     2026-MM-DD, remove override when intelligence_index populates"
+4. **Update `providers.json`** ONLY if pricing changed from the previous
+   generation. Otherwise skip.
+5. **`python3 build.py`** to confirm no errors. The new model will appear in
+   the next daily GitHub Action refresh.
+
+### Stub template
+
+```json
+{
+  "canonical":           "claude-opus-4-9",
+  "display":             "Claude Opus 4.9",
+  "aa_name":             "Claude Opus 4.9",
+  "epoch_name":          "Claude Opus 4.9",
+  "arena_name":          "claude-opus-4-9",
+  "openrouter_slug":     "anthropic/claude-opus-4.9",
+  "vectara_name":        null,
+  "salesevals_name":     "Claude Opus 4.9",
+  "provider_key":        "anthropic-opus-4.8",
+  "_note":               "AA pending. Released 2026-MM-DD per Anthropic blog. Remove override when scored.",
+  "release_date_override": "2026-MM-DD"
+}
+```
+
+### Auto-graduation
+
+Once AA publishes a score for that exact `aa_name`, `merge_one()` overwrites
+the stub's `release_date` with AA's real value, fills in `intelligence_index`,
+`task_scores`, `cost.aa_blended_per_1m`, etc. The `preliminary` tag drops off.
+At that point the maintainer can delete `release_date_override` and `_note` —
+the entry becomes a normal tracked model.
+
+### When a stub goes stale
+
+If a stub sits for >45 days without AA picking it up:
+- AA name guess was probably wrong. Open
+  [artificialanalysis.ai/models](https://artificialanalysis.ai/models)
+  and find the exact name, update `aa_name`.
+- Or the model was renamed / cancelled. Remove the stub.
