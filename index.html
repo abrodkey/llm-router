@@ -159,6 +159,8 @@
   tbody tr:hover td{background:var(--panel2)}
   /* In-card task chip — declares scope even when top-of-page chips scroll out of view */
   .fc-task-chip{display:inline-block;margin-left:8px;padding:2px 8px;background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);border-radius:10px;font-size:var(--fs-caption);font-weight:500;vertical-align:middle}
+  .fc-score-src{font-size:var(--fs-caption);color:var(--dim);margin:6px 0 2px}
+  .fc-score-src b{color:var(--ink);font-weight:500}
   /* Mobile stacked-row view — hidden by default; replaces table under 780px */
   .fc-mobile{display:none}
   .fc-row{padding:11px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel)}
@@ -524,6 +526,7 @@
     <!-- TABLE -->
     <div class="card" id="fc-card">
       <h2 id="fc-title">Full comparison <span class="fc-task-chip" id="fc-task-chip"></span></h2>
+      <div class="fc-score-src" id="fc-score-src"></div>
       <div class="h-sub">Click a header to sort. Rows not matching constraints are dimmed.</div>
       <div class="active-filters" id="active-filters"></div>
       <!-- Mobile: stacked one-card-per-model view (table is hidden under 780px) -->
@@ -960,6 +963,7 @@ function renderTable(){
   const task=taskSel(),C=constraints(),cF=cacheFrac(),bF=batchFrac(),tb=$('#table tbody'),mob=$('#fc-mobile');tb.innerHTML='';mob.innerHTML='';
   // In-card chip: declares active task scope so it's visible even when top-of-page chips scroll out.
   const chip=$('#fc-task-chip');if(chip)chip.textContent='Task: '+(TASK_LABEL[task]||task);
+  const srcEl=$('#fc-score-src');if(srcEl)srcEl.innerHTML=`Scored by <b>${scoreSourceLabel(task)}</b> · all rows below ranked on this metric.`;
   const keep=new Set(MODELS.filter(m=>passes(m,C)).map(m=>m.canonical));
   const aug=MODELS.map(m=>{const e=effective(m,cF,bF);const sp=m.openrouter&&m.openrouter.spread;
     return {...m,_cap:capValue(m,task),_eff:e?e.blended:null,_ipd:m.intel_per_dollar,_hostmin:sp?sp.cheapest_in:null,_arena:m.arena?m.arena.elo_overall_sc:null,_scd:m.arena?m.arena.sc_delta:null,_hall:m.hallucination?m.hallucination.hallucination_rate:null,_up:(m.reliability||{}).best_uptime_1d??null,_vis:m.capabilities.vision?1:0,_fc:m.capabilities.function_calling?1:0};});
@@ -993,7 +997,7 @@ function renderTable(){
     const origin=m.provenance.country?(m.provenance.country.includes('United States')?'🇺🇸 US':m.provenance.country.includes('China')?'🇨🇳 China':m.provenance.country):'';
     const meta=[`<b>${effTxt}</b>`,arenaTxt,upTxt,hallTxt,origin].filter(Boolean).join(' · ');
     mob.insertAdjacentHTML('beforeend',
-      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n">${m.display} <span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px">${m.tier}</span></div><div class="fc-row-sw"><div class="fc-row-s">${score}<small>/100</small></div><div class="fc-row-src">${scoreSourceLabel(task)}</div></div></div><div class="fc-row-m">${meta}</div></div>`);
+      `<div class="fc-row${dimmed}"><div class="fc-row-h"><div class="fc-row-n">${m.display} <span class="tag ${m.tier}" style="font-size:9px;vertical-align:1px">${m.tier}</span></div><div class="fc-row-s">${score}<small>/100</small></div></div><div class="fc-row-m">${meta}</div></div>`);
   }
 }
 
