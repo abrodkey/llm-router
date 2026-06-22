@@ -41,13 +41,70 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add models.json data/radar.json
+          # Track radar_auto.json + per-org HF caches alongside models.json + radar.json
+          git add models.json data/radar.json radar_auto.json data/hf-*.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes — skipping commit."
           else
-            git commit -m "data: daily refresh ($(date -u +%Y-%m-%d))"
+            # Build a one-line promotion summary for the commit message
+            SUMMARY=$(python3 -c "
+          import json,os
+          try:
+            a=json.load(open('radar_auto.json'))
+            promoted=a.get('promoted',[])
+          except Exception:
+            promoted=[]
+          if promoted:
+            names=', '.join(p['display'] for p in promoted[:6])
+            tail=f' (+{len(promoted)-6} more)' if len(promoted)>6 else ''
+            print(f'auto-promoted {len(promoted)}: {names}{tail}')
+          else:
+            print('no auto-promotions today')
+          ")
+            git commit -m "data: daily refresh ($(date -u +%Y-%m-%d)) — $SUMMARY"
             git push
           fi
+
+      - name: Daily promotion-policy summary
+        run: |
+          # Surface the promotion run in the Actions workflow summary so the maintainer
+          # can see what shipped each day without digging through commits.
+          {
+            echo "## 📋 Daily promotion policy — $(date -u +%Y-%m-%d)"
+            echo ""
+            python3 -c "
+          import json
+          try:
+            a=json.load(open('radar_auto.json'))
+            promoted=a.get('promoted',[])
+            decisions=a.get('decisions',[])
+          except Exception:
+            promoted=[]; decisions=[]
+          print(f'**Tier-1 PREVIEW models in dashboard:** {len(promoted)}')
+          print('')
+          if promoted:
+            print('### Auto-promoted (Tier-1 PREVIEW)')
+            for p in promoted:
+              print(f\"- **{p['display']}** ({p.get('creator','?')}) — template: \`{p.get('template_provider','?')}\` · coverage: {', '.join(p.get('data_coverage',[]) or ['(none yet)'])} · released {p.get('release_date','?')}\")
+          if decisions:
+            print('')
+            print('### Decision log')
+            for d in decisions:
+              print(d)
+          try:
+            r=json.load(open('data/radar.json'))
+            cands=r.get('candidates',[])
+            if cands:
+              print('')
+              print(f'### Tier-0 radar — detected upstream, awaiting benchmark ({len(cands)})')
+              for c in cands[:20]:
+                srcs='+'.join(c.get('sources',['aa']))
+                intel=f\", intel {c['max_intel']}\" if c.get('max_intel') is not None else ''
+                print(f\"- **{c['base']}** ({c.get('creator','?')}) — {srcs}{intel}, released {c.get('release_date','?')}\")
+          except Exception:
+            pass
+            "
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: New-model radar → GitHub issue
         env:
