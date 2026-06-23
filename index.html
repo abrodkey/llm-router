@@ -703,6 +703,10 @@ function arenaCategoryRow(m,task){const cat=ARENA_CAT_FOR_TASK[task];if(!cat)ret
 // We prefer Arena here (matching the vertical-bucket pattern), falling back to the AA proxy only
 // when Arena data is missing.
 const ARENA_PREFERRED_TASKS=new Set(['chat','writing_email']);
+// Min votes for a per-category LMArena Elo to count as settled. Category slices are a
+// subset of total battles (~10x fewer votes than the overall 5000-vote board), so this
+// is tuned lower. Below it, the category rank is still moving and we mark it preliminary.
+const ARENA_CATEGORY_MIN_VOTES=1000;
 // Short label naming what generates the task score — shown under the big score so users
 // understand why a model with a worse Arena rank can still score higher (different signal).
 function scoreSourceLabel(task){
@@ -761,7 +765,10 @@ function isPreliminary(m, task){
     const catSlug = ARENA_CAT_FOR_TASK[task];
     if(catSlug && m.arena_categories && m.arena_categories[catSlug]){
       const cat = m.arena_categories[catSlug];
-      return (cat.votes||0) < 5000;
+      // Category slices are a SUBSET of total Arena battles, so their vote counts run
+      // ~10x lower than the overall board. A category model with 1000+ votes has a
+      // stable rank — only flag the genuinely-fresh entrants below that.
+      return (cat.votes||0) < ARENA_CATEGORY_MIN_VOTES;
     }
     return !m.arena || m.arena.low_confidence;
   }
