@@ -119,9 +119,10 @@
   #floorV::-webkit-inner-spin-button,#floorV::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
   #floorV:hover{border-bottom-color:var(--accent);color:var(--accent)}
   #floorV:focus{border-bottom-color:var(--accent);outline:none;color:var(--accent)}
-  /* auto-fit so cards wrap instead of overflowing when the content column is narrow
-     (the 300px sidebar + a mid-width viewport used to crush 3 columns past their edges) */
-  .recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  /* Wide desktop: 3 equal columns. Mid-range collapses to a hero layout (#1 full-width,
+     #2+#3 below) and mobile stacks — see the media queries below. min-width:0 on .rec
+     keeps any column from being blown past its track. */
+  .recs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   /* min-width:0 lets a card shrink to its grid track instead of forcing the track wider
      (grid/flex items default to min-width:auto, which is what blew the 3rd card past the
      content edge and got it clipped by .content's overflow-x:hidden). overflow-wrap
@@ -309,6 +310,13 @@
     #fc-card .h-sub{display:none}
   }
 
+  /* Mid-range recommender: when 3 equal columns get cramped, promote #1 to a full-width
+     hero on row 1 and let #2 + #3 share row 2. */
+  @media (max-width:1080px){
+    .recs{grid-template-columns:1fr 1fr}
+    .recs > .rec:nth-child(1){grid-column:1 / -1}
+  }
+
   /* ─────────────────────────── RESPONSIVE / MOBILE (≤780px) ─────────────────────────── */
   @media (max-width:780px){
     /* Stack the two-column grid into one — sidebar above content */
@@ -330,6 +338,7 @@
        above its top edge; a tight gap makes the badge visually crash into the
        previous card and read as uneven spacing. */
     .recs{grid-template-columns:1fr;gap:22px}
+    .recs > .rec:nth-child(1){grid-column:auto}
     .rec{padding:12px 14px;margin-top:0}
     .rec .name{font-size:var(--fs-body)}
     .rec-metric .m-big{font-size:var(--fs-metric)}
