@@ -1100,19 +1100,39 @@ function renderScatter(){
     // hovering any dot reveals its full details.
     const showLabel = keep.has(d.m.canonical) && paretoSet.has(d.m.canonical);
     if(showLabel){
-      // Approximate label width (avg ~6px per char at current font-size) to decide if the label
-      // will overflow the right edge of the plot area. If so, flip to left of the dot.
+      // Approximate label width (avg ~6px per char) to decide if it overflows the right
+      // edge; if so, flip to the left of the dot. Store numeric fields so the collision
+      // pass below can nudge overlapping labels apart.
       const approxW=d.m.display.length*6.2+8;
-      const rightEdge=W-P.r;
-      const fitsRight=xs(d.x)+r+4+approxW <= rightEdge;
-      const attrs=fitsRight
-        ? {x:xs(d.x)+r+4,y:ys(d.y)+3,class:'dot-label'}
-        : {x:xs(d.x)-r-4,y:ys(d.y)+3,class:'dot-label','text-anchor':'end'};
-      labelDefs.push({attrs,text:d.m.display});
+      const fitsRight=xs(d.x)+r+4+approxW <= W-P.r;
+      labelDefs.push({
+        x: fitsRight ? xs(d.x)+r+4 : xs(d.x)-r-4,
+        y: ys(d.y)+3,
+        w: approxW,
+        anchor: fitsRight ? 'start' : 'end',
+        text: d.m.display
+      });
+    }
+  }
+  // De-collision: frontier points can sit close together (the cheap-open cluster), so
+  // their labels overprint. Sort top-to-bottom and, for any two labels whose horizontal
+  // extents overlap and whose baselines are within a line-height, push the lower one down.
+  const LH=13;
+  labelDefs.sort((a,b)=>a.y-b.y);
+  const xExtent=L=>L.anchor==='end'?[L.x-L.w,L.x]:[L.x,L.x+L.w];
+  for(let i=0;i<labelDefs.length;i++){
+    for(let j=0;j<i;j++){
+      const A=labelDefs[i],B=labelDefs[j];
+      const [aL,aR]=xExtent(A),[bL,bR]=xExtent(B);
+      if(aL<bR && bL<aR && (A.y-B.y)<LH) A.y=B.y+LH;   // horizontal overlap + too close → nudge down
     }
   }
   // Second pass: paint labels last so they sit above every dot in stacking order.
-  for(const {attrs,text} of labelDefs)svg.appendChild(el('text',attrs,text));
+  for(const L of labelDefs){
+    const attrs={x:L.x,y:L.y,class:'dot-label'};
+    if(L.anchor==='end')attrs['text-anchor']='end';
+    svg.appendChild(el('text',attrs,L.text));
+  }
 }
 function showTip(e,m,task){
   const t=$('#tip'),sp=m.openrouter&&m.openrouter.spread,eff=effective(m,cacheFrac(),batchFrac());
