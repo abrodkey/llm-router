@@ -1051,9 +1051,10 @@ function renderScatter(){
   // frontier, plus the next-best models that almost beat it, plus a few good runner-ups.
   // Excludes deeply-dominated models (e.g. 5+ models that beat them on both axes) — they
   // contribute noise, not signal.
-  // On mobile, restrict the chart to ONLY models on the Pareto frontier — desktop has
-  // room for k-dominated neighbours, mobile doesn't.
-  const isMobileChart = window.innerWidth <= 780;
+  // Show ONLY models on the Pareto frontier (mobile + desktop). A model is on the
+  // frontier when no other model dominates it (cheaper AND higher score). Everything
+  // below the frontier is dominated noise — plotting it just crowds the chart and
+  // collides labels. The dashed line connects exactly these points.
   const domCount = allData.map(d=>{
     let n=0;
     for(const o of allData){
@@ -1062,10 +1063,7 @@ function renderScatter(){
     }
     return {d,n};
   });
-  domCount.sort((a,b)=>a.n-b.n || b.d.y-a.d.y);
-  const data = isMobileChart
-    ? domCount.filter(x=>x.n===0).map(x=>x.d)        // strict Pareto frontier only
-    : domCount.slice(0, 22).map(x=>x.d);             // desktop: top 22 by Pareto proximity
+  const data = domCount.filter(x=>x.n===0).map(x=>x.d);   // strict Pareto frontier
   const xMax=Math.max(...data.map(d=>d.x))*1.06, yMax=Math.max(...data.map(d=>d.y))*1.08, yMin=Math.max(0,Math.min(...data.map(d=>d.y))-6);
   const xs=v=>P.l+(v/xMax)*(W-P.l-P.r), ys=v=>H-P.b-((v-yMin)/(yMax-yMin))*(H-P.t-P.b);
   const ns='http://www.w3.org/2000/svg', el=(t,a,x)=>{const e=document.createElementNS(ns,t);for(const k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;};
@@ -1096,11 +1094,9 @@ function renderScatter(){
     dot.addEventListener('mouseleave',hideTip);
     dot.addEventListener('click',e=>{e.stopPropagation();showTip(e,d.m,task);});
     svg.appendChild(dot);
-    // Label rule: on mobile, ONLY label models on the Pareto curve (others reveal name on tap).
-    // On desktop, keep the existing rule (frontier tier OR very high intel/$ OR large dot).
-    const showLabel = keep.has(d.m.canonical) && (isMobile
-      ? paretoSet.has(d.m.canonical)
-      : (d.m.tier==='frontier'||ipd>30||r>8));
+    // Every plotted point is on the Pareto frontier now, so label them all (that pass
+    // the constraint filter). paretoSet retained for clarity but all data is Pareto.
+    const showLabel = keep.has(d.m.canonical);
     if(showLabel){
       // Approximate label width (avg ~6px per char at current font-size) to decide if the label
       // will overflow the right edge of the plot area. If so, flip to left of the dot.
