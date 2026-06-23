@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Intelligent Noise LLM Router</title>
+<!-- Display face for brand-carrying headings only. Space Grotesk reads modern-technical
+     (fits a routing/infra tool) without being on the generic-font list. Body + dense data
+     stay on the fast system stack. preconnect + display:swap = no render-blocking. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0b0d10; --panel:#14171c; --panel2:#1c2026; --ink:#e6e8eb; --dim:#9aa1ab; --line:#2a2f37;
@@ -14,6 +20,7 @@
     --fs-body:13px; --fs-caption:11.5px; --fs-eyebrow:10.5px;
     --fs-metric:22px; --fs-button:12px;
     --fw-regular:400; --fw-bold:600;
+    --font-display:'Space Grotesk',-apple-system,system-ui,sans-serif;
   }
   @media (max-width:780px){:root{--fs-h1:17px; --fs-h2:14px; --fs-body:12.5px; --fs-caption:11px; --fs-metric:19px; --fs-button:11.5px}}
   @media (max-width:420px){:root{--fs-h1:15.5px; --fs-metric:17px}}
@@ -28,7 +35,7 @@
   button{font-family:inherit}
 
   header{padding:22px 32px 12px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
-  header .ttl h1{margin:0 0 3px;font-size:var(--fs-h1);font-weight:600;letter-spacing:-.01em}
+  header .ttl h1{margin:0 0 3px;font-size:var(--fs-h1);font-weight:600;letter-spacing:-.01em;font-family:var(--font-display)}
   header .ttl .meta{color:var(--dim);font-size:var(--fs-caption);margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}
   header .ttl .meta .warn{color:var(--warn)}
   header .ttl .meta .ds-prefix{color:var(--ink);font-weight:600}
@@ -98,7 +105,7 @@
   /* CONTENT cards */
   .content{padding:22px 28px;overflow-x:hidden}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:22px}
-  .card h2{margin:0 0 4px;font-size:var(--fs-h2);font-weight:600;display:flex;align-items:center;gap:8px}
+  .card h2{margin:0 0 4px;font-size:var(--fs-h2);font-weight:600;display:flex;align-items:center;gap:8px;font-family:var(--font-display)}
   .card .h-sub{color:var(--dim);font-size:var(--fs-button);margin-bottom:14px}
 
   /* ONBOARDING card */
@@ -226,7 +233,7 @@
   .modal-bg.on{display:flex}
   .modal{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;width:760px;max-width:100%;max-height:90vh;overflow:hidden;display:flex;flex-direction:column}
   .modal-h{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-  .modal-h h3{margin:0;font-size:var(--fs-modal-title)}
+  .modal-h h3{margin:0;font-size:var(--fs-modal-title);font-family:var(--font-display)}
   .modal-h button{background:none;border:none;color:var(--dim);font-size:18px;cursor:pointer}
   .modal-h button:hover{color:var(--accent)}
   .tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel2)}
