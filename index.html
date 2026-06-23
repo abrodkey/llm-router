@@ -65,7 +65,7 @@
   .sec-h{display:flex;align-items:center;gap:7px;margin:0 0 10px;font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--line);padding-bottom:6px}
   .sec-h .em{font-size:var(--fs-body)}
   .sec-h .ttl{flex:1;color:var(--ink)}
-  .info-btn{background:none;border:1px solid var(--line);color:var(--dim);width:18px;height:18px;border-radius:50%;font-size:var(--fs-eyebrow);font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1}
+  .info-btn{background:none;border:1px solid var(--line);color:var(--dim);width:18px;height:18px;border-radius:50%;font-size:var(--fs-eyebrow);font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1;position:relative}
   .info-btn:hover{color:var(--accent);border-color:var(--accent)}
 
   .sec label{display:flex;align-items:center;gap:8px;padding:4px 0;cursor:pointer;user-select:none;font-size:var(--fs-body)}
@@ -347,7 +347,11 @@
     header .ttl .meta{font-size:var(--fs-caption);gap:8px}
     header .ttl .freshness{font-size:var(--fs-caption);padding:4px 9px}
     header .hdr-act{width:100%;justify-content:flex-start;flex-wrap:nowrap}
-    header .hdr-act button{font-size:var(--fs-button);padding:5px 9px}
+    header .hdr-act button{font-size:var(--fs-button);padding:5px 9px;min-height:40px}
+    /* Mobile tap targets: keep the ⓘ icons visually small but expand their clickable
+       area to ~44px via a transparent overlay (Apple HIG / Material guidance). */
+    .info-btn::after{content:'';position:absolute;inset:-13px}
+    .hdr-help #hdr-help-btn{width:44px;height:44px}
     /* Mobile: tuck reference buttons under a ❔ icon to reclaim space */
     header .hdr-act .hdr-secondary{display:none}
     header .hdr-act .hdr-help{display:block;margin-left:auto}
@@ -427,7 +431,7 @@
     aside{display:none}
     /* Sticky summary chips at the very top of content */
     #mobile-summary{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;position:sticky;top:0;z-index:60;background:var(--bg);padding:0 14px 8px;margin:-13px -14px 14px}
-    .mob-chip{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 9px;color:var(--text);cursor:pointer;font-family:inherit;min-width:0;text-align:left;position:relative}
+    .mob-chip{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 9px;min-height:44px;color:var(--text);cursor:pointer;font-family:inherit;min-width:0;text-align:left;position:relative}
     .mob-chip:hover,.mob-chip:focus{border-color:var(--accent)}
     .mob-chip .mob-lbl{color:var(--dim);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.05em;line-height:1}
     .mob-chip .mob-val{color:var(--text);font-weight:600;font-size:var(--fs-button);line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:10px}
