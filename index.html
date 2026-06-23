@@ -1095,12 +1095,10 @@ function renderScatter(){
     dot.addEventListener('mouseleave',hideTip);
     dot.addEventListener('click',e=>{e.stopPropagation();showTip(e,d.m,task);});
     svg.appendChild(dot);
-    // Mobile shows only the Pareto frontier, so label every plotted point. Desktop shows
-    // 22 points (frontier + neighbours) — labeling all collides, so label only the
-    // frontier-tier / high-value / large dots and let the rest reveal their name on hover.
-    const showLabel = keep.has(d.m.canonical) && (isMobileChart
-      ? paretoSet.has(d.m.canonical)
-      : (d.m.tier==='frontier'||ipd>30||r>8));
+    // Only models ON the Pareto frontier (the dashed-line points) get a name label —
+    // on desktop and mobile alike. The close-to-curve neighbour dots stay unlabeled;
+    // hovering any dot reveals its full details.
+    const showLabel = keep.has(d.m.canonical) && paretoSet.has(d.m.canonical);
     if(showLabel){
       // Approximate label width (avg ~6px per char at current font-size) to decide if the label
       // will overflow the right edge of the plot area. If so, flip to left of the dot.
