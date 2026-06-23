@@ -315,6 +315,12 @@
   @media (max-width:1080px){
     .recs{grid-template-columns:1fr 1fr}
     .recs > .rec:nth-child(1){grid-column:1 / -1}
+    /* The hero is full-width — flow its receipt chips inline (bullet-separated) so they
+       use the horizontal space instead of stacking down the left edge. #2/#3 stay narrow
+       so their chips keep the vertical column. */
+    .recs > .rec:nth-child(1) .chips{flex-direction:row;flex-wrap:wrap;gap:0;column-gap:0;line-height:1.7}
+    .recs > .rec:nth-child(1) .chip{display:inline}
+    .recs > .rec:nth-child(1) .chip:not(:last-child)::after{content:" · ";color:var(--dim);margin:0 5px}
   }
 
   /* ─────────────────────────── RESPONSIVE / MOBILE (≤780px) ─────────────────────────── */
