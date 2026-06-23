@@ -206,7 +206,7 @@
   .tooltip .r .l{color:var(--dim)}
 
   /* POPOVER (ⓘ click) */
-  .pop{position:fixed;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:14px 16px 16px;font-size:var(--fs-button);max-width:380px;box-shadow:0 12px 36px rgba(0,0,0,.6);z-index:200;display:none;line-height:1.55}
+  .pop{position:fixed;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:14px 16px 16px;font-size:var(--fs-button);max-width:380px;max-height:80vh;overflow-y:auto;box-shadow:0 12px 36px rgba(0,0,0,.6);z-index:200;display:none;line-height:1.55}
   .pop.on{display:block}
   .pop h4{margin:0 0 6px;font-size:var(--fs-body);color:var(--accent)}
   .pop.warn{border-color:var(--warn)}
@@ -1280,7 +1280,12 @@ function updatePreliminaryNotice(){
     const t=Date.parse(rel);
     return !isNaN(t) && t >= cutoffMs;
   }).sort((a,b)=>(b.provenance.release_date||'').localeCompare(a.provenance.release_date||''));
-  const radar=(META.radar||[]);
+  // "Detected upstream" should only list models NOT yet in the dashboard. A radar
+  // candidate that's already been auto-promoted (e.g. GLM-5.2, intel 51.1) shows in the
+  // "Recently fielded" section above — drop it here so it isn't listed twice.
+  const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9.]/g,'');
+  const inDash=new Set(MODELS.map(m=>norm(m.display)));
+  const radar=(META.radar||[]).filter(r=>!inDash.has(norm(r.base)));
   const total=fielded.length + radar.length;
   if(!total){el.innerHTML='';return;}
   const fmt=iso=>{try{return new Date(iso).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}catch(_){return iso||'—';}};
