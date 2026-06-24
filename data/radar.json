@@ -60,38 +60,6 @@
       ],
       "hf_id": "nvidia/diffusiongemma-26B-A4B-it-NVFP4",
       "hf_downloads": 770554
-    },
-    {
-      "base": "SCAIL-2",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-06-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "zai-org/SCAIL-2",
-      "hf_downloads": 0
-    },
-    {
-      "base": "Claude Mythos 5",
-      "creator": "Anthropic",
-      "max_intel": null,
-      "release_date": "2026-06-09",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
-    },
-    {
-      "base": "North Mini Code",
-      "creator": "Cohere",
-      "max_intel": null,
-      "release_date": "2026-06-09",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
     }
   ]
 }
