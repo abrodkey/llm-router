@@ -1582,12 +1582,12 @@ const TAB_HOWTO=()=>{const badge=n=>`<span style="display:inline-block;width:22p
   const row=(n,title,body)=>`<tr><td style="padding-right:14px;vertical-align:top;width:32px">${badge(n)}</td><td style="padding:0"><b>${title}</b><div style="color:var(--dim);margin-top:2px">${body}</div></td></tr>`;
   return `<h4>Three steps to get an answer</h4>
   <table style="font-size:var(--fs-body);margin:8px 0;border-collapse:separate;border-spacing:0 8px">
-    ${row(1,"Build your feature",`Click <b style="color:var(--ink)">Features</b> above and answer 3 questions about your AI feature (what it does, the stakes, the volume). The tool routes it to a task, sets a quality floor, picks a cost tier, and infers cache/batch — all at once.`)}
+    ${row(1,"Build your feature",`Click <b style="color:var(--ink)">Features</b> above and answer 5 questions about your AI feature (what it does, the stakes, the volume, the data it touches, and any must-have capabilities). The tool routes it to a task, sets a quality floor, picks a cost tier, applies your compliance + capability filters, and infers cache/batch — all at once.`)}
     ${row(2,"Tune the bar if you want",`The build configures the <b style="color:var(--ink)">Quality floor</b> slider and the cost model for you. Drag the slider or adjust cache/batch on the recommender card to override anything.`)}
     ${row(3,"Read the top-3",`The recommender shows the <b style="color:var(--ink)">cheapest models that clear your bar</b>, with savings vs. defaulting to the frontier and trade-off receipts (origin, train policy, cheapest host, hallucination, uptime). Tap any <b style="color:var(--ink)">ⓘ</b> for more.`)}
   </table>
   <h4>What the header buttons do</h4>
-  <p><b>Features</b> — build a feature in 3 questions; the answers set the task, quality floor, cost tier, and cache/batch in one step.<br>
+  <p><b>Features</b> — build a feature in 5 questions; the answers set the task, quality floor, cost tier, compliance + capability filters, and cache/batch in one step.<br>
   <b>How to use</b> — this guide.<br>
   <b>Costing</b> — explains how list price + caching + batch + reasoning penalty combine into the "effective cost" the dashboard uses.<br>
   <b>Scoring</b> — explains how each task score is calculated, what each score level means, and how agentic scoring works.</p>
