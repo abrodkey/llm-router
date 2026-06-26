@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Qwen3-ForcedAligner-0.6B-hf",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-06-26",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
+      "hf_downloads": 0
+    },
+    {
       "base": "MiniMax-M3-NVFP4",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -11,7 +23,19 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 185
+      "hf_downloads": 7086
+    },
+    {
+      "base": "GLM-5.2-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-06-22",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/GLM-5.2-NVFP4",
+      "hf_downloads": 441
     },
     {
       "base": "GLM-5.2",
@@ -35,7 +59,19 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.2-FP8",
-      "hf_downloads": 477681
+      "hf_downloads": 540939
+    },
+    {
+      "base": "dlesym-v0-isccp-era5",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-06-16",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/dlesym-v0-isccp-era5",
+      "hf_downloads": 9
     },
     {
       "base": "GLM 5.2",
@@ -58,7 +94,7 @@
         "hf"
       ],
       "hf_id": "microsoft/FastContext-1.0-4B-RL",
-      "hf_downloads": 3533
+      "hf_downloads": 4067
     },
     {
       "base": "FastContext-1.0-4B-SFT",
@@ -70,7 +106,7 @@
         "hf"
       ],
       "hf_id": "microsoft/FastContext-1.0-4B-SFT",
-      "hf_downloads": 5276
+      "hf_downloads": 5735
     },
     {
       "base": "Kimi K2.7 Code",
