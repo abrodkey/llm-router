@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 0
+      "hf_downloads": 125
     },
     {
       "base": "c-fast-foundationstereo",
@@ -59,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 7086
+      "hf_downloads": 13940
     },
     {
       "base": "GLM-5.2-NVFP4",
@@ -71,7 +71,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.2-NVFP4",
-      "hf_downloads": 441
+      "hf_downloads": 6464
     },
     {
       "base": "GLM-5.2",
@@ -95,7 +95,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.2-FP8",
-      "hf_downloads": 540939
+      "hf_downloads": 613600
     },
     {
       "base": "dlesym-v0-isccp-era5",
@@ -107,7 +107,7 @@
         "hf"
       ],
       "hf_id": "nvidia/dlesym-v0-isccp-era5",
-      "hf_downloads": 9
+      "hf_downloads": 16
     },
     {
       "base": "GLM 5.2",
@@ -130,7 +130,7 @@
         "hf"
       ],
       "hf_id": "microsoft/FastContext-1.0-4B-RL",
-      "hf_downloads": 4067
+      "hf_downloads": 4257
     },
     {
       "base": "FastContext-1.0-4B-SFT",
@@ -142,7 +142,7 @@
         "hf"
       ],
       "hf_id": "microsoft/FastContext-1.0-4B-SFT",
-      "hf_downloads": 5735
+      "hf_downloads": 6447
     }
   ]
 }
