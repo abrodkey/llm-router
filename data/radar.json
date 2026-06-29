@@ -2,6 +2,150 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "eagle3_gemma4_12b_ttt7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/eagle3_gemma4_12b_ttt7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "eagle3_qwen3_14b_ttt7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/eagle3_qwen3_14b_ttt7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "eagle3_qwen3_8b_ttt7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/eagle3_qwen3_8b_ttt7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "eagle3_qwen3_4b_ttt7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/eagle3_qwen3_4b_ttt7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dflash_gemma4_12b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dflash_qwen3_14b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dflash_qwen3_14b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dflash_qwen3_8b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dflash_qwen3_8b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dflash_qwen3_4b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dflash_qwen3_4b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dspark_gemma4_12b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dspark_gemma4_12b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dspark_qwen3_14b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dspark_qwen3_14b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dspark_qwen3_8b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dspark_qwen3_8b_block7",
+      "hf_downloads": 0
+    },
+    {
+      "base": "dspark_qwen3_4b_block7",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-06-28",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/dspark_qwen3_4b_block7",
+      "hf_downloads": 0
+    },
+    {
       "base": "DeepSeek-V4-Pro-DSpark",
       "creator": "DeepSeek",
       "max_intel": null,
@@ -11,7 +155,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hf_downloads": 0
+      "hf_downloads": 5460
     },
     {
       "base": "DeepSeek-V4-Flash-DSpark",
@@ -23,7 +167,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-      "hf_downloads": 0
+      "hf_downloads": 2239
     },
     {
       "base": "Qwen3-ForcedAligner-0.6B-hf",
@@ -35,7 +179,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 125
+      "hf_downloads": 823
     },
     {
       "base": "c-fast-foundationstereo",
@@ -59,7 +203,7 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 13940
+      "hf_downloads": 29987
     },
     {
       "base": "GLM-5.2-NVFP4",
@@ -71,7 +215,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.2-NVFP4",
-      "hf_downloads": 6464
+      "hf_downloads": 81944
     },
     {
       "base": "GLM-5.2",
@@ -95,7 +239,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.2-FP8",
-      "hf_downloads": 613600
+      "hf_downloads": 844239
     },
     {
       "base": "dlesym-v0-isccp-era5",
@@ -107,7 +251,7 @@
         "hf"
       ],
       "hf_id": "nvidia/dlesym-v0-isccp-era5",
-      "hf_downloads": 16
+      "hf_downloads": 30
     },
     {
       "base": "GLM 5.2",
@@ -119,30 +263,6 @@
         "openrouter"
       ],
       "or_id": "z-ai/glm-5.2"
-    },
-    {
-      "base": "FastContext-1.0-4B-RL",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-06-14",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/FastContext-1.0-4B-RL",
-      "hf_downloads": 4257
-    },
-    {
-      "base": "FastContext-1.0-4B-SFT",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-06-14",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/FastContext-1.0-4B-SFT",
-      "hf_downloads": 6447
     }
   ]
 }
