@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "MiMo-V2.5-DFlash",
+      "creator": "Xiaomi",
+      "max_intel": null,
+      "release_date": "2026-07-03",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
+      "hf_downloads": 0
+    },
+    {
       "base": "HARC-Qwen2.5-7B-Instruct",
       "creator": "Microsoft",
       "max_intel": null,
@@ -11,7 +23,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 4
+      "hf_downloads": 237
     },
     {
       "base": "HARC-Llama-3.1-8B-Instruct",
@@ -23,6 +35,18 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
+      "hf_downloads": 228
+    },
+    {
+      "base": "Leanstral-1.5-119B-A6B",
+      "creator": "Mistral",
+      "max_intel": null,
+      "release_date": "2026-07-01",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
       "hf_downloads": 4
     },
     {
@@ -48,7 +72,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
-      "hf_downloads": 2221
+      "hf_downloads": 5244
     },
     {
       "base": "tabfm-1.0.0-jax",
@@ -60,7 +84,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-jax",
-      "hf_downloads": 105
+      "hf_downloads": 410
     },
     {
       "base": "tabfm-1.0.0-pytorch",
@@ -72,7 +96,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-pytorch",
-      "hf_downloads": 450
+      "hf_downloads": 1177
     },
     {
       "base": "Qwen3.5-397B-A17B-NVFP4-V2",
@@ -84,7 +108,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
-      "hf_downloads": 14360
+      "hf_downloads": 17465
     },
     {
       "base": "eagle3_gemma4_12b_ttt7",
@@ -96,7 +120,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_gemma4_12b_ttt7",
-      "hf_downloads": 318
+      "hf_downloads": 381
     },
     {
       "base": "eagle3_qwen3_14b_ttt7",
@@ -108,7 +132,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_14b_ttt7",
-      "hf_downloads": 272
+      "hf_downloads": 318
     },
     {
       "base": "eagle3_qwen3_8b_ttt7",
@@ -120,7 +144,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_8b_ttt7",
-      "hf_downloads": 341
+      "hf_downloads": 426
     },
     {
       "base": "eagle3_qwen3_4b_ttt7",
@@ -132,7 +156,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_4b_ttt7",
-      "hf_downloads": 349
+      "hf_downloads": 401
     },
     {
       "base": "dflash_gemma4_12b_block7",
@@ -144,7 +168,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
-      "hf_downloads": 538
+      "hf_downloads": 596
     },
     {
       "base": "dflash_qwen3_14b_block7",
@@ -156,7 +180,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_14b_block7",
-      "hf_downloads": 300
+      "hf_downloads": 392
     },
     {
       "base": "dflash_qwen3_8b_block7",
@@ -168,7 +192,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_8b_block7",
-      "hf_downloads": 559
+      "hf_downloads": 707
     },
     {
       "base": "dflash_qwen3_4b_block7",
@@ -180,7 +204,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_4b_block7",
-      "hf_downloads": 359
+      "hf_downloads": 424
     },
     {
       "base": "dspark_gemma4_12b_block7",
@@ -192,7 +216,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_gemma4_12b_block7",
-      "hf_downloads": 521
+      "hf_downloads": 591
     },
     {
       "base": "dspark_qwen3_14b_block7",
@@ -204,7 +228,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_14b_block7",
-      "hf_downloads": 757
+      "hf_downloads": 857
     },
     {
       "base": "dspark_qwen3_8b_block7",
@@ -216,7 +240,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_8b_block7",
-      "hf_downloads": 991
+      "hf_downloads": 1323
     },
     {
       "base": "dspark_qwen3_4b_block7",
@@ -228,7 +252,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_4b_block7",
-      "hf_downloads": 1399
+      "hf_downloads": 1916
     },
     {
       "base": "DeepSeek-V4-Pro-DSpark",
@@ -240,7 +264,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hf_downloads": 9388
+      "hf_downloads": 10306
     },
     {
       "base": "DeepSeek-V4-Flash-DSpark",
@@ -252,7 +276,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-      "hf_downloads": 32675
+      "hf_downloads": 40271
     },
     {
       "base": "Qwen3-ForcedAligner-0.6B-hf",
@@ -264,7 +288,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 1625
+      "hf_downloads": 2074
     },
     {
       "base": "c-fast-foundationstereo",
@@ -288,7 +312,7 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 43289
+      "hf_downloads": 54704
     },
     {
       "base": "Kimi-K2.6-DFlash",
@@ -300,7 +324,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.6-DFlash",
-      "hf_downloads": 182
+      "hf_downloads": 330
     },
     {
       "base": "GLM-5.2-NVFP4",
@@ -312,7 +336,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.2-NVFP4",
-      "hf_downloads": 189970
+      "hf_downloads": 236501
     },
     {
       "base": "Qwen3.6-27B-NVFP4",
@@ -324,7 +348,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.6-27B-NVFP4",
-      "hf_downloads": 94465
+      "hf_downloads": 184521
     }
   ]
 }
