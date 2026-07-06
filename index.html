@@ -1742,9 +1742,11 @@ const SCENES={
     tabs:{howto:{label:'',render:TAB_HOWTO}},
     default:'howto'},
   features: CFG.showLibrary
-    ? {title:'Build a feature — or pick from the Intelligent Noise library',
-       tabs:{build:{label:'Build a feature',render:TAB_BUILDER},library:{label:'Intelligent Noise library',render:TAB_FEATURES}},
-       default:'build'}
+    // IN client: lead with Ryan's curated feature library (his original entry point),
+    // with the generic builder available as the second tab.
+    ? {title:'Intelligent Noise features — or build your own',
+       tabs:{library:{label:'Intelligent Noise library',render:TAB_FEATURES},build:{label:'Build a feature',render:TAB_BUILDER}},
+       default:'library'}
     : {title:'Build a feature',
        tabs:{build:{label:'',render:TAB_BUILDER}},
        default:'build'},
