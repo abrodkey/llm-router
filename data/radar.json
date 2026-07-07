@@ -11,7 +11,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 1
+      "hf_downloads": 60
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 1
+      "hf_downloads": 67
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 18
+      "hf_downloads": 61
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -47,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 3
+      "hf_downloads": 42
     },
     {
       "base": "MiMo-V2.5-DFlash",
@@ -59,7 +59,7 @@
         "hf"
       ],
       "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 54
+      "hf_downloads": 90
     },
     {
       "base": "HARC-Qwen2.5-7B-Instruct",
@@ -71,7 +71,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 281
+      "hf_downloads": 299
     },
     {
       "base": "HARC-Llama-3.1-8B-Instruct",
@@ -83,7 +83,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
-      "hf_downloads": 282
+      "hf_downloads": 291
     },
     {
       "base": "Leanstral-1.5-119B-A6B",
@@ -95,7 +95,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "hf_downloads": 106
+      "hf_downloads": 157
     },
     {
       "base": "Claude Sonnet 5",
@@ -120,7 +120,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
-      "hf_downloads": 7422
+      "hf_downloads": 9273
     },
     {
       "base": "tabfm-1.0.0-jax",
@@ -132,7 +132,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-jax",
-      "hf_downloads": 786
+      "hf_downloads": 897
     },
     {
       "base": "tabfm-1.0.0-pytorch",
@@ -144,7 +144,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-pytorch",
-      "hf_downloads": 7036
+      "hf_downloads": 9458
     },
     {
       "base": "Qwen3.5-397B-A17B-NVFP4-V2",
@@ -156,7 +156,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
-      "hf_downloads": 18475
+      "hf_downloads": 19319
     },
     {
       "base": "eagle3_gemma4_12b_ttt7",
@@ -168,7 +168,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_gemma4_12b_ttt7",
-      "hf_downloads": 415
+      "hf_downloads": 435
     },
     {
       "base": "eagle3_qwen3_14b_ttt7",
@@ -180,7 +180,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_14b_ttt7",
-      "hf_downloads": 480
+      "hf_downloads": 485
     },
     {
       "base": "eagle3_qwen3_8b_ttt7",
@@ -192,7 +192,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_8b_ttt7",
-      "hf_downloads": 500
+      "hf_downloads": 532
     },
     {
       "base": "eagle3_qwen3_4b_ttt7",
@@ -204,7 +204,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_4b_ttt7",
-      "hf_downloads": 502
+      "hf_downloads": 542
     },
     {
       "base": "dflash_gemma4_12b_block7",
@@ -216,7 +216,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
-      "hf_downloads": 633
+      "hf_downloads": 717
     },
     {
       "base": "dflash_qwen3_14b_block7",
@@ -228,7 +228,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_14b_block7",
-      "hf_downloads": 420
+      "hf_downloads": 436
     },
     {
       "base": "dflash_qwen3_8b_block7",
@@ -240,7 +240,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_8b_block7",
-      "hf_downloads": 792
+      "hf_downloads": 840
     },
     {
       "base": "dflash_qwen3_4b_block7",
@@ -252,7 +252,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_4b_block7",
-      "hf_downloads": 619
+      "hf_downloads": 667
     },
     {
       "base": "dspark_gemma4_12b_block7",
@@ -264,7 +264,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_gemma4_12b_block7",
-      "hf_downloads": 1307
+      "hf_downloads": 1596
     },
     {
       "base": "dspark_qwen3_14b_block7",
@@ -276,7 +276,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_14b_block7",
-      "hf_downloads": 1154
+      "hf_downloads": 1208
     },
     {
       "base": "dspark_qwen3_8b_block7",
@@ -288,7 +288,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_8b_block7",
-      "hf_downloads": 2171
+      "hf_downloads": 2341
     },
     {
       "base": "dspark_qwen3_4b_block7",
@@ -300,7 +300,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_4b_block7",
-      "hf_downloads": 3133
+      "hf_downloads": 3912
     },
     {
       "base": "DeepSeek-V4-Pro-DSpark",
@@ -312,7 +312,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hf_downloads": 14276
+      "hf_downloads": 15538
     },
     {
       "base": "DeepSeek-V4-Flash-DSpark",
@@ -324,7 +324,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-      "hf_downloads": 65824
+      "hf_downloads": 81329
     },
     {
       "base": "Qwen3-ForcedAligner-0.6B-hf",
@@ -336,7 +336,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 3583
+      "hf_downloads": 4022
     },
     {
       "base": "c-fast-foundationstereo",
@@ -360,7 +360,7 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 89261
+      "hf_downloads": 96665
     },
     {
       "base": "Kimi-K2.6-DFlash",
@@ -372,31 +372,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.6-DFlash",
-      "hf_downloads": 684
-    },
-    {
-      "base": "GLM-5.2-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-22",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/GLM-5.2-NVFP4",
-      "hf_downloads": 365499
-    },
-    {
-      "base": "Qwen3.6-27B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-22",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Qwen3.6-27B-NVFP4",
-      "hf_downloads": 430676
+      "hf_downloads": 747
     }
   ]
 }
