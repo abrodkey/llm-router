@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-07T09:24:09+00:00",
+  "generated_at": "2026-07-08T08:08:25+00:00",
   "promoted": [
     {
       "canonical": "claude-sonnet-5",
       "display": "Claude Sonnet 5",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-06-30",
@@ -17,7 +17,7 @@
     {
       "canonical": "glm-5.2",
       "display": "GLM-5.2",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-06-16",
@@ -30,7 +30,7 @@
     {
       "canonical": "kimi-k2.7-code",
       "display": "Kimi K2.7 Code",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Kimi",
       "template_provider": "moonshot-kimi-k2.6",
       "release_date": "2026-06-12",
@@ -43,7 +43,7 @@
     {
       "canonical": "nemotron-3-ultra-550b-a55b",
       "display": "Nemotron 3 Ultra 550B A55B",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "NVIDIA",
       "template_provider": "nvidia-template",
       "release_date": "2026-06-04",
@@ -56,7 +56,7 @@
     {
       "canonical": "minimax-m3",
       "display": "MiniMax-M3",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "MiniMax",
       "template_provider": "minimax-template",
       "release_date": "2026-06-01",
@@ -70,7 +70,7 @@
     {
       "canonical": "qwen3.7-plus",
       "display": "Qwen3.7 Plus",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-06-01",
@@ -84,7 +84,7 @@
     {
       "canonical": "qwen3.7-max",
       "display": "Qwen3.7 Max",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-05-19",
@@ -95,23 +95,9 @@
       ]
     },
     {
-      "canonical": "grok-4.3",
-      "display": "Grok 4.3",
-      "promoted_at": "2026-07-07",
-      "creator": "xAI",
-      "template_provider": "xai-template",
-      "release_date": "2026-04-30",
-      "max_intel": 37.6,
-      "data_coverage": [
-        "aa",
-        "arena",
-        "openrouter"
-      ]
-    },
-    {
       "canonical": "mimo-v2.5-pro",
       "display": "MiMo-V2.5-Pro",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-04-22",
@@ -125,7 +111,7 @@
     {
       "canonical": "mimo-v2.5",
       "display": "MiMo-V2.5",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-04-22",
@@ -139,7 +125,7 @@
     {
       "canonical": "qwen3.6-27b",
       "display": "Qwen3.6 27B",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-04-22",
@@ -152,7 +138,7 @@
     {
       "canonical": "muse-spark",
       "display": "Muse Spark",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-04-08",
@@ -163,21 +149,9 @@
       ]
     },
     {
-      "canonical": "grok-4.20-0309-v2",
-      "display": "Grok 4.20 0309 v2",
-      "promoted_at": "2026-07-07",
-      "creator": "xAI",
-      "template_provider": "xai-template",
-      "release_date": "2026-04-07",
-      "max_intel": 37,
-      "data_coverage": [
-        "aa"
-      ]
-    },
-    {
       "canonical": "mimo-v2-omni-0327",
       "display": "MiMo-V2-Omni-0327",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-27",
@@ -189,7 +163,7 @@
     {
       "canonical": "mimo-v2-omni",
       "display": "MiMo-V2-Omni",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-19",
@@ -202,7 +176,7 @@
     {
       "canonical": "mimo-v2-pro",
       "display": "MiMo-V2-Pro",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-18",
@@ -215,7 +189,7 @@
     {
       "canonical": "minimax-m2.7",
       "display": "MiniMax-M2.7",
-      "promoted_at": "2026-07-07",
+      "promoted_at": "2026-07-08",
       "creator": "MiniMax",
       "template_provider": "minimax-template",
       "release_date": "2026-03-18",
@@ -224,30 +198,6 @@
         "aa",
         "arena",
         "openrouter"
-      ]
-    },
-    {
-      "canonical": "grok-4.20-0309",
-      "display": "Grok 4.20 0309",
-      "promoted_at": "2026-07-07",
-      "creator": "xAI",
-      "template_provider": "xai-template",
-      "release_date": "2026-03-10",
-      "max_intel": 36.5,
-      "data_coverage": [
-        "aa"
-      ]
-    },
-    {
-      "canonical": "grok-build-0.1-0616",
-      "display": "Grok Build 0.1 0616",
-      "promoted_at": "2026-07-07",
-      "creator": "xAI",
-      "template_provider": "xai-template",
-      "release_date": null,
-      "max_intel": 39.8,
-      "data_coverage": [
-        "aa"
       ]
     }
   ],
@@ -259,17 +209,13 @@
     "  \u2713 MiniMax-M3: promoted as PREVIEW (template=minimax-template, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 Qwen3.7 Plus: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 Qwen3.7 Max: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'openrouter'])",
-    "  \u2713 Grok 4.3: promoted as PREVIEW (template=xai-template, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 MiMo-V2.5-Pro: promoted as PREVIEW (template=xiaomi-template, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 MiMo-V2.5: promoted as PREVIEW (template=xiaomi-template, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 Qwen3.6 27B: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'openrouter'])",
     "  \u2713 Muse Spark: promoted as PREVIEW (template=meta-template, coverage=['aa', 'arena'])",
-    "  \u2713 Grok 4.20 0309 v2: promoted as PREVIEW (template=xai-template, coverage=['aa'])",
     "  \u2713 MiMo-V2-Omni-0327: promoted as PREVIEW (template=xiaomi-template, coverage=['aa'])",
     "  \u2713 MiMo-V2-Omni: promoted as PREVIEW (template=xiaomi-template, coverage=['aa', 'arena'])",
     "  \u2713 MiMo-V2-Pro: promoted as PREVIEW (template=xiaomi-template, coverage=['aa', 'arena'])",
-    "  \u2713 MiniMax-M2.7: promoted as PREVIEW (template=minimax-template, coverage=['aa', 'arena', 'openrouter'])",
-    "  \u2713 Grok 4.20 0309: promoted as PREVIEW (template=xai-template, coverage=['aa'])",
-    "  \u2713 Grok Build 0.1 0616: promoted as PREVIEW (template=xai-template, coverage=['aa'])"
+    "  \u2713 MiniMax-M2.7: promoted as PREVIEW (template=minimax-template, coverage=['aa', 'arena', 'openrouter'])"
   ]
 }

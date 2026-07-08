@@ -2,6 +2,40 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "CWIP-1.0",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-07",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/CWIP-1.0",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Muse Image",
+      "creator": "Meta",
+      "max_intel": null,
+      "release_date": "2026-07-07",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
+      "base": "Kimi-K2.7-Code-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-06",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
+      "hf_downloads": 0
+    },
+    {
       "base": "gr00t17-lerobot-libero_goal-640",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -351,28 +385,40 @@
       "hf_downloads": 0
     },
     {
-      "base": "MiniMax-M3-NVFP4",
+      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-FP8",
       "creator": "NVIDIA",
       "max_intel": null,
-      "release_date": "2026-06-23",
+      "release_date": "2026-06-24",
       "newer_than_our": null,
       "sources": [
         "hf"
       ],
-      "hf_id": "nvidia/MiniMax-M3-NVFP4",
-      "hf_downloads": 96665
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-FP8",
+      "hf_downloads": 43
     },
     {
-      "base": "Kimi-K2.6-DFlash",
+      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
       "creator": "NVIDIA",
       "max_intel": null,
-      "release_date": "2026-06-23",
+      "release_date": "2026-06-24",
       "newer_than_our": null,
       "sources": [
         "hf"
       ],
-      "hf_id": "nvidia/Kimi-K2.6-DFlash",
-      "hf_downloads": 747
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+      "hf_downloads": 159
+    },
+    {
+      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-06-24",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4",
+      "hf_downloads": 47
     }
   ]
 }
