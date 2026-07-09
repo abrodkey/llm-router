@@ -2,6 +2,29 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "nvDock",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-08",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/nvDock",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Grok 4.5",
+      "creator": "xAI",
+      "max_intel": null,
+      "release_date": "2026-07-08",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "x-ai/grok-4.5"
+    },
+    {
       "base": "CWIP-1.0",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -11,7 +34,7 @@
         "hf"
       ],
       "hf_id": "nvidia/CWIP-1.0",
-      "hf_downloads": 0
+      "hf_downloads": 66
     },
     {
       "base": "Muse Image",
@@ -33,7 +56,17 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 0
+      "hf_downloads": 2623
+    },
+    {
+      "base": "GPT-Realtime-2.1-Mini",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-06",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
     },
     {
       "base": "gr00t17-lerobot-libero_goal-640",
@@ -45,7 +78,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 60
+      "hf_downloads": 86
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -57,7 +90,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 67
+      "hf_downloads": 76
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -69,7 +102,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 61
+      "hf_downloads": 97
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -81,7 +114,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 42
+      "hf_downloads": 73
     },
     {
       "base": "MiMo-V2.5-DFlash",
@@ -93,7 +126,7 @@
         "hf"
       ],
       "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 90
+      "hf_downloads": 215
     },
     {
       "base": "HARC-Qwen2.5-7B-Instruct",
@@ -105,7 +138,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 299
+      "hf_downloads": 317
     },
     {
       "base": "HARC-Llama-3.1-8B-Instruct",
@@ -117,7 +150,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
-      "hf_downloads": 291
+      "hf_downloads": 311
     },
     {
       "base": "Leanstral-1.5-119B-A6B",
@@ -129,7 +162,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "hf_downloads": 157
+      "hf_downloads": 258
     },
     {
       "base": "Claude Sonnet 5",
@@ -154,7 +187,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
-      "hf_downloads": 9273
+      "hf_downloads": 14932
     },
     {
       "base": "tabfm-1.0.0-jax",
@@ -166,7 +199,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-jax",
-      "hf_downloads": 897
+      "hf_downloads": 1751
     },
     {
       "base": "tabfm-1.0.0-pytorch",
@@ -178,7 +211,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-pytorch",
-      "hf_downloads": 9458
+      "hf_downloads": 16374
     },
     {
       "base": "Qwen3.5-397B-A17B-NVFP4-V2",
@@ -190,7 +223,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
-      "hf_downloads": 19319
+      "hf_downloads": 21996
     },
     {
       "base": "eagle3_gemma4_12b_ttt7",
@@ -202,7 +235,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_gemma4_12b_ttt7",
-      "hf_downloads": 435
+      "hf_downloads": 546
     },
     {
       "base": "eagle3_qwen3_14b_ttt7",
@@ -214,7 +247,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_14b_ttt7",
-      "hf_downloads": 485
+      "hf_downloads": 533
     },
     {
       "base": "eagle3_qwen3_8b_ttt7",
@@ -226,7 +259,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_8b_ttt7",
-      "hf_downloads": 532
+      "hf_downloads": 648
     },
     {
       "base": "eagle3_qwen3_4b_ttt7",
@@ -238,7 +271,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_4b_ttt7",
-      "hf_downloads": 542
+      "hf_downloads": 654
     },
     {
       "base": "dflash_gemma4_12b_block7",
@@ -250,7 +283,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
-      "hf_downloads": 717
+      "hf_downloads": 886
     },
     {
       "base": "dflash_qwen3_14b_block7",
@@ -262,7 +295,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_14b_block7",
-      "hf_downloads": 436
+      "hf_downloads": 498
     },
     {
       "base": "dflash_qwen3_8b_block7",
@@ -274,7 +307,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_8b_block7",
-      "hf_downloads": 840
+      "hf_downloads": 1038
     },
     {
       "base": "dflash_qwen3_4b_block7",
@@ -286,7 +319,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_4b_block7",
-      "hf_downloads": 667
+      "hf_downloads": 810
     },
     {
       "base": "dspark_gemma4_12b_block7",
@@ -298,7 +331,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_gemma4_12b_block7",
-      "hf_downloads": 1596
+      "hf_downloads": 1949
     },
     {
       "base": "dspark_qwen3_14b_block7",
@@ -310,7 +343,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_14b_block7",
-      "hf_downloads": 1208
+      "hf_downloads": 1637
     },
     {
       "base": "dspark_qwen3_8b_block7",
@@ -322,7 +355,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_8b_block7",
-      "hf_downloads": 2341
+      "hf_downloads": 3033
     },
     {
       "base": "dspark_qwen3_4b_block7",
@@ -334,7 +367,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_4b_block7",
-      "hf_downloads": 3912
+      "hf_downloads": 5592
     },
     {
       "base": "DeepSeek-V4-Pro-DSpark",
@@ -346,7 +379,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hf_downloads": 15538
+      "hf_downloads": 29230
     },
     {
       "base": "DeepSeek-V4-Flash-DSpark",
@@ -358,7 +391,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-      "hf_downloads": 81329
+      "hf_downloads": 118357
     },
     {
       "base": "Qwen3-ForcedAligner-0.6B-hf",
@@ -370,7 +403,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 4022
+      "hf_downloads": 6138
     },
     {
       "base": "c-fast-foundationstereo",
@@ -383,42 +416,6 @@
       ],
       "hf_id": "nvidia/c-fast-foundationstereo",
       "hf_downloads": 0
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-FP8",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-24",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-FP8",
-      "hf_downloads": 43
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-24",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
-      "hf_downloads": 159
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-24",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4",
-      "hf_downloads": 47
     }
   ]
 }
