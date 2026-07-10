@@ -2,6 +2,87 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GPT-5.6 Sol",
+      "creator": "OpenAI",
+      "max_intel": 58.9,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-sol"
+    },
+    {
+      "base": "GPT-5.6 Terra",
+      "creator": "OpenAI",
+      "max_intel": 55,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-terra"
+    },
+    {
+      "base": "GPT-5.6 Luna",
+      "creator": "OpenAI",
+      "max_intel": 51.2,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-luna"
+    },
+    {
+      "base": "GPT-5.6 Luna Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-luna-pro"
+    },
+    {
+      "base": "GPT-5.6 Terra Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-terra-pro"
+    },
+    {
+      "base": "GPT-5.6 Sol Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-09",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-5.6-sol-pro"
+    },
+    {
+      "base": "Kimi-K2.7-Code-DFlash",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-08",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
+      "hf_downloads": 30
+    },
+    {
       "base": "nvDock",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -34,7 +115,7 @@
         "hf"
       ],
       "hf_id": "nvidia/CWIP-1.0",
-      "hf_downloads": 66
+      "hf_downloads": 70
     },
     {
       "base": "Muse Image",
@@ -56,7 +137,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 2623
+      "hf_downloads": 9969
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -78,7 +159,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 86
+      "hf_downloads": 91
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -90,7 +171,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 76
+      "hf_downloads": 80
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -102,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 97
+      "hf_downloads": 102
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -114,7 +195,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 73
+      "hf_downloads": 84
     },
     {
       "base": "MiMo-V2.5-DFlash",
@@ -126,7 +207,31 @@
         "hf"
       ],
       "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 215
+      "hf_downloads": 222
+    },
+    {
+      "base": "ARDY-G1-RP-25FPS-Horizon8",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-02",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon8",
+      "hf_downloads": 3
+    },
+    {
+      "base": "ARDY-Core-RP-20FPS-Horizon8",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-02",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon8",
+      "hf_downloads": 6
     },
     {
       "base": "HARC-Qwen2.5-7B-Instruct",
@@ -138,7 +243,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 317
+      "hf_downloads": 323
     },
     {
       "base": "HARC-Llama-3.1-8B-Instruct",
@@ -150,7 +255,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
-      "hf_downloads": 311
+      "hf_downloads": 317
     },
     {
       "base": "Leanstral-1.5-119B-A6B",
@@ -162,7 +267,31 @@
         "hf"
       ],
       "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "hf_downloads": 258
+      "hf_downloads": 315
+    },
+    {
+      "base": "ARDY-G1-RP-25FPS-Horizon52",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-01",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon52",
+      "hf_downloads": 7
+    },
+    {
+      "base": "ARDY-Core-RP-20FPS-Horizon40",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-01",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
+      "hf_downloads": 8
     },
     {
       "base": "Claude Sonnet 5",
@@ -187,7 +316,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
-      "hf_downloads": 14932
+      "hf_downloads": 16561
     },
     {
       "base": "tabfm-1.0.0-jax",
@@ -199,7 +328,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-jax",
-      "hf_downloads": 1751
+      "hf_downloads": 1858
     },
     {
       "base": "tabfm-1.0.0-pytorch",
@@ -211,7 +340,7 @@
         "hf"
       ],
       "hf_id": "google/tabfm-1.0.0-pytorch",
-      "hf_downloads": 16374
+      "hf_downloads": 18626
     },
     {
       "base": "Qwen3.5-397B-A17B-NVFP4-V2",
@@ -223,7 +352,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
-      "hf_downloads": 21996
+      "hf_downloads": 23649
     },
     {
       "base": "eagle3_gemma4_12b_ttt7",
@@ -235,7 +364,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_gemma4_12b_ttt7",
-      "hf_downloads": 546
+      "hf_downloads": 590
     },
     {
       "base": "eagle3_qwen3_14b_ttt7",
@@ -247,7 +376,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_14b_ttt7",
-      "hf_downloads": 533
+      "hf_downloads": 538
     },
     {
       "base": "eagle3_qwen3_8b_ttt7",
@@ -259,7 +388,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_8b_ttt7",
-      "hf_downloads": 648
+      "hf_downloads": 661
     },
     {
       "base": "eagle3_qwen3_4b_ttt7",
@@ -271,7 +400,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/eagle3_qwen3_4b_ttt7",
-      "hf_downloads": 654
+      "hf_downloads": 684
     },
     {
       "base": "dflash_gemma4_12b_block7",
@@ -283,7 +412,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
-      "hf_downloads": 886
+      "hf_downloads": 898
     },
     {
       "base": "dflash_qwen3_14b_block7",
@@ -295,7 +424,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_14b_block7",
-      "hf_downloads": 498
+      "hf_downloads": 512
     },
     {
       "base": "dflash_qwen3_8b_block7",
@@ -307,7 +436,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_8b_block7",
-      "hf_downloads": 1038
+      "hf_downloads": 1060
     },
     {
       "base": "dflash_qwen3_4b_block7",
@@ -319,7 +448,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dflash_qwen3_4b_block7",
-      "hf_downloads": 810
+      "hf_downloads": 859
     },
     {
       "base": "dspark_gemma4_12b_block7",
@@ -331,7 +460,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_gemma4_12b_block7",
-      "hf_downloads": 1949
+      "hf_downloads": 2001
     },
     {
       "base": "dspark_qwen3_14b_block7",
@@ -343,7 +472,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_14b_block7",
-      "hf_downloads": 1637
+      "hf_downloads": 1664
     },
     {
       "base": "dspark_qwen3_8b_block7",
@@ -355,7 +484,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_8b_block7",
-      "hf_downloads": 3033
+      "hf_downloads": 3128
     },
     {
       "base": "dspark_qwen3_4b_block7",
@@ -367,7 +496,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/dspark_qwen3_4b_block7",
-      "hf_downloads": 5592
+      "hf_downloads": 5889
     },
     {
       "base": "DeepSeek-V4-Pro-DSpark",
@@ -379,7 +508,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hf_downloads": 29230
+      "hf_downloads": 33088
     },
     {
       "base": "DeepSeek-V4-Flash-DSpark",
@@ -391,7 +520,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-      "hf_downloads": 118357
+      "hf_downloads": 133000
     },
     {
       "base": "Qwen3-ForcedAligner-0.6B-hf",
@@ -403,7 +532,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
-      "hf_downloads": 6138
+      "hf_downloads": 6322
     },
     {
       "base": "c-fast-foundationstereo",
