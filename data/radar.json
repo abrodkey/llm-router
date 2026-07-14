@@ -327,42 +327,6 @@
       ],
       "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
       "hf_downloads": 18617
-    },
-    {
-      "base": "tabfm-1.0.0-jax",
-      "creator": "Google",
-      "max_intel": null,
-      "release_date": "2026-06-29",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "google/tabfm-1.0.0-jax",
-      "hf_downloads": 2145
-    },
-    {
-      "base": "tabfm-1.0.0-pytorch",
-      "creator": "Google",
-      "max_intel": null,
-      "release_date": "2026-06-29",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "google/tabfm-1.0.0-pytorch",
-      "hf_downloads": 21590
-    },
-    {
-      "base": "Qwen3.5-397B-A17B-NVFP4-V2",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-29",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
-      "hf_downloads": 24590
     }
   ]
 }
