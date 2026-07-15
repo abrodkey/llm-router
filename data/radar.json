@@ -90,7 +90,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 107
+      "hf_downloads": 284
     },
     {
       "base": "nvDock",
@@ -147,7 +147,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 59004
+      "hf_downloads": 62947
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -169,7 +169,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 110
+      "hf_downloads": 112
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -181,7 +181,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 108
+      "hf_downloads": 109
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -193,7 +193,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 142
+      "hf_downloads": 145
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -205,7 +205,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 99
+      "hf_downloads": 103
     },
     {
       "base": "MiMo-V2.5-DFlash",
@@ -217,7 +217,7 @@
         "hf"
       ],
       "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 260
+      "hf_downloads": 279
     },
     {
       "base": "ARDY-G1-RP-25FPS-Horizon8",
@@ -229,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon8",
-      "hf_downloads": 11
+      "hf_downloads": 24
     },
     {
       "base": "ARDY-Core-RP-20FPS-Horizon8",
@@ -241,7 +241,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon8",
-      "hf_downloads": 25
+      "hf_downloads": 49
     },
     {
       "base": "HARC-Qwen2.5-7B-Instruct",
@@ -253,7 +253,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 345
+      "hf_downloads": 352
     },
     {
       "base": "HARC-Llama-3.1-8B-Instruct",
@@ -265,7 +265,7 @@
         "hf"
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
-      "hf_downloads": 334
+      "hf_downloads": 341
     },
     {
       "base": "Leanstral-1.5-119B-A6B",
@@ -277,7 +277,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "hf_downloads": 358
+      "hf_downloads": 386
     },
     {
       "base": "ARDY-G1-RP-25FPS-Horizon52",
@@ -289,7 +289,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon52",
-      "hf_downloads": 29
+      "hf_downloads": 49
     },
     {
       "base": "ARDY-Core-RP-20FPS-Horizon40",
@@ -301,32 +301,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
-      "hf_downloads": 52
-    },
-    {
-      "base": "Claude Sonnet 5",
-      "creator": "Anthropic",
-      "max_intel": 53.4,
-      "release_date": "2026-06-30",
-      "newer_than_our": "2026-05-28",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-sonnet-5"
-    },
-    {
-      "base": "Mistral-Medium-3.5-128B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-06-30",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
-      "hf_downloads": 18617
+      "hf_downloads": 117
     }
   ]
 }
