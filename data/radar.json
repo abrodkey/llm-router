@@ -266,42 +266,6 @@
       ],
       "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
       "hf_downloads": 341
-    },
-    {
-      "base": "Leanstral-1.5-119B-A6B",
-      "creator": "Mistral",
-      "max_intel": null,
-      "release_date": "2026-07-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "hf_downloads": 386
-    },
-    {
-      "base": "ARDY-G1-RP-25FPS-Horizon52",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon52",
-      "hf_downloads": 49
-    },
-    {
-      "base": "ARDY-Core-RP-20FPS-Horizon40",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
-      "hf_downloads": 117
     }
   ]
 }
