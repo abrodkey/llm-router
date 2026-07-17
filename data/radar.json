@@ -2,6 +2,42 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Kimi K3",
+      "creator": "Kimi",
+      "max_intel": 57.1,
+      "release_date": "2026-07-16",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "moonshotai/kimi-k3"
+    },
+    {
+      "base": "bitnet-embedding-0.6b",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-15",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/bitnet-embedding-0.6b",
+      "hf_downloads": 172
+    },
+    {
+      "base": "bitnet-embedding-270m",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-15",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/bitnet-embedding-270m",
+      "hf_downloads": 130
+    },
+    {
       "base": "GPT-5.6 Sol",
       "creator": "OpenAI",
       "max_intel": 58.9,
@@ -90,7 +126,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 284
+      "hf_downloads": 488
     },
     {
       "base": "nvDock",
@@ -147,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 62947
+      "hf_downloads": 72617
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -169,7 +205,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 112
+      "hf_downloads": 118
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -181,7 +217,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 109
+      "hf_downloads": 115
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -193,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 145
+      "hf_downloads": 153
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -205,7 +241,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 103
+      "hf_downloads": 115
     },
     {
       "base": "MiMo-V2.5-DFlash",
@@ -217,55 +253,7 @@
         "hf"
       ],
       "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 279
-    },
-    {
-      "base": "ARDY-G1-RP-25FPS-Horizon8",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/ARDY-G1-RP-25FPS-Horizon8",
-      "hf_downloads": 24
-    },
-    {
-      "base": "ARDY-Core-RP-20FPS-Horizon8",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/ARDY-Core-RP-20FPS-Horizon8",
-      "hf_downloads": 49
-    },
-    {
-      "base": "HARC-Qwen2.5-7B-Instruct",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/HARC-Qwen2.5-7B-Instruct",
-      "hf_downloads": 352
-    },
-    {
-      "base": "HARC-Llama-3.1-8B-Instruct",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/HARC-Llama-3.1-8B-Instruct",
-      "hf_downloads": 341
+      "hf_downloads": 300
     }
   ]
 }
