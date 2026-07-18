@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 172
+      "hf_downloads": 261
     },
     {
       "base": "bitnet-embedding-270m",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 130
+      "hf_downloads": 182
     },
     {
       "base": "GPT-5.6 Sol",
@@ -126,7 +126,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 488
+      "hf_downloads": 1258
     },
     {
       "base": "nvDock",
@@ -183,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 72617
+      "hf_downloads": 85709
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -205,7 +205,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 118
+      "hf_downloads": 142
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -217,7 +217,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 115
+      "hf_downloads": 138
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -229,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 153
+      "hf_downloads": 198
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -241,19 +241,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 115
-    },
-    {
-      "base": "MiMo-V2.5-DFlash",
-      "creator": "Xiaomi",
-      "max_intel": null,
-      "release_date": "2026-07-03",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "XiaomiMiMo/MiMo-V2.5-DFlash",
-      "hf_downloads": 300
+      "hf_downloads": 159
     }
   ]
 }
