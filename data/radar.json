@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 261
+      "hf_downloads": 315
     },
     {
       "base": "bitnet-embedding-270m",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 182
+      "hf_downloads": 232
     },
     {
       "base": "GPT-5.6 Sol",
@@ -126,7 +126,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 1258
+      "hf_downloads": 1314
     },
     {
       "base": "nvDock",
@@ -161,7 +161,7 @@
         "hf"
       ],
       "hf_id": "nvidia/CWIP-1.0",
-      "hf_downloads": 72
+      "hf_downloads": 76
     },
     {
       "base": "Muse Image",
@@ -183,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 85709
+      "hf_downloads": 87725
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -205,7 +205,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 142
+      "hf_downloads": 149
     },
     {
       "base": "gr00t17-lerobot-libero_10-640",
@@ -217,7 +217,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 138
+      "hf_downloads": 150
     },
     {
       "base": "gr00t17-lerobot-libero_object-640",
@@ -229,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 198
+      "hf_downloads": 208
     },
     {
       "base": "gr00t17-lerobot-libero_spatial-640",
@@ -241,7 +241,7 @@
         "hf"
       ],
       "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 159
+      "hf_downloads": 167
     }
   ]
 }
