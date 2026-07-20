@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 315
+      "hf_downloads": 347
     },
     {
       "base": "bitnet-embedding-270m",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 232
+      "hf_downloads": 255
     },
     {
       "base": "GPT-5.6 Sol",
@@ -126,7 +126,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 1314
+      "hf_downloads": 1321
     },
     {
       "base": "nvDock",
@@ -183,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 87725
+      "hf_downloads": 88012
     },
     {
       "base": "GPT-Realtime-2.1-Mini",
@@ -194,54 +194,6 @@
       "sources": [
         "epoch"
       ]
-    },
-    {
-      "base": "gr00t17-lerobot-libero_goal-640",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-05",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/gr00t17-lerobot-libero_goal-640",
-      "hf_downloads": 149
-    },
-    {
-      "base": "gr00t17-lerobot-libero_10-640",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-05",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/gr00t17-lerobot-libero_10-640",
-      "hf_downloads": 150
-    },
-    {
-      "base": "gr00t17-lerobot-libero_object-640",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-05",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/gr00t17-lerobot-libero_object-640",
-      "hf_downloads": 208
-    },
-    {
-      "base": "gr00t17-lerobot-libero_spatial-640",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-05",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/gr00t17-lerobot-libero_spatial-640",
-      "hf_downloads": 167
     }
   ]
 }
