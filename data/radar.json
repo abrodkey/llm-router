@@ -84,6 +84,18 @@
       ]
     },
     {
+      "base": "Cosmos3-Edge-Policy-DROID",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Cosmos3-Edge-Policy-DROID",
+      "hf_downloads": 23
+    },
+    {
       "base": "GPT-5.6 Luna Pro",
       "creator": "OpenAI",
       "max_intel": null,
@@ -164,32 +176,34 @@
       "hf_downloads": 76
     },
     {
-      "base": "Muse Image",
-      "creator": "Meta",
+      "base": "Cosmos3-Super-Image2Video-4Step",
+      "creator": "NVIDIA",
       "max_intel": null,
       "release_date": "2026-07-07",
       "newer_than_our": null,
       "sources": [
-        "epoch"
-      ]
+        "hf"
+      ],
+      "hf_id": "nvidia/Cosmos3-Super-Image2Video-4Step",
+      "hf_downloads": 49
     },
     {
-      "base": "Kimi-K2.7-Code-NVFP4",
+      "base": "Cosmos3-Super-Text2Image-4Step",
       "creator": "NVIDIA",
       "max_intel": null,
-      "release_date": "2026-07-06",
+      "release_date": "2026-07-07",
       "newer_than_our": null,
       "sources": [
         "hf"
       ],
-      "hf_id": "nvidia/Kimi-K2.7-Code-NVFP4",
-      "hf_downloads": 88012
+      "hf_id": "nvidia/Cosmos3-Super-Text2Image-4Step",
+      "hf_downloads": 26
     },
     {
-      "base": "GPT-Realtime-2.1-Mini",
-      "creator": "OpenAI",
+      "base": "Muse Image",
+      "creator": "Meta",
       "max_intel": null,
-      "release_date": "2026-07-06",
+      "release_date": "2026-07-07",
       "newer_than_our": null,
       "sources": [
         "epoch"
