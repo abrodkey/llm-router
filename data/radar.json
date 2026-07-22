@@ -2,6 +2,113 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Gemini 3.6 Flash",
+      "creator": "Google",
+      "max_intel": 50.1,
+      "release_date": "2026-07-21",
+      "newer_than_our": "2026-05-19",
+      "sources": [
+        "aa",
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "google/gemini-3.6-flash"
+    },
+    {
+      "base": "Mage-Flow-Edit-Base",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow-Edit-Base",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Mage-Flow-Edit-Turbo",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow-Edit-Turbo",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Mage-Flow-Edit",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow-Edit",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Mage-Flow-Turbo",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow-Turbo",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Mage-Flow",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Mage-Flow-Base",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/Mage-Flow-Base",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Gemini 3.5 Flash-Lite",
+      "creator": "Google",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "google/gemini-3.5-flash-lite"
+    },
+    {
+      "base": "Gemini 3.5 Flash Cyber",
+      "creator": "Google",
+      "max_intel": null,
+      "release_date": "2026-07-21",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
       "base": "Kimi K3",
       "creator": "Kimi",
       "max_intel": 57.1,
@@ -14,6 +121,42 @@
       "or_id": "moonshotai/kimi-k3"
     },
     {
+      "base": "NV-JEPA-DNA-HyenaDNA",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-16",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NV-JEPA-DNA-HyenaDNA",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NV-JEPA-DNA-NTv3",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-16",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NV-JEPA-DNA-NTv3",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NV-JEPA-DNA-DNABERT2",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-16",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NV-JEPA-DNA-DNABERT2",
+      "hf_downloads": 0
+    },
+    {
       "base": "bitnet-embedding-0.6b",
       "creator": "Microsoft",
       "max_intel": null,
@@ -23,7 +166,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 347
+      "hf_downloads": 427
     },
     {
       "base": "bitnet-embedding-270m",
@@ -35,7 +178,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 255
+      "hf_downloads": 327
     },
     {
       "base": "GPT-5.6 Sol",
@@ -45,6 +188,7 @@
       "newer_than_our": "2026-05-05",
       "sources": [
         "aa",
+        "epoch",
         "openrouter"
       ],
       "or_id": "openai/gpt-5.6-sol"
@@ -57,6 +201,7 @@
       "newer_than_our": "2026-05-05",
       "sources": [
         "aa",
+        "epoch",
         "openrouter"
       ],
       "or_id": "openai/gpt-5.6-terra"
@@ -69,6 +214,7 @@
       "newer_than_our": "2026-05-05",
       "sources": [
         "aa",
+        "epoch",
         "openrouter"
       ],
       "or_id": "openai/gpt-5.6-luna"
@@ -80,7 +226,8 @@
       "release_date": "2026-07-09",
       "newer_than_our": null,
       "sources": [
-        "aa"
+        "aa",
+        "epoch"
       ]
     },
     {
@@ -93,7 +240,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-Edge-Policy-DROID",
-      "hf_downloads": 23
+      "hf_downloads": 70
     },
     {
       "base": "GPT-5.6 Luna Pro",
@@ -138,7 +285,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K2.7-Code-DFlash",
-      "hf_downloads": 1321
+      "hf_downloads": 1495
     },
     {
       "base": "nvDock",
@@ -159,55 +306,10 @@
       "release_date": "2026-07-08",
       "newer_than_our": null,
       "sources": [
+        "epoch",
         "openrouter"
       ],
       "or_id": "x-ai/grok-4.5"
-    },
-    {
-      "base": "CWIP-1.0",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-07",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/CWIP-1.0",
-      "hf_downloads": 76
-    },
-    {
-      "base": "Cosmos3-Super-Image2Video-4Step",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-07",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Cosmos3-Super-Image2Video-4Step",
-      "hf_downloads": 49
-    },
-    {
-      "base": "Cosmos3-Super-Text2Image-4Step",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-07",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Cosmos3-Super-Text2Image-4Step",
-      "hf_downloads": 26
-    },
-    {
-      "base": "Muse Image",
-      "creator": "Meta",
-      "max_intel": null,
-      "release_date": "2026-07-07",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
     }
   ]
 }
