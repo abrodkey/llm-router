@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T08:08:43+00:00",
+  "generated_at": "2026-07-27T09:31:36+00:00",
   "promoted": [
     {
       "canonical": "claude-opus-5",
       "display": "Claude Opus 5",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-07-24",
@@ -17,7 +17,7 @@
     {
       "canonical": "gemini-3.6-flash",
       "display": "Gemini 3.6 Flash",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-07-21",
@@ -31,7 +31,7 @@
     {
       "canonical": "gemini-3.5-flash-lite",
       "display": "Gemini 3.5 Flash-Lite",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-07-21",
@@ -45,7 +45,7 @@
     {
       "canonical": "kimi-k3",
       "display": "Kimi K3",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Kimi",
       "template_provider": "moonshot-kimi-k2.6",
       "release_date": "2026-07-16",
@@ -58,7 +58,7 @@
     {
       "canonical": "gpt-5.6-sol",
       "display": "GPT-5.6 Sol",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -71,7 +71,7 @@
     {
       "canonical": "gpt-5.6-terra",
       "display": "GPT-5.6 Terra",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -84,7 +84,7 @@
     {
       "canonical": "gpt-5.6-luna",
       "display": "GPT-5.6 Luna",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -97,7 +97,7 @@
     {
       "canonical": "muse-spark-1.1",
       "display": "Muse Spark 1.1",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-07-09",
@@ -110,7 +110,7 @@
     {
       "canonical": "claude-sonnet-5",
       "display": "Claude Sonnet 5",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-06-30",
@@ -122,7 +122,7 @@
     {
       "canonical": "glm-5.2",
       "display": "GLM-5.2",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-06-16",
@@ -135,7 +135,7 @@
     {
       "canonical": "kimi-k2.7-code",
       "display": "Kimi K2.7 Code",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Kimi",
       "template_provider": "moonshot-kimi-k2.6",
       "release_date": "2026-06-12",
@@ -148,7 +148,7 @@
     {
       "canonical": "nemotron-3-ultra-550b-a55b",
       "display": "Nemotron 3 Ultra 550B A55B",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "NVIDIA",
       "template_provider": "nvidia-template",
       "release_date": "2026-06-04",
@@ -161,7 +161,7 @@
     {
       "canonical": "minimax-m3",
       "display": "MiniMax-M3",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "MiniMax",
       "template_provider": "minimax-template",
       "release_date": "2026-06-01",
@@ -175,7 +175,7 @@
     {
       "canonical": "qwen3.7-plus",
       "display": "Qwen3.7 Plus",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-06-01",
@@ -189,7 +189,7 @@
     {
       "canonical": "qwen3.7-max",
       "display": "Qwen3.7 Max",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-05-19",
@@ -202,7 +202,7 @@
     {
       "canonical": "mimo-v2.5-pro",
       "display": "MiMo-V2.5-Pro",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-04-22",
@@ -216,7 +216,7 @@
     {
       "canonical": "mimo-v2.5",
       "display": "MiMo-V2.5",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-04-22",
@@ -230,7 +230,7 @@
     {
       "canonical": "qwen3.6-27b",
       "display": "Qwen3.6 27B",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-04-22",
@@ -243,7 +243,7 @@
     {
       "canonical": "muse-spark",
       "display": "Muse Spark",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-04-08",
@@ -256,7 +256,7 @@
     {
       "canonical": "mimo-v2-omni-0327",
       "display": "MiMo-V2-Omni-0327",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-27",
@@ -268,7 +268,7 @@
     {
       "canonical": "mimo-v2-omni",
       "display": "MiMo-V2-Omni",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-19",
@@ -281,7 +281,7 @@
     {
       "canonical": "mimo-v2-pro",
       "display": "MiMo-V2-Pro",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-03-18",
@@ -294,7 +294,7 @@
     {
       "canonical": "minimax-m2.7",
       "display": "MiniMax-M2.7",
-      "promoted_at": "2026-07-26",
+      "promoted_at": "2026-07-27",
       "creator": "MiniMax",
       "template_provider": "minimax-template",
       "release_date": "2026-03-18",
