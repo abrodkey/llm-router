@@ -2,6 +2,17 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Qwen3.7 Flash",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-07-27",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.7-flash"
+    },
+    {
       "base": "Mage-ViT",
       "creator": "Microsoft",
       "max_intel": null,
