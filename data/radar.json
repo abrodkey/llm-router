@@ -22,7 +22,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 1284
+      "hf_downloads": 3349
     },
     {
       "base": "Claude Opus 5",
@@ -80,7 +80,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos-H-Dreams",
-      "hf_downloads": 116
+      "hf_downloads": 127
     },
     {
       "base": "Mage-Flow-Edit-Base",
@@ -92,7 +92,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow-Edit-Base",
-      "hf_downloads": 398
+      "hf_downloads": 460
     },
     {
       "base": "Mage-Flow-Edit-Turbo",
@@ -104,7 +104,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow-Edit-Turbo",
-      "hf_downloads": 1115
+      "hf_downloads": 1260
     },
     {
       "base": "Mage-Flow-Edit",
@@ -116,7 +116,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow-Edit",
-      "hf_downloads": 558
+      "hf_downloads": 657
     },
     {
       "base": "Mage-Flow-Turbo",
@@ -128,7 +128,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow-Turbo",
-      "hf_downloads": 1345
+      "hf_downloads": 1582
     },
     {
       "base": "Mage-Flow",
@@ -140,7 +140,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow",
-      "hf_downloads": 1691
+      "hf_downloads": 2007
     },
     {
       "base": "Mage-Flow-Base",
@@ -152,7 +152,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-Flow-Base",
-      "hf_downloads": 628
+      "hf_downloads": 721
     },
     {
       "base": "Gemini 3.5 Flash-Lite",
@@ -243,7 +243,7 @@
         "hf"
       ],
       "hf_id": "nvidia/MiniMax-M3-DSpark",
-      "hf_downloads": 323
+      "hf_downloads": 374
     },
     {
       "base": "Ising-Decoder-ColorCode-1-Fast",
@@ -267,7 +267,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 855
+      "hf_downloads": 892
     },
     {
       "base": "bitnet-embedding-270m",
@@ -279,7 +279,7 @@
         "hf"
       ],
       "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 533
+      "hf_downloads": 550
     }
   ]
 }
