@@ -83,78 +83,6 @@
       "hf_downloads": 127
     },
     {
-      "base": "Mage-Flow-Edit-Base",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow-Edit-Base",
-      "hf_downloads": 460
-    },
-    {
-      "base": "Mage-Flow-Edit-Turbo",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow-Edit-Turbo",
-      "hf_downloads": 1260
-    },
-    {
-      "base": "Mage-Flow-Edit",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow-Edit",
-      "hf_downloads": 657
-    },
-    {
-      "base": "Mage-Flow-Turbo",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow-Turbo",
-      "hf_downloads": 1582
-    },
-    {
-      "base": "Mage-Flow",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow",
-      "hf_downloads": 2007
-    },
-    {
-      "base": "Mage-Flow-Base",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-21",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-Flow-Base",
-      "hf_downloads": 721
-    },
-    {
       "base": "Gemini 3.5 Flash-Lite",
       "creator": "Google",
       "max_intel": null,
@@ -232,54 +160,6 @@
       ],
       "hf_id": "nvidia/NV-JEPA-DNA-DNABERT2",
       "hf_downloads": 0
-    },
-    {
-      "base": "MiniMax-M3-DSpark",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/MiniMax-M3-DSpark",
-      "hf_downloads": 374
-    },
-    {
-      "base": "Ising-Decoder-ColorCode-1-Fast",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Ising-Decoder-ColorCode-1-Fast",
-      "hf_downloads": 7
-    },
-    {
-      "base": "bitnet-embedding-0.6b",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/bitnet-embedding-0.6b",
-      "hf_downloads": 892
-    },
-    {
-      "base": "bitnet-embedding-270m",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/bitnet-embedding-270m",
-      "hf_downloads": 550
     }
   ]
 }
