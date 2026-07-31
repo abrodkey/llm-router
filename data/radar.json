@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "DeepSeek V4 Flash 0731",
+      "creator": "DeepSeek",
+      "max_intel": 49.9,
+      "release_date": "2026-07-31",
+      "newer_than_our": "2026-04-24",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "deepseek/deepseek-v4-flash-0731"
+    },
+    {
       "base": "Qwen3.7 Flash",
       "creator": "Alibaba",
       "max_intel": null,
@@ -22,7 +34,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 3349
+      "hf_downloads": 5900
     },
     {
       "base": "Claude Opus 5",
@@ -80,7 +92,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos-H-Dreams",
-      "hf_downloads": 127
+      "hf_downloads": 184
     },
     {
       "base": "Gemini 3.5 Flash-Lite",
@@ -112,54 +124,6 @@
         "openrouter"
       ],
       "or_id": "google/gemini-3.5-flash-lite"
-    },
-    {
-      "base": "Kimi K3",
-      "creator": "Kimi",
-      "max_intel": 57.1,
-      "release_date": "2026-07-16",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "aa",
-        "openrouter"
-      ],
-      "or_id": "moonshotai/kimi-k3"
-    },
-    {
-      "base": "NV-JEPA-DNA-HyenaDNA",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NV-JEPA-DNA-HyenaDNA",
-      "hf_downloads": 0
-    },
-    {
-      "base": "NV-JEPA-DNA-NTv3",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NV-JEPA-DNA-NTv3",
-      "hf_downloads": 0
-    },
-    {
-      "base": "NV-JEPA-DNA-DNABERT2",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-07-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NV-JEPA-DNA-DNABERT2",
-      "hf_downloads": 0
     }
   ]
 }
