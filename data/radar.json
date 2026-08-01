@@ -14,6 +14,38 @@
       "or_id": "deepseek/deepseek-v4-flash-0731"
     },
     {
+      "base": "DeepSeek-V4-Flash-0731",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-07-31",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "hf_downloads": 0
+    },
+    {
+      "base": "GPT Transcribe",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-29",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
+      "base": "GPT Live Transcribe",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-07-29",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
       "base": "Qwen3.7 Flash",
       "creator": "Alibaba",
       "max_intel": null,
@@ -34,7 +66,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 5900
+      "hf_downloads": 6299
     },
     {
       "base": "Claude Opus 5",
@@ -92,7 +124,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos-H-Dreams",
-      "hf_downloads": 184
+      "hf_downloads": 287
     },
     {
       "base": "Gemini 3.5 Flash-Lite",
