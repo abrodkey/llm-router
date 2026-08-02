@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 0
+      "hf_downloads": 15366
     },
     {
       "base": "GPT Transcribe",
@@ -66,7 +66,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 6299
+      "hf_downloads": 6388
     },
     {
       "base": "Claude Opus 5",
@@ -124,7 +124,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos-H-Dreams",
-      "hf_downloads": 287
+      "hf_downloads": 295
     },
     {
       "base": "Gemini 3.5 Flash-Lite",
