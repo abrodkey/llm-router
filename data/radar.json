@@ -2,6 +2,17 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Qwen3.8 Max",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-08-03",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-max"
+    },
+    {
       "base": "DeepSeek V4 Flash 0731",
       "creator": "DeepSeek",
       "max_intel": 49.9,
@@ -24,6 +35,18 @@
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "hf_downloads": 236076
+    },
+    {
+      "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-07-29",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "hf_downloads": 8
     },
     {
       "base": "GPT Transcribe",
