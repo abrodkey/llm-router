@@ -2,12 +2,23 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Muse Spark 1.2",
+      "creator": "Meta",
+      "max_intel": 54.1,
+      "release_date": "2026-08-05",
+      "newer_than_our": null,
+      "sources": [
+        "aa"
+      ]
+    },
+    {
       "base": "Qwen3.8 Max",
       "creator": "Alibaba",
-      "max_intel": null,
+      "max_intel": 56.2,
       "release_date": "2026-08-03",
       "newer_than_our": "2026-04-20",
       "sources": [
+        "aa",
         "openrouter"
       ],
       "or_id": "qwen/qwen3.8-max"
