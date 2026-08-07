@@ -4,7 +4,7 @@
     {
       "base": "Muse Spark 1.2",
       "creator": "Meta",
-      "max_intel": 54.1,
+      "max_intel": 56.8,
       "release_date": "2026-08-05",
       "newer_than_our": null,
       "sources": [
@@ -14,7 +14,7 @@
     {
       "base": "Qwen3.8 Max",
       "creator": "Alibaba",
-      "max_intel": 56.2,
+      "max_intel": 58.1,
       "release_date": "2026-08-03",
       "newer_than_our": "2026-04-20",
       "sources": [
@@ -26,7 +26,7 @@
     {
       "base": "DeepSeek V4 Flash 0731",
       "creator": "DeepSeek",
-      "max_intel": 49.9,
+      "max_intel": 51.8,
       "release_date": "2026-07-31",
       "newer_than_our": "2026-04-24",
       "sources": [
@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 433284
+      "hf_downloads": 617900
     },
     {
       "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-      "hf_downloads": 80
+      "hf_downloads": 206
     },
     {
       "base": "GPT Transcribe",
@@ -101,12 +101,12 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 7090
+      "hf_downloads": 7172
     },
     {
       "base": "Claude Opus 5",
       "creator": "Anthropic",
-      "max_intel": 60.7,
+      "max_intel": 63.1,
       "release_date": "2026-07-24",
       "newer_than_our": "2026-05-28",
       "sources": [
