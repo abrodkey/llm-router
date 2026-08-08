@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 617900
+      "hf_downloads": 702709
     },
     {
       "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-      "hf_downloads": 206
+      "hf_downloads": 359
     },
     {
       "base": "GPT Transcribe",
@@ -101,40 +101,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 7172
-    },
-    {
-      "base": "Claude Opus 5",
-      "creator": "Anthropic",
-      "max_intel": 63.1,
-      "release_date": "2026-07-24",
-      "newer_than_our": "2026-05-28",
-      "sources": [
-        "aa",
-        "epoch"
-      ]
-    },
-    {
-      "base": "claude-opus-5-fast",
-      "creator": "Anthropic",
-      "max_intel": null,
-      "release_date": "2026-07-24",
-      "newer_than_our": "2026-05-28",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-opus-5-fast"
-    },
-    {
-      "base": "claude-opus-5",
-      "creator": "Anthropic",
-      "max_intel": null,
-      "release_date": "2026-07-24",
-      "newer_than_our": "2026-05-28",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-opus-5"
+      "hf_downloads": 7334
     }
   ]
 }
