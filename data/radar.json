@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 702709
+      "hf_downloads": 785771
     },
     {
       "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-      "hf_downloads": 359
+      "hf_downloads": 458
     },
     {
       "base": "GPT Transcribe",
@@ -101,7 +101,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 7334
+      "hf_downloads": 7407
     }
   ]
 }
