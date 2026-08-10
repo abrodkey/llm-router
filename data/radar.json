@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 785771
+      "hf_downloads": 868576
     },
     {
       "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-      "hf_downloads": 458
+      "hf_downloads": 543
     },
     {
       "base": "GPT Transcribe",
@@ -90,18 +90,6 @@
         "openrouter"
       ],
       "or_id": "qwen/qwen3.7-flash"
-    },
-    {
-      "base": "Mage-ViT",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-07-26",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/Mage-ViT",
-      "hf_downloads": 7407
     }
   ]
 }
