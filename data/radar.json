@@ -2,13 +2,24 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Muse Glimmer",
+      "creator": "Meta",
+      "max_intel": null,
+      "release_date": "2026-08-10",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
       "base": "Muse Spark 1.2",
       "creator": "Meta",
       "max_intel": 56.8,
       "release_date": "2026-08-05",
       "newer_than_our": null,
       "sources": [
-        "aa"
+        "aa",
+        "epoch"
       ]
     },
     {
@@ -46,7 +57,17 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 868576
+      "hf_downloads": 954441
+    },
+    {
+      "base": "Gemini Robotics ER 2",
+      "creator": "Google",
+      "max_intel": null,
+      "release_date": "2026-07-30",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
     },
     {
       "base": "NVIDIA-NemotronLabs-VoiceChat-11B",
@@ -58,7 +79,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-      "hf_downloads": 543
+      "hf_downloads": 597
     },
     {
       "base": "GPT Transcribe",
@@ -79,17 +100,6 @@
       "sources": [
         "epoch"
       ]
-    },
-    {
-      "base": "Qwen3.7 Flash",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-07-27",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.7-flash"
     }
   ]
 }
