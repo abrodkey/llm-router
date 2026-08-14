@@ -2,9 +2,22 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Gemini 3.7 Flash",
+      "creator": "Google",
+      "max_intel": 56,
+      "release_date": "2026-08-13",
+      "newer_than_our": "2026-05-19",
+      "sources": [
+        "aa",
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "google/gemini-3.7-flash"
+    },
+    {
       "base": "DeepSeek V4 Pro 0813",
       "creator": "DeepSeek",
-      "max_intel": 53,
+      "max_intel": 53.2,
       "release_date": "2026-08-13",
       "newer_than_our": "2026-04-24",
       "sources": [
@@ -12,6 +25,30 @@
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4-pro-0813"
+    },
+    {
+      "base": "DeepSeek-V4-Pro-0813",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-08-13",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Qwen3.8 2.4T A95B",
+      "creator": "Alibaba",
+      "max_intel": 57.7,
+      "release_date": "2026-08-12",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-2.4t-a95b"
     },
     {
       "base": "Grok 4.6",
@@ -24,17 +61,6 @@
         "openrouter"
       ],
       "or_id": "x-ai/grok-4.6"
-    },
-    {
-      "base": "Qwen3.8 2.4T A95B",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-08-12",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-2.4t-a95b"
     },
     {
       "base": "GPT-5.6 Cyber",
@@ -88,7 +114,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-      "hf_downloads": 978
+      "hf_downloads": 1012
     },
     {
       "base": "Qwen3.8-2.4T-A95B-FP8",
@@ -100,7 +126,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-      "hf_downloads": 3851
+      "hf_downloads": 4000
     },
     {
       "base": "Muse Spark 1.2",
@@ -123,7 +149,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
-      "hf_downloads": 336
+      "hf_downloads": 774
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
@@ -135,7 +161,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "hf_downloads": 64
+      "hf_downloads": 2929
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
@@ -147,7 +173,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
-      "hf_downloads": 112
+      "hf_downloads": 665
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
@@ -159,7 +185,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-      "hf_downloads": 19250
+      "hf_downloads": 44859
     },
     {
       "base": "Qwen3.8 Max",
@@ -183,7 +209,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-      "hf_downloads": 15740
+      "hf_downloads": 22279
     },
     {
       "base": "DeepSeek V4 Flash 0731",
@@ -208,17 +234,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 1048685
-    },
-    {
-      "base": "Gemini Robotics ER 2",
-      "creator": "Google",
-      "max_intel": null,
-      "release_date": "2026-07-30",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
+      "hf_downloads": 1431587
     }
   ]
 }
