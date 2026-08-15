@@ -2,6 +2,77 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "NVIDIA-Nemotron-Labs-Teacher-Chat",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+      "hf_downloads": 0
+    },
+    {
+      "base": "NVIDIA-Nemotron-Labs-Teacher-STEM",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Qwen3.8 27B",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-08-14",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-27b"
+    },
+    {
       "base": "Gemini 3.7 Flash",
       "creator": "Google",
       "max_intel": 56,
@@ -36,6 +107,18 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "hf_downloads": 245
+    },
+    {
+      "base": "Kimi-K3-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-13",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Kimi-K3-NVFP4",
       "hf_downloads": 0
     },
     {
@@ -114,7 +197,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-      "hf_downloads": 1012
+      "hf_downloads": 3832
     },
     {
       "base": "Qwen3.8-2.4T-A95B-FP8",
@@ -126,7 +209,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-      "hf_downloads": 4000
+      "hf_downloads": 9334
     },
     {
       "base": "Muse Spark 1.2",
@@ -149,7 +232,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
-      "hf_downloads": 774
+      "hf_downloads": 1086
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
@@ -161,7 +244,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "hf_downloads": 2929
+      "hf_downloads": 8592
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
@@ -173,7 +256,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
-      "hf_downloads": 665
+      "hf_downloads": 1310
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
@@ -185,7 +268,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-      "hf_downloads": 44859
+      "hf_downloads": 119572
     },
     {
       "base": "Qwen3.8 Max",
@@ -209,32 +292,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-      "hf_downloads": 22279
-    },
-    {
-      "base": "DeepSeek V4 Flash 0731",
-      "creator": "DeepSeek",
-      "max_intel": 51.8,
-      "release_date": "2026-07-31",
-      "newer_than_our": "2026-04-24",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "deepseek/deepseek-v4-flash-0731"
-    },
-    {
-      "base": "DeepSeek-V4-Flash-0731",
-      "creator": "DeepSeek",
-      "max_intel": null,
-      "release_date": "2026-07-31",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hf_downloads": 1431587
+      "hf_downloads": 34137
     }
   ]
 }
