@@ -11,7 +11,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-      "hf_downloads": 0
+      "hf_downloads": 673
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-      "hf_downloads": 0
+      "hf_downloads": 862
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-      "hf_downloads": 0
+      "hf_downloads": 673
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
@@ -47,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-      "hf_downloads": 0
+      "hf_downloads": 75
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-STEM",
@@ -59,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
-      "hf_downloads": 0
+      "hf_downloads": 872
     },
     {
       "base": "Qwen3.8 27B",
@@ -107,7 +107,7 @@
         "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hf_downloads": 245
+      "hf_downloads": 19945
     },
     {
       "base": "Kimi-K3-NVFP4",
@@ -119,7 +119,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K3-NVFP4",
-      "hf_downloads": 0
+      "hf_downloads": 16
     },
     {
       "base": "Qwen3.8 2.4T A95B",
@@ -197,7 +197,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-      "hf_downloads": 3832
+      "hf_downloads": 6381
     },
     {
       "base": "Qwen3.8-2.4T-A95B-FP8",
@@ -209,7 +209,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-      "hf_downloads": 9334
+      "hf_downloads": 10745
     },
     {
       "base": "Muse Spark 1.2",
@@ -232,7 +232,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
-      "hf_downloads": 1086
+      "hf_downloads": 1629
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
@@ -244,7 +244,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "hf_downloads": 8592
+      "hf_downloads": 16810
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
@@ -256,7 +256,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
-      "hf_downloads": 1310
+      "hf_downloads": 1475
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
@@ -268,7 +268,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-      "hf_downloads": 119572
+      "hf_downloads": 170554
     },
     {
       "base": "Qwen3.8 Max",
@@ -281,18 +281,6 @@
         "openrouter"
       ],
       "or_id": "qwen/qwen3.8-max"
-    },
-    {
-      "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-08-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-      "hf_downloads": 34137
     }
   ]
 }
