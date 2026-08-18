@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Qwen3.8 27B",
+      "creator": "Alibaba",
+      "max_intel": 52,
+      "release_date": "2026-08-14",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-27b"
+    },
+    {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Chat",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -11,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-      "hf_downloads": 1128
+      "hf_downloads": 1141
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
@@ -23,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-      "hf_downloads": 1231
+      "hf_downloads": 1874
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
@@ -35,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-      "hf_downloads": 806
+      "hf_downloads": 820
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
@@ -47,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-      "hf_downloads": 115
+      "hf_downloads": 156
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-STEM",
@@ -59,18 +71,17 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
-      "hf_downloads": 1021
+      "hf_downloads": 1059
     },
     {
-      "base": "Qwen3.8 27B",
+      "base": "Qwen 3.8 27B",
       "creator": "Alibaba",
       "max_intel": null,
       "release_date": "2026-08-14",
-      "newer_than_our": "2026-04-20",
+      "newer_than_our": null,
       "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-27b"
+        "epoch"
+      ]
     },
     {
       "base": "Gemini 3.7 Flash",
@@ -104,10 +115,11 @@
       "release_date": "2026-08-13",
       "newer_than_our": null,
       "sources": [
-        "hf"
+        "hf",
+        "epoch"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hf_downloads": 21873
+      "hf_downloads": 25006
     },
     {
       "base": "Kimi-K3-NVFP4",
@@ -119,7 +131,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K3-NVFP4",
-      "hf_downloads": 170
+      "hf_downloads": 277
     },
     {
       "base": "Qwen3.8 2.4T A95B",
@@ -197,7 +209,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-      "hf_downloads": 7932
+      "hf_downloads": 9465
     },
     {
       "base": "Qwen3.8-2.4T-A95B-FP8",
@@ -209,7 +221,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-      "hf_downloads": 11311
+      "hf_downloads": 12295
     },
     {
       "base": "Muse Spark 1.2",
@@ -232,7 +244,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
-      "hf_downloads": 1704
+      "hf_downloads": 1772
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
@@ -244,7 +256,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "hf_downloads": 22583
+      "hf_downloads": 28360
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
@@ -256,7 +268,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
-      "hf_downloads": 1536
+      "hf_downloads": 1628
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
@@ -268,19 +280,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-      "hf_downloads": 196326
-    },
-    {
-      "base": "Qwen3.8 Max",
-      "creator": "Alibaba",
-      "max_intel": 58.1,
-      "release_date": "2026-08-03",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "aa",
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-max"
+      "hf_downloads": 231271
     }
   ]
 }
