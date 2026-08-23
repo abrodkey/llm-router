@@ -55,7 +55,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-      "hf_downloads": 1261
+      "hf_downloads": 1287
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
@@ -67,7 +67,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-      "hf_downloads": 2026
+      "hf_downloads": 2056
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
@@ -79,7 +79,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-      "hf_downloads": 926
+      "hf_downloads": 949
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
@@ -91,7 +91,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-      "hf_downloads": 366
+      "hf_downloads": 401
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-STEM",
@@ -103,7 +103,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
-      "hf_downloads": 1683
+      "hf_downloads": 1729
     },
     {
       "base": "Qwen 3.8 27B",
@@ -151,7 +151,7 @@
         "epoch"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hf_downloads": 49601
+      "hf_downloads": 54566
     },
     {
       "base": "Kimi-K3-NVFP4",
@@ -163,7 +163,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K3-NVFP4",
-      "hf_downloads": 4040
+      "hf_downloads": 4477
     },
     {
       "base": "cmd",
@@ -242,30 +242,6 @@
       "sources": [
         "epoch"
       ]
-    },
-    {
-      "base": "Qwen3.8-2.4T-A95B",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-08-08",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-      "hf_downloads": 15702
-    },
-    {
-      "base": "Qwen3.8-2.4T-A95B-FP8",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-08-08",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-      "hf_downloads": 18390
     }
   ]
 }
