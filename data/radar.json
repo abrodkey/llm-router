@@ -55,7 +55,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-      "hf_downloads": 1305
+      "hf_downloads": 1350
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
@@ -67,7 +67,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-      "hf_downloads": 2073
+      "hf_downloads": 2106
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
@@ -79,7 +79,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-      "hf_downloads": 967
+      "hf_downloads": 1018
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
@@ -91,7 +91,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-      "hf_downloads": 428
+      "hf_downloads": 469
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Teacher-STEM",
@@ -103,7 +103,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
-      "hf_downloads": 1751
+      "hf_downloads": 1780
     },
     {
       "base": "Qwen 3.8 27B",
@@ -147,11 +147,10 @@
       "release_date": "2026-08-13",
       "newer_than_our": null,
       "sources": [
-        "hf",
-        "epoch"
+        "hf"
       ],
       "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hf_downloads": 57928
+      "hf_downloads": 63058
     },
     {
       "base": "Kimi-K3-NVFP4",
@@ -163,7 +162,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimi-K3-NVFP4",
-      "hf_downloads": 4602
+      "hf_downloads": 4663
     },
     {
       "base": "cmd",
@@ -232,16 +231,6 @@
         "openrouter"
       ],
       "or_id": "nvidia/nemotron-3.5-lightning"
-    },
-    {
-      "base": "Muse Glimmer",
-      "creator": "Meta",
-      "max_intel": null,
-      "release_date": "2026-08-10",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
     }
   ]
 }
