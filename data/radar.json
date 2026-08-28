@@ -24,6 +24,16 @@
       ]
     },
     {
+      "base": "Qwen3.8-Flash-Next",
+      "creator": "Alibaba",
+      "max_intel": 55.8,
+      "release_date": "2026-08-26",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "aa"
+      ]
+    },
+    {
       "base": "Qwen3.8 Flash",
       "creator": "Alibaba",
       "max_intel": null,
@@ -44,6 +54,42 @@
         "openrouter"
       ],
       "or_id": "z-ai/glm-5.3-flash"
+    },
+    {
+      "base": "GLM-5.3-BF16",
+      "creator": "Z AI",
+      "max_intel": null,
+      "release_date": "2026-08-25",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "zai-org/GLM-5.3-BF16",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Qwen3.8-2.4T-A95B-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-08-25",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+      "hf_downloads": 0
+    },
+    {
+      "base": "timesfm-3.0-pytorch",
+      "creator": "Google",
+      "max_intel": null,
+      "release_date": "2026-08-24",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "google/timesfm-3.0-pytorch",
+      "hf_downloads": 0
     },
     {
       "base": "DeepSeek V4 Flash Vision",
@@ -73,8 +119,10 @@
       "release_date": "2026-08-18",
       "newer_than_our": "2026-04-07",
       "sources": [
-        "aa"
-      ]
+        "aa",
+        "hf"
+      ],
+      "hf_id": "zai-org/GLM-5.3"
     },
     {
       "base": "GLM 5.3",
@@ -168,65 +216,6 @@
       "sources": [
         "epoch"
       ]
-    },
-    {
-      "base": "Gemini 3.7 Flash",
-      "creator": "Google",
-      "max_intel": 56,
-      "release_date": "2026-08-13",
-      "newer_than_our": "2026-05-19",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "google/gemini-3.7-flash"
-    },
-    {
-      "base": "DeepSeek V4 Pro 0813",
-      "creator": "DeepSeek",
-      "max_intel": 53.2,
-      "release_date": "2026-08-13",
-      "newer_than_our": "2026-04-24",
-      "sources": [
-        "aa"
-      ]
-    },
-    {
-      "base": "DeepSeek-V4-Pro-0813",
-      "creator": "DeepSeek",
-      "max_intel": null,
-      "release_date": "2026-08-13",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hf_downloads": 90822
-    },
-    {
-      "base": "Kimi-K3-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-08-13",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Kimi-K3-NVFP4",
-      "hf_downloads": 6473
-    },
-    {
-      "base": "cmd",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-08-13",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/cmd",
-      "hf_downloads": 45
     }
   ]
 }
