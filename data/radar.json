@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "DeepSeek-V4-Flash-Vision-Exp",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-08-31",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "hf_downloads": 0
+    },
+    {
       "base": "DeepSeek-V4-Pro-0813-NVFP4",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -11,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 117
+      "hf_downloads": 149
     },
     {
       "base": "SQuadGen",
@@ -77,7 +89,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 1787
+      "hf_downloads": 2354
     },
     {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
@@ -89,7 +101,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 438
+      "hf_downloads": 487
     },
     {
       "base": "timesfm-3.0-pytorch",
