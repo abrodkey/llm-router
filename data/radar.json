@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Claude Fable 5.1",
+      "creator": "Anthropic",
+      "max_intel": 65.7,
+      "release_date": "2026-09-01",
+      "newer_than_our": "2026-05-28",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "anthropic/claude-fable-5.1"
+    },
+    {
       "base": "DeepSeek-V4-Pro-0813-NVFP4",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -80,6 +92,18 @@
       "hf_downloads": 4111
     },
     {
+      "base": "GLM-5.3",
+      "creator": "Z AI",
+      "max_intel": null,
+      "release_date": "2026-08-25",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "zai-org/GLM-5.3",
+      "hf_downloads": 94403
+    },
+    {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -135,29 +159,6 @@
       ],
       "hf_id": "nvidia/DeepSeek-V4-Flash-0731-NVFP4",
       "hf_downloads": 307
-    },
-    {
-      "base": "GLM-5.3",
-      "creator": "Z AI",
-      "max_intel": 59.5,
-      "release_date": "2026-08-18",
-      "newer_than_our": "2026-04-07",
-      "sources": [
-        "aa",
-        "hf"
-      ],
-      "hf_id": "zai-org/GLM-5.3"
-    },
-    {
-      "base": "GLM 5.3",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-08-18",
-      "newer_than_our": "2026-04-07",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "z-ai/glm-5.3"
     }
   ]
 }
