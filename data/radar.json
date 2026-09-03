@@ -2,6 +2,19 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Gemini 3.8 Flash",
+      "creator": "Google",
+      "max_intel": 58.7,
+      "release_date": "2026-09-02",
+      "newer_than_our": "2026-05-19",
+      "sources": [
+        "aa",
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "google/gemini-3.8-flash"
+    },
+    {
       "base": "Claude Fable 5.1",
       "creator": "Anthropic",
       "max_intel": 65.7,
@@ -9,6 +22,7 @@
       "newer_than_our": "2026-05-28",
       "sources": [
         "aa",
+        "epoch",
         "openrouter"
       ],
       "or_id": "anthropic/claude-fable-5.1"
@@ -23,7 +37,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 582
+      "hf_downloads": 950
     },
     {
       "base": "SQuadGen",
@@ -89,7 +103,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 4111
+      "hf_downloads": 4695
     },
     {
       "base": "GLM-5.3",
@@ -101,7 +115,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3",
-      "hf_downloads": 94403
+      "hf_downloads": 151021
     },
     {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
@@ -113,7 +127,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 589
+      "hf_downloads": 741
     },
     {
       "base": "timesfm-3.0-pytorch",
@@ -125,7 +139,7 @@
         "hf"
       ],
       "hf_id": "google/timesfm-3.0-pytorch",
-      "hf_downloads": 0
+      "hf_downloads": 46862
     },
     {
       "base": "DeepSeek V4 Flash Vision",
@@ -147,18 +161,6 @@
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4-flash-vision-exp"
-    },
-    {
-      "base": "DeepSeek-V4-Flash-0731-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-08-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/DeepSeek-V4-Flash-0731-NVFP4",
-      "hf_downloads": 307
     }
   ]
 }
