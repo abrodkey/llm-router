@@ -2,6 +2,27 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GPT-6 Astra",
+      "creator": "OpenAI",
+      "max_intel": 61.2,
+      "release_date": "2026-09-03",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "epoch"
+      ]
+    },
+    {
+      "base": "Muse Spark 1.3",
+      "creator": "Meta",
+      "max_intel": 62.1,
+      "release_date": "2026-09-02",
+      "newer_than_our": null,
+      "sources": [
+        "aa"
+      ]
+    },
+    {
       "base": "Gemini 3.8 Flash",
       "creator": "Google",
       "max_intel": 58.7,
@@ -37,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 950
+      "hf_downloads": 1180
     },
     {
       "base": "SQuadGen",
@@ -103,7 +124,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 4695
+      "hf_downloads": 5911
     },
     {
       "base": "GLM-5.3",
@@ -115,7 +136,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3",
-      "hf_downloads": 151021
+      "hf_downloads": 303534
     },
     {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
@@ -127,7 +148,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 741
+      "hf_downloads": 903
     },
     {
       "base": "timesfm-3.0-pytorch",
@@ -139,7 +160,7 @@
         "hf"
       ],
       "hf_id": "google/timesfm-3.0-pytorch",
-      "hf_downloads": 46862
+      "hf_downloads": 105304
     },
     {
       "base": "DeepSeek V4 Flash Vision",
