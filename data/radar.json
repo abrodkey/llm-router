@@ -39,7 +39,7 @@
     {
       "base": "Muse Spark 1.3",
       "creator": "Meta",
-      "max_intel": 52.7,
+      "max_intel": 53,
       "release_date": "2026-09-02",
       "newer_than_our": null,
       "sources": [
@@ -82,7 +82,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 1234
+      "hf_downloads": 1253
     },
     {
       "base": "SQuadGen",
@@ -148,7 +148,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 6995
+      "hf_downloads": 7747
     },
     {
       "base": "GLM-5.3",
@@ -160,7 +160,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3",
-      "hf_downloads": 370417
+      "hf_downloads": 410074
     },
     {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
@@ -172,7 +172,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 1206
+      "hf_downloads": 1227
     },
     {
       "base": "timesfm-3.0-pytorch",
@@ -184,7 +184,7 @@
         "hf"
       ],
       "hf_id": "google/timesfm-3.0-pytorch",
-      "hf_downloads": 123025
+      "hf_downloads": 144455
     }
   ]
 }
