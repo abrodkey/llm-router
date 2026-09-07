@@ -43,7 +43,8 @@
       "release_date": "2026-09-02",
       "newer_than_our": null,
       "sources": [
-        "aa"
+        "aa",
+        "epoch"
       ]
     },
     {
@@ -82,7 +83,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 1253
+      "hf_downloads": 1289
     },
     {
       "base": "SQuadGen",
@@ -148,7 +149,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 7747
+      "hf_downloads": 8865
     },
     {
       "base": "GLM-5.3",
@@ -160,7 +161,7 @@
         "hf"
       ],
       "hf_id": "zai-org/GLM-5.3",
-      "hf_downloads": 410074
+      "hf_downloads": 442064
     },
     {
       "base": "Qwen3.8-2.4T-A95B-NVFP4",
@@ -172,7 +173,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 1227
+      "hf_downloads": 1258
     },
     {
       "base": "timesfm-3.0-pytorch",
@@ -184,7 +185,7 @@
         "hf"
       ],
       "hf_id": "google/timesfm-3.0-pytorch",
-      "hf_downloads": 144455
+      "hf_downloads": 271713
     }
   ]
 }
