@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-08T10:17:25+00:00",
+  "generated_at": "2026-09-09T10:23:57+00:00",
   "promoted": [
     {
       "canonical": "gpt-6-astra",
       "display": "GPT-6 Astra",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-09-03",
-      "max_intel": 54.7,
+      "max_intel": 52.8,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -17,11 +17,11 @@
     {
       "canonical": "muse-spark-1.3",
       "display": "Muse Spark 1.3",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-09-02",
-      "max_intel": 53,
+      "max_intel": 48.2,
       "data_coverage": [
         "aa"
       ]
@@ -29,11 +29,11 @@
     {
       "canonical": "gemini-3.8-flash",
       "display": "Gemini 3.8 Flash",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-09-02",
-      "max_intel": 47.1,
+      "max_intel": 41.2,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -42,24 +42,37 @@
     {
       "canonical": "claude-fable-5.1",
       "display": "Claude Fable 5.1",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-09-01",
-      "max_intel": 56.8,
+      "max_intel": 53.4,
       "data_coverage": [
         "aa",
         "openrouter"
       ]
     },
     {
+      "canonical": "qwen3.8-flash-next",
+      "display": "Qwen3.8-Flash-Next",
+      "promoted_at": "2026-09-09",
+      "creator": "Alibaba",
+      "template_provider": "alibaba-qwen-3.6-max",
+      "release_date": "2026-08-26",
+      "max_intel": 42.2,
+      "data_coverage": [
+        "aa",
+        "arena"
+      ]
+    },
+    {
       "canonical": "glm-5.3-flash",
       "display": "GLM-5.3-Flash",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-08-26",
-      "max_intel": 46.2,
+      "max_intel": 41.9,
       "data_coverage": [
         "aa",
         "arena",
@@ -67,26 +80,13 @@
       ]
     },
     {
-      "canonical": "qwen3.8-flash-next",
-      "display": "Qwen3.8-Flash-Next",
-      "promoted_at": "2026-09-08",
-      "creator": "Alibaba",
-      "template_provider": "alibaba-qwen-3.6-max",
-      "release_date": "2026-08-26",
-      "max_intel": 45.6,
-      "data_coverage": [
-        "aa",
-        "arena"
-      ]
-    },
-    {
       "canonical": "deepseek-v4-flash-vision",
       "display": "DeepSeek V4 Flash Vision",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "DeepSeek",
       "template_provider": "deepseek-v4-pro",
       "release_date": "2026-08-21",
-      "max_intel": 40.7,
+      "max_intel": 35,
       "data_coverage": [
         "aa"
       ]
@@ -94,38 +94,24 @@
     {
       "canonical": "glm-5.3",
       "display": "GLM-5.3",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-08-18",
-      "max_intel": 48.6,
+      "max_intel": 44.9,
       "data_coverage": [
         "aa",
-        "openrouter"
-      ]
-    },
-    {
-      "canonical": "qwen3.8-27b",
-      "display": "Qwen3.8 27B",
-      "promoted_at": "2026-09-08",
-      "creator": "Alibaba",
-      "template_provider": "alibaba-qwen-3.6-max",
-      "release_date": "2026-08-14",
-      "max_intel": 41.4,
-      "data_coverage": [
-        "aa",
-        "arena",
         "openrouter"
       ]
     },
     {
       "canonical": "gemini-3.7-flash",
       "display": "Gemini 3.7 Flash",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-08-13",
-      "max_intel": 45.2,
+      "max_intel": 39.6,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -134,11 +120,11 @@
     {
       "canonical": "deepseek-v4-pro-0813",
       "display": "DeepSeek V4 Pro 0813",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "DeepSeek",
       "template_provider": "deepseek-v4-pro",
       "release_date": "2026-08-13",
-      "max_intel": 42.1,
+      "max_intel": 36.3,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -147,11 +133,11 @@
     {
       "canonical": "qwen3.8-2.4t-a95b",
       "display": "Qwen3.8 2.4T A95B",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-08-12",
-      "max_intel": 46.7,
+      "max_intel": 40,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -160,11 +146,11 @@
     {
       "canonical": "muse-spark-1.2",
       "display": "Muse Spark 1.2",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-08-05",
-      "max_intel": 46.8,
+      "max_intel": 39.8,
       "data_coverage": [
         "aa"
       ]
@@ -172,50 +158,24 @@
     {
       "canonical": "qwen3.8-max",
       "display": "Qwen3.8 Max",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-08-03",
-      "max_intel": 46.9,
+      "max_intel": 40.3,
       "data_coverage": [
         "aa",
         "arena"
       ]
     },
     {
-      "canonical": "deepseek-v4-flash-0731",
-      "display": "DeepSeek V4 Flash 0731",
-      "promoted_at": "2026-09-08",
-      "creator": "DeepSeek",
-      "template_provider": "deepseek-v4-pro",
-      "release_date": "2026-07-31",
-      "max_intel": 40.8,
-      "data_coverage": [
-        "aa",
-        "openrouter"
-      ]
-    },
-    {
       "canonical": "claude-opus-5",
       "display": "Claude Opus 5",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-07-24",
-      "max_intel": 54.1,
-      "data_coverage": [
-        "aa",
-        "openrouter"
-      ]
-    },
-    {
-      "canonical": "gemini-3.6-flash",
-      "display": "Gemini 3.6 Flash",
-      "promoted_at": "2026-09-08",
-      "creator": "Google",
-      "template_provider": "google-gemini-3.5-flash",
-      "release_date": "2026-07-21",
-      "max_intel": 40.3,
+      "max_intel": 50.7,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -224,11 +184,11 @@
     {
       "canonical": "kimi-k3",
       "display": "Kimi K3",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Kimi",
       "template_provider": "moonshot-kimi-k2.6",
       "release_date": "2026-07-16",
-      "max_intel": 50.2,
+      "max_intel": 43.8,
       "data_coverage": [
         "aa"
       ]
@@ -236,11 +196,11 @@
     {
       "canonical": "gpt-5.6-sol",
       "display": "GPT-5.6 Sol",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
-      "max_intel": 51.3,
+      "max_intel": 47.1,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -249,11 +209,11 @@
     {
       "canonical": "gpt-5.6-terra",
       "display": "GPT-5.6 Terra",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
-      "max_intel": 46.8,
+      "max_intel": 42.3,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -262,37 +222,24 @@
     {
       "canonical": "gpt-5.6-luna",
       "display": "GPT-5.6 Luna",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
-      "max_intel": 43.4,
+      "max_intel": 37.5,
       "data_coverage": [
         "aa",
         "openrouter"
       ]
     },
     {
-      "canonical": "muse-spark-1.1",
-      "display": "Muse Spark 1.1",
-      "promoted_at": "2026-09-08",
-      "creator": "Meta",
-      "template_provider": "meta-template",
-      "release_date": "2026-07-09",
-      "max_intel": 41.2,
-      "data_coverage": [
-        "aa",
-        "arena"
-      ]
-    },
-    {
       "canonical": "claude-sonnet-5",
       "display": "Claude Sonnet 5",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-06-30",
-      "max_intel": 45.1,
+      "max_intel": 38.4,
       "data_coverage": [
         "aa",
         "openrouter"
@@ -301,54 +248,14 @@
     {
       "canonical": "glm-5.2",
       "display": "GLM-5.2",
-      "promoted_at": "2026-09-08",
+      "promoted_at": "2026-09-09",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-06-16",
-      "max_intel": 42.1,
+      "max_intel": 38.6,
       "data_coverage": [
         "aa",
         "openrouter"
-      ]
-    },
-    {
-      "canonical": "minimax-m3",
-      "display": "MiniMax-M3",
-      "promoted_at": "2026-09-08",
-      "creator": "MiniMax",
-      "template_provider": "minimax-template",
-      "release_date": "2026-06-01",
-      "max_intel": 35.7,
-      "data_coverage": [
-        "aa",
-        "arena",
-        "openrouter"
-      ]
-    },
-    {
-      "canonical": "qwen3.7-max",
-      "display": "Qwen3.7 Max",
-      "promoted_at": "2026-09-08",
-      "creator": "Alibaba",
-      "template_provider": "alibaba-qwen-3.6-max",
-      "release_date": "2026-05-19",
-      "max_intel": 36.6,
-      "data_coverage": [
-        "aa",
-        "openrouter"
-      ]
-    },
-    {
-      "canonical": "muse-spark",
-      "display": "Muse Spark",
-      "promoted_at": "2026-09-08",
-      "creator": "Meta",
-      "template_provider": "meta-template",
-      "release_date": "2026-04-08",
-      "max_intel": 35.8,
-      "data_coverage": [
-        "aa",
-        "arena"
       ]
     }
   ],
@@ -357,28 +264,21 @@
     "  \u2713 Muse Spark 1.3: promoted as PREVIEW (template=meta-template, coverage=['aa'])",
     "  \u2713 Gemini 3.8 Flash: promoted as PREVIEW (template=google-gemini-3.5-flash, coverage=['aa', 'openrouter'])",
     "  \u2713 Claude Fable 5.1: promoted as PREVIEW (template=anthropic-sonnet-4.6, coverage=['aa', 'openrouter'])",
-    "  \u2713 GLM-5.3-Flash: promoted as PREVIEW (template=zhipu-glm-5.1, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 Qwen3.8-Flash-Next: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'arena'])",
+    "  \u2713 GLM-5.3-Flash: promoted as PREVIEW (template=zhipu-glm-5.1, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 DeepSeek V4 Flash Vision: promoted as PREVIEW (template=deepseek-v4-pro, coverage=['aa'])",
     "  \u2713 GLM-5.3: promoted as PREVIEW (template=zhipu-glm-5.1, coverage=['aa', 'openrouter'])",
-    "  \u2713 Qwen3.8 27B: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'arena', 'openrouter'])",
     "  \u2713 Gemini 3.7 Flash: promoted as PREVIEW (template=google-gemini-3.5-flash, coverage=['aa', 'openrouter'])",
     "  \u2713 DeepSeek V4 Pro 0813: promoted as PREVIEW (template=deepseek-v4-pro, coverage=['aa', 'openrouter'])",
     "  \u2713 Qwen3.8 2.4T A95B: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'openrouter'])",
     "  \u2713 Muse Spark 1.2: promoted as PREVIEW (template=meta-template, coverage=['aa'])",
     "  \u2713 Qwen3.8 Max: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'arena'])",
-    "  \u2713 DeepSeek V4 Flash 0731: promoted as PREVIEW (template=deepseek-v4-pro, coverage=['aa', 'openrouter'])",
     "  \u2713 Claude Opus 5: promoted as PREVIEW (template=anthropic-sonnet-4.6, coverage=['aa', 'openrouter'])",
-    "  \u2713 Gemini 3.6 Flash: promoted as PREVIEW (template=google-gemini-3.5-flash, coverage=['aa', 'openrouter'])",
     "  \u2713 Kimi K3: promoted as PREVIEW (template=moonshot-kimi-k2.6, coverage=['aa'])",
     "  \u2713 GPT-5.6 Sol: promoted as PREVIEW (template=openai-gpt-5.5, coverage=['aa', 'openrouter'])",
     "  \u2713 GPT-5.6 Terra: promoted as PREVIEW (template=openai-gpt-5.5, coverage=['aa', 'openrouter'])",
     "  \u2713 GPT-5.6 Luna: promoted as PREVIEW (template=openai-gpt-5.5, coverage=['aa', 'openrouter'])",
-    "  \u2713 Muse Spark 1.1: promoted as PREVIEW (template=meta-template, coverage=['aa', 'arena'])",
     "  \u2713 Claude Sonnet 5: promoted as PREVIEW (template=anthropic-sonnet-4.6, coverage=['aa', 'openrouter'])",
-    "  \u2713 GLM-5.2: promoted as PREVIEW (template=zhipu-glm-5.1, coverage=['aa', 'openrouter'])",
-    "  \u2713 MiniMax-M3: promoted as PREVIEW (template=minimax-template, coverage=['aa', 'arena', 'openrouter'])",
-    "  \u2713 Qwen3.7 Max: promoted as PREVIEW (template=alibaba-qwen-3.6-max, coverage=['aa', 'openrouter'])",
-    "  \u2713 Muse Spark: promoted as PREVIEW (template=meta-template, coverage=['aa', 'arena'])"
+    "  \u2713 GLM-5.2: promoted as PREVIEW (template=zhipu-glm-5.1, coverage=['aa', 'openrouter'])"
   ]
 }

@@ -2,6 +2,48 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "ChatGPT Images 2.5",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-08",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
+      "base": "GPT-Image-2.5 Flare",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-08",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
+      "base": "GPT-Image-2.5 Sunburst",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-08",
+      "newer_than_our": null,
+      "sources": [
+        "epoch"
+      ]
+    },
+    {
+      "base": "Qwen3.8-27B-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-04",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
+      "hf_downloads": 0
+    },
+    {
       "base": "GPT-6 Astra Pro",
       "creator": "OpenAI",
       "max_intel": null,
@@ -15,7 +57,7 @@
     {
       "base": "GPT-6 Astra",
       "creator": "OpenAI",
-      "max_intel": 54.7,
+      "max_intel": 52.8,
       "release_date": "2026-09-03",
       "newer_than_our": "2026-05-05",
       "sources": [
@@ -39,7 +81,7 @@
     {
       "base": "Muse Spark 1.3",
       "creator": "Meta",
-      "max_intel": 53,
+      "max_intel": 48.2,
       "release_date": "2026-09-02",
       "newer_than_our": null,
       "sources": [
@@ -48,13 +90,36 @@
       ]
     },
     {
+      "base": "Nemotron-3-Labs-Ultra-Math-RL",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-02",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Nemotron-3-Labs-Ultra-Math-SFT",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-02",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+      "hf_downloads": 0
+    },
+    {
       "base": "Gemini 3.8 Flash",
       "creator": "Google",
-      "max_intel": 47.1,
+      "max_intel": null,
       "release_date": "2026-09-02",
-      "newer_than_our": "2026-05-19",
+      "newer_than_our": null,
       "sources": [
-        "aa",
         "epoch",
         "openrouter"
       ],
@@ -63,7 +128,7 @@
     {
       "base": "Claude Fable 5.1",
       "creator": "Anthropic",
-      "max_intel": 56.8,
+      "max_intel": 53.4,
       "release_date": "2026-09-01",
       "newer_than_our": "2026-05-28",
       "sources": [
@@ -98,26 +163,6 @@
       "hf_downloads": 0
     },
     {
-      "base": "GLM-5.3-Flash",
-      "creator": "Z AI",
-      "max_intel": 46.2,
-      "release_date": "2026-08-26",
-      "newer_than_our": "2026-04-07",
-      "sources": [
-        "aa"
-      ]
-    },
-    {
-      "base": "Qwen3.8-Flash-Next",
-      "creator": "Alibaba",
-      "max_intel": 45.6,
-      "release_date": "2026-08-26",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "aa"
-      ]
-    },
-    {
       "base": "Qwen3.8 Flash",
       "creator": "Alibaba",
       "max_intel": null,
@@ -138,42 +183,6 @@
         "openrouter"
       ],
       "or_id": "z-ai/glm-5.3-flash"
-    },
-    {
-      "base": "GLM-5.3-BF16",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-08-25",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "zai-org/GLM-5.3-BF16",
-      "hf_downloads": 10543
-    },
-    {
-      "base": "GLM-5.3",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-08-25",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "zai-org/GLM-5.3",
-      "hf_downloads": 474141
-    },
-    {
-      "base": "Qwen3.8-2.4T-A95B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-08-25",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-      "hf_downloads": 1373
     }
   ]
 }
