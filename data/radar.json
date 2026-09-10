@@ -2,6 +2,17 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "DeepSeek V4.1 Flash",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-09-10",
+      "newer_than_our": "2026-04-24",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "deepseek/deepseek-v4.1-flash"
+    },
+    {
       "base": "ChatGPT Images 2.5",
       "creator": "OpenAI",
       "max_intel": null,
@@ -41,7 +52,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
-      "hf_downloads": 0
+      "hf_downloads": 10488
     },
     {
       "base": "GPT-6 Astra Pro",
@@ -99,7 +110,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-      "hf_downloads": 0
+      "hf_downloads": 335
     },
     {
       "base": "Nemotron-3-Labs-Ultra-Math-SFT",
@@ -111,7 +122,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
-      "hf_downloads": 0
+      "hf_downloads": 470
     },
     {
       "base": "Gemini 3.8 Flash",
@@ -148,7 +159,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 1354
+      "hf_downloads": 1703
     },
     {
       "base": "SQuadGen",
@@ -161,28 +172,6 @@
       ],
       "hf_id": "microsoft/SQuadGen",
       "hf_downloads": 0
-    },
-    {
-      "base": "Qwen3.8 Flash",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-08-26",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-flash"
-    },
-    {
-      "base": "GLM 5.3 Flash",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-08-26",
-      "newer_than_our": "2026-04-07",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "z-ai/glm-5.3-flash"
     }
   ]
 }
