@@ -13,6 +13,18 @@
       "or_id": "deepseek/deepseek-v4.1-flash"
     },
     {
+      "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+      "hf_downloads": 0
+    },
+    {
       "base": "ChatGPT Images 2.5",
       "creator": "OpenAI",
       "max_intel": null,
@@ -150,28 +162,28 @@
       "or_id": "anthropic/claude-fable-5.1"
     },
     {
-      "base": "DeepSeek-V4-Pro-0813-NVFP4",
-      "creator": "NVIDIA",
+      "base": "gnm-v3",
+      "creator": "Google",
       "max_intel": null,
-      "release_date": "2026-08-27",
+      "release_date": "2026-09-01",
       "newer_than_our": null,
       "sources": [
         "hf"
       ],
-      "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-      "hf_downloads": 1703
+      "hf_id": "google/gnm-v3",
+      "hf_downloads": 0
     },
     {
-      "base": "SQuadGen",
-      "creator": "Microsoft",
+      "base": "NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
+      "creator": "NVIDIA",
       "max_intel": null,
-      "release_date": "2026-08-27",
+      "release_date": "2026-09-01",
       "newer_than_our": null,
       "sources": [
         "hf"
       ],
-      "hf_id": "microsoft/SQuadGen",
-      "hf_downloads": 0
+      "hf_id": "nvidia/NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
+      "hf_downloads": 2
     }
   ]
 }
