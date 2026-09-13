@@ -22,7 +22,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 780
+      "hf_downloads": 991
     },
     {
       "base": "ChatGPT Images 2.5",
@@ -64,7 +64,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
-      "hf_downloads": 19195
+      "hf_downloads": 31014
     },
     {
       "base": "GPT-6 Astra Pro",
@@ -122,7 +122,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-      "hf_downloads": 374
+      "hf_downloads": 555
     },
     {
       "base": "Nemotron-3-Labs-Ultra-Math-SFT",
@@ -134,7 +134,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
-      "hf_downloads": 510
+      "hf_downloads": 1663
     },
     {
       "base": "Gemini 3.8 Flash",
@@ -183,7 +183,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
-      "hf_downloads": 20
+      "hf_downloads": 164
     }
   ]
 }
