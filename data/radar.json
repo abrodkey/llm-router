@@ -2,6 +2,30 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "c-foundationstereo-s",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-15",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/c-foundationstereo-s",
+      "hf_downloads": 0
+    },
+    {
+      "base": "foundationpose",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-15",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/foundationpose",
+      "hf_downloads": 0
+    },
+    {
       "base": "DeepSeek V4.1 Flash",
       "creator": "DeepSeek",
       "max_intel": null,
@@ -91,17 +115,6 @@
       "or_id": "openai/gpt-6-astra"
     },
     {
-      "base": "Qwen3.8 Max (0902)",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-09-03",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-max-0902"
-    },
-    {
       "base": "Muse Spark 1.3",
       "creator": "Meta",
       "max_intel": 48.2,
@@ -111,6 +124,18 @@
         "aa",
         "epoch"
       ]
+    },
+    {
+      "base": "Qwen3.8 Max",
+      "creator": "Alibaba",
+      "max_intel": 45.4,
+      "release_date": "2026-09-02",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-max-0902"
     },
     {
       "base": "Nemotron-3-Labs-Ultra-Math-RL",
@@ -147,43 +172,6 @@
         "openrouter"
       ],
       "or_id": "google/gemini-3.8-flash"
-    },
-    {
-      "base": "Claude Fable 5.1",
-      "creator": "Anthropic",
-      "max_intel": 53.4,
-      "release_date": "2026-09-01",
-      "newer_than_our": "2026-05-28",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-fable-5.1"
-    },
-    {
-      "base": "gnm-v3",
-      "creator": "Google",
-      "max_intel": null,
-      "release_date": "2026-09-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "google/gnm-v3",
-      "hf_downloads": 0
-    },
-    {
-      "base": "NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-01",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
-      "hf_downloads": 196
     }
   ]
 }
