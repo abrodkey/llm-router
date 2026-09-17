@@ -11,7 +11,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 0
+      "hf_downloads": 106
     },
     {
       "base": "foundationpose",
@@ -23,18 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 0
-    },
-    {
-      "base": "DeepSeek V4.1 Flash",
-      "creator": "DeepSeek",
-      "max_intel": null,
-      "release_date": "2026-09-10",
-      "newer_than_our": "2026-04-24",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "deepseek/deepseek-v4.1-flash"
+      "hf_downloads": 121
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -46,7 +35,19 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1093
+      "hf_downloads": 1316
+    },
+    {
+      "base": "DeepSeek V4.1 Flash",
+      "creator": "DeepSeek",
+      "max_intel": null,
+      "release_date": "2026-09-09",
+      "newer_than_our": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "deepseek/deepseek-v4.1-flash"
     },
     {
       "base": "ChatGPT Images 2.5",
@@ -88,7 +89,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
-      "hf_downloads": 57632
+      "hf_downloads": 83430
     },
     {
       "base": "GPT-6 Astra Pro",
@@ -115,63 +116,15 @@
       "or_id": "openai/gpt-6-astra"
     },
     {
-      "base": "Muse Spark 1.3",
-      "creator": "Meta",
-      "max_intel": 48.2,
-      "release_date": "2026-09-02",
-      "newer_than_our": null,
-      "sources": [
-        "aa",
-        "epoch"
-      ]
-    },
-    {
-      "base": "Qwen3.8 Max",
+      "base": "Qwen3.8 Max (0902)",
       "creator": "Alibaba",
-      "max_intel": 45.4,
-      "release_date": "2026-09-02",
+      "max_intel": null,
+      "release_date": "2026-09-03",
       "newer_than_our": "2026-04-20",
       "sources": [
-        "aa",
         "openrouter"
       ],
       "or_id": "qwen/qwen3.8-max-0902"
-    },
-    {
-      "base": "Nemotron-3-Labs-Ultra-Math-RL",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-      "hf_downloads": 679
-    },
-    {
-      "base": "Nemotron-3-Labs-Ultra-Math-SFT",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-02",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
-      "hf_downloads": 1817
-    },
-    {
-      "base": "Gemini 3.8 Flash",
-      "creator": "Google",
-      "max_intel": null,
-      "release_date": "2026-09-02",
-      "newer_than_our": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "google/gemini-3.8-flash"
     }
   ]
 }
