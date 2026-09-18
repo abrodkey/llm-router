@@ -11,7 +11,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 106
+      "hf_downloads": 112
     },
     {
       "base": "foundationpose",
@@ -23,7 +23,19 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 121
+      "hf_downloads": 144
+    },
+    {
+      "base": "GLM-5.3-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-14",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/GLM-5.3-NVFP4",
+      "hf_downloads": 129
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -35,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1316
+      "hf_downloads": 1345
     },
     {
       "base": "DeepSeek V4.1 Flash",
@@ -89,7 +101,18 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
-      "hf_downloads": 83430
+      "hf_downloads": 104346
+    },
+    {
+      "base": "GPT-6 Astra",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-04",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-astra"
     },
     {
       "base": "GPT-6 Astra Pro",
@@ -101,30 +124,6 @@
         "openrouter"
       ],
       "or_id": "openai/gpt-6-astra-pro"
-    },
-    {
-      "base": "GPT-6 Astra",
-      "creator": "OpenAI",
-      "max_intel": 52.8,
-      "release_date": "2026-09-03",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-astra"
-    },
-    {
-      "base": "Qwen3.8 Max (0902)",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-09-03",
-      "newer_than_our": "2026-04-20",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "qwen/qwen3.8-max-0902"
     }
   ]
 }
