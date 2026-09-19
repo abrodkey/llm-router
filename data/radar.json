@@ -2,6 +2,17 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GLM 5.3 FlashX",
+      "creator": "Z AI",
+      "max_intel": null,
+      "release_date": "2026-09-18",
+      "newer_than_our": "2026-04-07",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "z-ai/glm-5.3-flashx"
+    },
+    {
       "base": "c-foundationstereo-s",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -11,7 +22,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 112
+      "hf_downloads": 120
     },
     {
       "base": "foundationpose",
@@ -23,7 +34,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 144
+      "hf_downloads": 152
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -35,7 +46,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 129
+      "hf_downloads": 1296
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -47,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1345
+      "hf_downloads": 1422
     },
     {
       "base": "DeepSeek V4.1 Flash",
@@ -90,40 +101,6 @@
       "sources": [
         "epoch"
       ]
-    },
-    {
-      "base": "Qwen3.8-27B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-04",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
-      "hf_downloads": 104346
-    },
-    {
-      "base": "GPT-6 Astra",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-04",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-astra"
-    },
-    {
-      "base": "GPT-6 Astra Pro",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-04",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-astra-pro"
     }
   ]
 }
