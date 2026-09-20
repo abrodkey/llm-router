@@ -22,7 +22,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 120
+      "hf_downloads": 151
     },
     {
       "base": "foundationpose",
@@ -34,7 +34,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 152
+      "hf_downloads": 168
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 1296
+      "hf_downloads": 2272
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1422
+      "hf_downloads": 1446
     },
     {
       "base": "DeepSeek V4.1 Flash",
