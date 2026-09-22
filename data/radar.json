@@ -2,6 +2,52 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "MiMo-V2.6-Pro",
+      "creator": "Xiaomi",
+      "max_intel": 46.3,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "xiaomi/mimo-v2.6-pro"
+    },
+    {
+      "base": "Grok 4.7",
+      "creator": "xAI",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "x-ai/grok-4.7"
+    },
+    {
+      "base": "MiMo-V2.6-Pro-UltraSpeed",
+      "creator": "Xiaomi",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "xiaomi/mimo-v2.6-pro-ultraspeed"
+    },
+    {
+      "base": "MiMo-V2.6-Flash",
+      "creator": "Xiaomi",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "xiaomi/mimo-v2.6-flash"
+    },
+    {
       "base": "Qwen-Image-2.1-PE-I2I",
       "creator": "Alibaba",
       "max_intel": null,
@@ -11,7 +57,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 4604
+      "hf_downloads": 5501
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -23,7 +69,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 876
+      "hf_downloads": 1885
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -37,6 +83,18 @@
       "or_id": "z-ai/glm-5.3-flashx"
     },
     {
+      "base": "RT-DETR-Hand-Detector-v1",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-15",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/RT-DETR-Hand-Detector-v1",
+      "hf_downloads": 0
+    },
+    {
       "base": "c-foundationstereo-s",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -46,7 +104,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 180
+      "hf_downloads": 184
     },
     {
       "base": "foundationpose",
@@ -58,7 +116,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 194
+      "hf_downloads": 212
     },
     {
       "base": "Qwen-Image-2.1",
@@ -70,7 +128,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 6523
+      "hf_downloads": 16242
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -82,7 +140,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 2439
+      "hf_downloads": 6795
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -94,7 +152,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1466
+      "hf_downloads": 1501
     },
     {
       "base": "DeepSeek V4.1 Flash",
