@@ -2,6 +2,74 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Claude Opus 5.5",
+      "creator": "Anthropic",
+      "max_intel": 57.6,
+      "release_date": "2026-09-22",
+      "newer_than_our": "2026-05-28",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "anthropic/claude-opus-5.5"
+    },
+    {
+      "base": "GPT-6 Sol",
+      "creator": "OpenAI",
+      "max_intel": 47.5,
+      "release_date": "2026-09-22",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-sol"
+    },
+    {
+      "base": "Command A+",
+      "creator": "Cohere",
+      "max_intel": null,
+      "release_date": "2026-09-22",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "cohere/command-a-plus"
+    },
+    {
+      "base": "GPT-6 Luna Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-22",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-luna-pro"
+    },
+    {
+      "base": "GPT-6 Luna",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-22",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-luna"
+    },
+    {
+      "base": "GPT-6 Sol Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-22",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-sol-pro"
+    },
+    {
       "base": "MiMo-V2.6-Pro",
       "creator": "Xiaomi",
       "max_intel": 46.3,
@@ -12,6 +80,18 @@
         "openrouter"
       ],
       "or_id": "xiaomi/mimo-v2.6-pro"
+    },
+    {
+      "base": "rho-roboeval",
+      "creator": "Microsoft",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "microsoft/rho-roboeval",
+      "hf_downloads": 0
     },
     {
       "base": "Grok 4.7",
@@ -48,6 +128,17 @@
       "or_id": "xiaomi/mimo-v2.6-flash"
     },
     {
+      "base": "Qwen3.8 Omni Flash",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-omni-flash"
+    },
+    {
       "base": "Qwen-Image-2.1-PE-I2I",
       "creator": "Alibaba",
       "max_intel": null,
@@ -57,7 +148,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 5501
+      "hf_downloads": 6189
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -69,7 +160,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 1885
+      "hf_downloads": 2630
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -104,7 +195,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 184
+      "hf_downloads": 198
     },
     {
       "base": "foundationpose",
@@ -116,7 +207,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 212
+      "hf_downloads": 221
     },
     {
       "base": "Qwen-Image-2.1",
@@ -128,7 +219,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 16242
+      "hf_downloads": 28407
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -140,7 +231,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 6795
+      "hf_downloads": 7721
     },
     {
       "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
@@ -152,7 +243,7 @@
         "hf"
       ],
       "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1501
+      "hf_downloads": 1542
     },
     {
       "base": "DeepSeek V4.1 Flash",
@@ -165,36 +256,6 @@
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4.1-flash"
-    },
-    {
-      "base": "ChatGPT Images 2.5",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-08",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
-    },
-    {
-      "base": "GPT-Image-2.5 Flare",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-08",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
-    },
-    {
-      "base": "GPT-Image-2.5 Sunburst",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-08",
-      "newer_than_our": null,
-      "sources": [
-        "epoch"
-      ]
     }
   ]
 }
