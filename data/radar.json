@@ -2,6 +2,28 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GLM 5.3 Prime",
+      "creator": "Z AI",
+      "max_intel": null,
+      "release_date": "2026-09-23",
+      "newer_than_our": "2026-04-07",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "z-ai/glm-5.3-prime"
+    },
+    {
+      "base": "Qwen3.8 Max Prime",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-09-23",
+      "newer_than_our": "2026-04-20",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "qwen/qwen3.8-max-prime"
+    },
+    {
       "base": "Claude Opus 5.5",
       "creator": "Anthropic",
       "max_intel": 57.6,
@@ -148,7 +170,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 6189
+      "hf_downloads": 6779
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -160,7 +182,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 2630
+      "hf_downloads": 3208
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -195,7 +217,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 198
+      "hf_downloads": 372
     },
     {
       "base": "foundationpose",
@@ -207,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 221
+      "hf_downloads": 228
     },
     {
       "base": "Qwen-Image-2.1",
@@ -219,7 +241,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 28407
+      "hf_downloads": 37618
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -231,28 +253,15 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 7721
-    },
-    {
-      "base": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
-      "hf_downloads": 1542
+      "hf_downloads": 8095
     },
     {
       "base": "DeepSeek V4.1 Flash",
       "creator": "DeepSeek",
       "max_intel": null,
-      "release_date": "2026-09-09",
+      "release_date": "2026-09-10",
       "newer_than_our": null,
       "sources": [
-        "epoch",
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4.1-flash"
