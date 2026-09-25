@@ -170,7 +170,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 6779
+      "hf_downloads": 7200
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -182,7 +182,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 3208
+      "hf_downloads": 3625
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -217,7 +217,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 372
+      "hf_downloads": 382
     },
     {
       "base": "foundationpose",
@@ -229,7 +229,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 228
+      "hf_downloads": 233
     },
     {
       "base": "Qwen-Image-2.1",
@@ -241,7 +241,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 37618
+      "hf_downloads": 42469
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -253,18 +253,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 8095
-    },
-    {
-      "base": "DeepSeek V4.1 Flash",
-      "creator": "DeepSeek",
-      "max_intel": null,
-      "release_date": "2026-09-10",
-      "newer_than_our": null,
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "deepseek/deepseek-v4.1-flash"
+      "hf_downloads": 9461
     }
   ]
 }
