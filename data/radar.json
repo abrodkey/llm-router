@@ -43,9 +43,22 @@
       "newer_than_our": "2026-05-05",
       "sources": [
         "aa",
+        "epoch",
         "openrouter"
       ],
       "or_id": "openai/gpt-6-sol"
+    },
+    {
+      "base": "GPT-6 Luna",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-22",
+      "newer_than_our": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6-luna"
     },
     {
       "base": "Command A+",
@@ -68,17 +81,6 @@
         "openrouter"
       ],
       "or_id": "openai/gpt-6-luna-pro"
-    },
-    {
-      "base": "GPT-6 Luna",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-22",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-luna"
     },
     {
       "base": "GPT-6 Sol Pro",
@@ -170,7 +172,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 7200
+      "hf_downloads": 8020
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -182,7 +184,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 3625
+      "hf_downloads": 4088
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -217,7 +219,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 382
+      "hf_downloads": 401
     },
     {
       "base": "foundationpose",
@@ -229,7 +231,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 233
+      "hf_downloads": 248
     },
     {
       "base": "Qwen-Image-2.1",
@@ -241,7 +243,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 42469
+      "hf_downloads": 48361
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -253,7 +255,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 9461
+      "hf_downloads": 11264
     }
   ]
 }
