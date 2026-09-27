@@ -172,7 +172,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 8020
+      "hf_downloads": 8589
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -184,7 +184,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 4088
+      "hf_downloads": 4607
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -219,7 +219,7 @@
         "hf"
       ],
       "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 401
+      "hf_downloads": 409
     },
     {
       "base": "foundationpose",
@@ -231,7 +231,7 @@
         "hf"
       ],
       "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 248
+      "hf_downloads": 254
     },
     {
       "base": "Qwen-Image-2.1",
@@ -243,7 +243,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1",
-      "hf_downloads": 48361
+      "hf_downloads": 52804
     },
     {
       "base": "GLM-5.3-NVFP4",
@@ -255,7 +255,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GLM-5.3-NVFP4",
-      "hf_downloads": 11264
+      "hf_downloads": 12783
     }
   ]
 }
