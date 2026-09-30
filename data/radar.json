@@ -2,6 +2,30 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GPT-6.1 Sol",
+      "creator": "OpenAI",
+      "max_intel": 51.8,
+      "release_date": "2026-09-29",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "aa",
+        "epoch",
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6.1-sol"
+    },
+    {
+      "base": "GPT-6.1 Sol Pro",
+      "creator": "OpenAI",
+      "max_intel": null,
+      "release_date": "2026-09-29",
+      "newer_than_our": "2026-05-05",
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "openai/gpt-6.1-sol-pro"
+    },
+    {
       "base": "Claude Sonnet 5.5",
       "creator": "Anthropic",
       "max_intel": 56,
@@ -186,7 +210,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 9859
+      "hf_downloads": 10325
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -198,7 +222,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 5800
+      "hf_downloads": 6314
     },
     {
       "base": "GLM 5.3 FlashX",
@@ -210,42 +234,6 @@
         "openrouter"
       ],
       "or_id": "z-ai/glm-5.3-flashx"
-    },
-    {
-      "base": "RT-DETR-Hand-Detector-v1",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/RT-DETR-Hand-Detector-v1",
-      "hf_downloads": 0
-    },
-    {
-      "base": "c-foundationstereo-s",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/c-foundationstereo-s",
-      "hf_downloads": 443
-    },
-    {
-      "base": "foundationpose",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-09-15",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/foundationpose",
-      "hf_downloads": 294
     }
   ]
 }
