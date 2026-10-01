@@ -2,6 +2,16 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Gemini 4 Argon",
+      "creator": "Google",
+      "max_intel": 52.6,
+      "release_date": "2026-09-30",
+      "newer_than_our": "2026-02-19",
+      "sources": [
+        "aa"
+      ]
+    },
+    {
       "base": "GPT-6.1 Sol",
       "creator": "OpenAI",
       "max_intel": 51.8,
@@ -76,7 +86,7 @@
     {
       "base": "GPT-6 Sol",
       "creator": "OpenAI",
-      "max_intel": 47.5,
+      "max_intel": 47.6,
       "release_date": "2026-09-22",
       "newer_than_our": "2026-05-05",
       "sources": [
@@ -210,7 +220,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 10325
+      "hf_downloads": 10555
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -222,7 +232,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 6314
+      "hf_downloads": 6674
     },
     {
       "base": "GLM 5.3 FlashX",
