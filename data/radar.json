@@ -2,13 +2,38 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "PixelUMM",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-01",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/PixelUMM",
+      "hf_downloads": 0
+    },
+    {
+      "base": "PixelDiT2-ImageNet",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-01",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/PixelDiT2-ImageNet",
+      "hf_downloads": 0
+    },
+    {
       "base": "Gemini 4 Argon",
       "creator": "Google",
       "max_intel": 52.6,
       "release_date": "2026-09-30",
       "newer_than_our": "2026-02-19",
       "sources": [
-        "aa"
+        "aa",
+        "epoch"
       ]
     },
     {
@@ -220,7 +245,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 10555
+      "hf_downloads": 10725
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -232,7 +257,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 6674
+      "hf_downloads": 6922
     },
     {
       "base": "GLM 5.3 FlashX",
