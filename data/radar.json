@@ -65,7 +65,7 @@
       "creator": "Anthropic",
       "max_intel": 56,
       "release_date": "2026-09-28",
-      "newer_than_our": "2026-05-28",
+      "newer_than_our": "2025-10-15",
       "sources": [
         "aa",
         "epoch",
@@ -100,7 +100,7 @@
       "creator": "Anthropic",
       "max_intel": 57.6,
       "release_date": "2026-09-22",
-      "newer_than_our": "2026-05-28",
+      "newer_than_our": "2025-10-15",
       "sources": [
         "aa",
         "epoch",
@@ -203,6 +203,17 @@
       "or_id": "x-ai/grok-4.7"
     },
     {
+      "base": "Switchyard",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-09-21",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "nvidia/switchyard"
+    },
+    {
       "base": "MiMo-V2.6-Pro-UltraSpeed",
       "creator": "Xiaomi",
       "max_intel": null,
@@ -245,7 +256,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 10725
+      "hf_downloads": 10903
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -257,18 +268,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 6922
-    },
-    {
-      "base": "GLM 5.3 FlashX",
-      "creator": "Z AI",
-      "max_intel": null,
-      "release_date": "2026-09-18",
-      "newer_than_our": "2026-04-07",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "z-ai/glm-5.3-flashx"
+      "hf_downloads": 7151
     }
   ]
 }
