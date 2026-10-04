@@ -256,7 +256,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 10903
+      "hf_downloads": 11281
     },
     {
       "base": "Qwen-Image-2.1-PE-T2I",
@@ -268,7 +268,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 7151
+      "hf_downloads": 7399
     }
   ]
 }
