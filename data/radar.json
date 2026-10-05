@@ -245,30 +245,6 @@
         "openrouter"
       ],
       "or_id": "qwen/qwen3.8-omni-flash"
-    },
-    {
-      "base": "Qwen-Image-2.1-PE-I2I",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-09-20",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "hf_downloads": 11281
-    },
-    {
-      "base": "Qwen-Image-2.1-PE-T2I",
-      "creator": "Alibaba",
-      "max_intel": null,
-      "release_date": "2026-09-20",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "hf_downloads": 7399
     }
   ]
 }
