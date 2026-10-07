@@ -2,6 +2,17 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Mistral Large 4",
+      "creator": "Mistral",
+      "max_intel": null,
+      "release_date": "2026-10-06",
+      "newer_than_our": null,
+      "sources": [
+        "openrouter"
+      ],
+      "or_id": "mistralai/mistral-large-4-0"
+    },
+    {
       "base": "PixelUMM",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -94,77 +105,6 @@
         "openrouter"
       ],
       "or_id": "qwen/qwen3.8-max-prime"
-    },
-    {
-      "base": "Claude Opus 5.5",
-      "creator": "Anthropic",
-      "max_intel": 57.6,
-      "release_date": "2026-09-22",
-      "newer_than_our": "2025-10-15",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-opus-5.5"
-    },
-    {
-      "base": "GPT-6 Sol",
-      "creator": "OpenAI",
-      "max_intel": 47.6,
-      "release_date": "2026-09-22",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-sol"
-    },
-    {
-      "base": "GPT-6 Luna",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-22",
-      "newer_than_our": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-luna"
-    },
-    {
-      "base": "Command A+",
-      "creator": "Cohere",
-      "max_intel": null,
-      "release_date": "2026-09-22",
-      "newer_than_our": null,
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "cohere/command-a-plus"
-    },
-    {
-      "base": "GPT-6 Luna Pro",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-22",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-luna-pro"
-    },
-    {
-      "base": "GPT-6 Sol Pro",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-22",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6-sol-pro"
     }
   ]
 }
