@@ -2,6 +2,54 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "agile_one_s_place_ssd_n17_24050",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_place_ssd_n17_24050",
+      "hf_downloads": 0
+    },
+    {
+      "base": "agile_one_s_walk_n2_1680",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_walk_n2_1680",
+      "hf_downloads": 0
+    },
+    {
+      "base": "agile_one_s_pick_ssd_n17_58000",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_pick_ssd_n17_58000",
+      "hf_downloads": 0
+    },
+    {
+      "base": "agile_one_s_pick_ssd_n17_40000",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_pick_ssd_n17_40000",
+      "hf_downloads": 0
+    },
+    {
       "base": "Claude Haiku 5.5",
       "creator": "Anthropic",
       "max_intel": null,
