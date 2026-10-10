@@ -2,6 +2,54 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "agile_one_s_pick_ssd_n2_1120",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-10",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_pick_ssd_n2_1120",
+      "hf_downloads": 0
+    },
+    {
+      "base": "agile_one_s_place_ssd_n2_1260",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-10",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_place_ssd_n2_1260",
+      "hf_downloads": 0
+    },
+    {
+      "base": "agile_one_s_pickplace_ssd_n2_18200",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-10",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
+      "hf_downloads": 0
+    },
+    {
+      "base": "Qwen-Image-2.1-Turbo",
+      "creator": "Alibaba",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
+      "hf_downloads": 2138
+    },
+    {
       "base": "agile_one_s_place_ssd_n17_24050",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -48,6 +96,18 @@
       ],
       "hf_id": "nvidia/agile_one_s_pick_ssd_n17_40000",
       "hf_downloads": 0
+    },
+    {
+      "base": "LIDstral-Arabic",
+      "creator": "Mistral",
+      "max_intel": null,
+      "release_date": "2026-10-08",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "mistralai/LIDstral-Arabic",
+      "hf_downloads": 30
     },
     {
       "base": "Claude Haiku 5.5",
