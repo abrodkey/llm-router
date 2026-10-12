@@ -47,7 +47,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 4702
+      "hf_downloads": 6787
     },
     {
       "base": "agile_one_s_place_ssd_n17_24050",
@@ -107,7 +107,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 49
+      "hf_downloads": 56
     },
     {
       "base": "Claude Haiku 5.5",
