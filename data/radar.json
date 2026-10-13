@@ -2,6 +2,26 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "Muse Wonder Full",
+      "creator": "Meta",
+      "max_intel": 55.8,
+      "release_date": "2026-10-12",
+      "newer_than_our": null,
+      "sources": [
+        "aa"
+      ]
+    },
+    {
+      "base": "Muse Wonder",
+      "creator": "Meta",
+      "max_intel": 52.4,
+      "release_date": "2026-10-12",
+      "newer_than_our": null,
+      "sources": [
+        "aa"
+      ]
+    },
+    {
       "base": "agile_one_s_pick_ssd_n2_1120",
       "creator": "NVIDIA",
       "max_intel": null,
@@ -47,7 +67,19 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 6787
+      "hf_downloads": 9665
+    },
+    {
+      "base": "Qwen-Image-NVFP4",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/Qwen-Image-NVFP4",
+      "hf_downloads": 18
     },
     {
       "base": "agile_one_s_place_ssd_n17_24050",
@@ -107,7 +139,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 56
+      "hf_downloads": 60
     },
     {
       "base": "Claude Haiku 5.5",
@@ -189,19 +221,6 @@
         "openrouter"
       ],
       "or_id": "openai/gpt-6.1-sol-pro"
-    },
-    {
-      "base": "Claude Sonnet 5.5",
-      "creator": "Anthropic",
-      "max_intel": 56,
-      "release_date": "2026-09-28",
-      "newer_than_our": "2025-10-15",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-sonnet-5.5"
     }
   ]
 }
