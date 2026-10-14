@@ -2,6 +2,18 @@
   "threshold": 45,
   "candidates": [
     {
+      "base": "GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-13",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
+      "hf_downloads": 217
+    },
+    {
       "base": "Muse Wonder Full",
       "creator": "Meta",
       "max_intel": 55.8,
@@ -67,7 +79,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 9665
+      "hf_downloads": 12704
     },
     {
       "base": "Qwen-Image-NVFP4",
@@ -79,7 +91,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen-Image-NVFP4",
-      "hf_downloads": 18
+      "hf_downloads": 29
     },
     {
       "base": "agile_one_s_place_ssd_n17_24050",
@@ -139,7 +151,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 60
+      "hf_downloads": 80
     },
     {
       "base": "Claude Haiku 5.5",
@@ -195,32 +207,10 @@
       "newer_than_our": "2026-02-19",
       "sources": [
         "aa",
-        "epoch"
-      ]
-    },
-    {
-      "base": "GPT-6.1 Sol",
-      "creator": "OpenAI",
-      "max_intel": 51.8,
-      "release_date": "2026-09-29",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "aa",
         "epoch",
         "openrouter"
       ],
-      "or_id": "openai/gpt-6.1-sol"
-    },
-    {
-      "base": "GPT-6.1 Sol Pro",
-      "creator": "OpenAI",
-      "max_intel": null,
-      "release_date": "2026-09-29",
-      "newer_than_our": "2026-05-05",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "openai/gpt-6.1-sol-pro"
+      "or_id": "google/gemini-4-argon"
     }
   ]
 }
