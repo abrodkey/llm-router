@@ -2,16 +2,15 @@
   "threshold": 45,
   "candidates": [
     {
-      "base": "GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-      "creator": "NVIDIA",
+      "base": "Gemini 4 Argon",
+      "creator": "Google",
       "max_intel": null,
       "release_date": "2026-10-13",
-      "newer_than_our": null,
+      "newer_than_our": "2026-02-19",
       "sources": [
-        "hf"
+        "openrouter"
       ],
-      "hf_id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-      "hf_downloads": 217
+      "or_id": "google/gemini-4-argon"
     },
     {
       "base": "Muse Wonder Full",
@@ -34,42 +33,6 @@
       ]
     },
     {
-      "base": "agile_one_s_pick_ssd_n2_1120",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-10",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_pick_ssd_n2_1120",
-      "hf_downloads": 0
-    },
-    {
-      "base": "agile_one_s_place_ssd_n2_1260",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-10",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_place_ssd_n2_1260",
-      "hf_downloads": 0
-    },
-    {
-      "base": "agile_one_s_pickplace_ssd_n2_18200",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-10",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
-      "hf_downloads": 0
-    },
-    {
       "base": "Qwen-Image-2.1-Turbo",
       "creator": "Alibaba",
       "max_intel": null,
@@ -79,7 +42,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 12704
+      "hf_downloads": 15315
     },
     {
       "base": "Qwen-Image-NVFP4",
@@ -91,55 +54,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen-Image-NVFP4",
-      "hf_downloads": 29
-    },
-    {
-      "base": "agile_one_s_place_ssd_n17_24050",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_place_ssd_n17_24050",
-      "hf_downloads": 0
-    },
-    {
-      "base": "agile_one_s_walk_n2_1680",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_walk_n2_1680",
-      "hf_downloads": 0
-    },
-    {
-      "base": "agile_one_s_pick_ssd_n17_58000",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_pick_ssd_n17_58000",
-      "hf_downloads": 0
-    },
-    {
-      "base": "agile_one_s_pick_ssd_n17_40000",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-09",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/agile_one_s_pick_ssd_n17_40000",
-      "hf_downloads": 0
+      "hf_downloads": 36
     },
     {
       "base": "LIDstral-Arabic",
@@ -151,7 +66,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 80
+      "hf_downloads": 85
     },
     {
       "base": "Claude Haiku 5.5",
@@ -198,19 +113,6 @@
       ],
       "hf_id": "nvidia/PixelDiT2-ImageNet",
       "hf_downloads": 0
-    },
-    {
-      "base": "Gemini 4 Argon",
-      "creator": "Google",
-      "max_intel": 52.6,
-      "release_date": "2026-09-30",
-      "newer_than_our": "2026-02-19",
-      "sources": [
-        "aa",
-        "epoch",
-        "openrouter"
-      ],
-      "or_id": "google/gemini-4-argon"
     }
   ]
 }
