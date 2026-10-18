@@ -22,7 +22,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "hf_downloads": 369
+      "hf_downloads": 507
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
@@ -34,7 +34,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "hf_downloads": 213
+      "hf_downloads": 315
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
@@ -46,7 +46,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "hf_downloads": 674
+      "hf_downloads": 1247
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
@@ -58,7 +58,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "hf_downloads": 461
+      "hf_downloads": 2953
     },
     {
       "base": "scFM-dataselection",
@@ -82,7 +82,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
-      "hf_downloads": 851
+      "hf_downloads": 944
     },
     {
       "base": "Muse Spark Open",
@@ -115,7 +115,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-123M",
-      "hf_downloads": 536
+      "hf_downloads": 701
     },
     {
       "base": "Timestral-28M",
@@ -127,7 +127,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-28M",
-      "hf_downloads": 785
+      "hf_downloads": 1025
     },
     {
       "base": "Timestral-5M",
@@ -139,7 +139,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-5M",
-      "hf_downloads": 1132
+      "hf_downloads": 1349
     },
     {
       "base": "Timestral-209M",
@@ -151,7 +151,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-209M",
-      "hf_downloads": 1501
+      "hf_downloads": 1882
     },
     {
       "base": "ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
@@ -163,7 +163,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
-      "hf_downloads": 19
+      "hf_downloads": 30
     },
     {
       "base": "Kimodo-SOMA-RP-ArdyRep-v1.2",
@@ -175,7 +175,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
-      "hf_downloads": 11
+      "hf_downloads": 19
     },
     {
       "base": "Kimodo-SOMA-RP-v1.2",
@@ -187,7 +187,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-v1.2",
-      "hf_downloads": 249
+      "hf_downloads": 481
     },
     {
       "base": "Gemini 4 Argon",
@@ -230,7 +230,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
-      "hf_downloads": 1107
+      "hf_downloads": 1366
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
@@ -242,7 +242,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
-      "hf_downloads": 4805
+      "hf_downloads": 6176
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
@@ -254,7 +254,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
-      "hf_downloads": 1671
+      "hf_downloads": 1964
     },
     {
       "base": "Qwen-Image-2.1-Turbo",
@@ -266,7 +266,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 20703
+      "hf_downloads": 23131
     },
     {
       "base": "Qwen-Image-NVFP4",
@@ -278,7 +278,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Qwen-Image-NVFP4",
-      "hf_downloads": 45
+      "hf_downloads": 52
     },
     {
       "base": "LIDstral-Arabic",
@@ -290,7 +290,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 138
+      "hf_downloads": 148
     },
     {
       "base": "Claude Haiku 5.5",
