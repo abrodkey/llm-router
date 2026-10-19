@@ -4,10 +4,11 @@
     {
       "base": "DeepSeek V4.1 Flash 1017",
       "creator": "DeepSeek",
-      "max_intel": null,
+      "max_intel": 45.1,
       "release_date": "2026-10-17",
       "newer_than_our": null,
       "sources": [
+        "aa",
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4.1-flash-1017"
@@ -22,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "hf_downloads": 507
+      "hf_downloads": 661
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
@@ -34,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "hf_downloads": 315
+      "hf_downloads": 450
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
@@ -46,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "hf_downloads": 1247
+      "hf_downloads": 1779
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
@@ -58,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "hf_downloads": 2953
+      "hf_downloads": 5196
     },
     {
       "base": "scFM-dataselection",
@@ -82,7 +83,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
-      "hf_downloads": 944
+      "hf_downloads": 1025
     },
     {
       "base": "Muse Spark Open",
@@ -115,7 +116,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-123M",
-      "hf_downloads": 701
+      "hf_downloads": 932
     },
     {
       "base": "Timestral-28M",
@@ -127,7 +128,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-28M",
-      "hf_downloads": 1025
+      "hf_downloads": 1448
     },
     {
       "base": "Timestral-5M",
@@ -139,7 +140,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-5M",
-      "hf_downloads": 1349
+      "hf_downloads": 1686
     },
     {
       "base": "Timestral-209M",
@@ -151,7 +152,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-209M",
-      "hf_downloads": 1882
+      "hf_downloads": 2601
     },
     {
       "base": "ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
@@ -163,7 +164,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
-      "hf_downloads": 30
+      "hf_downloads": 41
     },
     {
       "base": "Kimodo-SOMA-RP-ArdyRep-v1.2",
@@ -175,7 +176,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
-      "hf_downloads": 19
+      "hf_downloads": 30
     },
     {
       "base": "Kimodo-SOMA-RP-v1.2",
@@ -187,7 +188,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-v1.2",
-      "hf_downloads": 481
+      "hf_downloads": 730
     },
     {
       "base": "Gemini 4 Argon",
@@ -230,7 +231,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
-      "hf_downloads": 1366
+      "hf_downloads": 1548
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
@@ -242,7 +243,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
-      "hf_downloads": 6176
+      "hf_downloads": 7070
     },
     {
       "base": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
@@ -254,7 +255,31 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
-      "hf_downloads": 1964
+      "hf_downloads": 2216
+    },
+    {
+      "base": "cosmos3-nano-libero10-sdg-export-S5_2",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-10",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2",
+      "hf_downloads": 32
+    },
+    {
+      "base": "cosmos3-nano-libero10-sdg-export-S5_all",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-10",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_all",
+      "hf_downloads": 36
     },
     {
       "base": "Qwen-Image-2.1-Turbo",
@@ -266,7 +291,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 23131
+      "hf_downloads": 25033
     },
     {
       "base": "Qwen-Image-NVFP4",
@@ -281,6 +306,18 @@
       "hf_downloads": 52
     },
     {
+      "base": "cosmos3-nano-libero10-sdg-export-D5",
+      "creator": "NVIDIA",
+      "max_intel": null,
+      "release_date": "2026-10-09",
+      "newer_than_our": null,
+      "sources": [
+        "hf"
+      ],
+      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D5",
+      "hf_downloads": 39
+    },
+    {
       "base": "LIDstral-Arabic",
       "creator": "Mistral",
       "max_intel": null,
@@ -290,7 +327,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 148
+      "hf_downloads": 154
     },
     {
       "base": "Claude Haiku 5.5",
