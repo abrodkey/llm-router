@@ -1,10 +1,22 @@
 {
-  "generated_at": "2026-10-19T11:34:35+00:00",
+  "generated_at": "2026-10-20T10:39:12+00:00",
   "promoted": [
+    {
+      "canonical": "minimax-m3.1-flash",
+      "display": "MiniMax-M3.1-Flash",
+      "promoted_at": "2026-10-20",
+      "creator": "MiniMax",
+      "template_provider": "minimax-template",
+      "release_date": "2026-10-19",
+      "max_intel": 42.7,
+      "data_coverage": [
+        "aa"
+      ]
+    },
     {
       "canonical": "deepseek-v4.1-flash-1017",
       "display": "DeepSeek V4.1 Flash 1017",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "DeepSeek",
       "template_provider": "deepseek-v4-pro",
       "release_date": "2026-10-17",
@@ -17,7 +29,7 @@
     {
       "canonical": "muse-spark-open",
       "display": "Muse Spark Open",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-10-15",
@@ -29,7 +41,7 @@
     {
       "canonical": "muse-wonder-full",
       "display": "Muse Wonder Full",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-10-12",
@@ -41,7 +53,7 @@
     {
       "canonical": "muse-wonder",
       "display": "Muse Wonder",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-10-12",
@@ -53,7 +65,7 @@
     {
       "canonical": "claude-haiku-5.5",
       "display": "Claude Haiku 5.5",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-10-07",
@@ -66,7 +78,7 @@
     {
       "canonical": "mistral-large-4-preview",
       "display": "Mistral Large 4 Preview",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Mistral",
       "template_provider": "mistral-template",
       "release_date": "2026-10-06",
@@ -78,7 +90,7 @@
     {
       "canonical": "gemini-4-argon",
       "display": "Gemini 4 Argon",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-09-30",
@@ -91,7 +103,7 @@
     {
       "canonical": "gpt-6.1-sol",
       "display": "GPT-6.1 Sol",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-09-29",
@@ -104,7 +116,7 @@
     {
       "canonical": "claude-sonnet-5.5",
       "display": "Claude Sonnet 5.5",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-09-28",
@@ -117,7 +129,7 @@
     {
       "canonical": "claude-opus-5.5",
       "display": "Claude Opus 5.5",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-09-22",
@@ -130,7 +142,7 @@
     {
       "canonical": "gpt-6-sol",
       "display": "GPT-6 Sol",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-09-22",
@@ -143,7 +155,7 @@
     {
       "canonical": "gpt-6-luna",
       "display": "GPT-6 Luna",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-09-22",
@@ -156,7 +168,7 @@
     {
       "canonical": "mimo-v2.6-pro",
       "display": "MiMo-V2.6-Pro",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-09-21",
@@ -170,7 +182,7 @@
     {
       "canonical": "mimo-v2.6-flash",
       "display": "MiMo-V2.6-Flash",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Xiaomi",
       "template_provider": "xiaomi-template",
       "release_date": "2026-09-21",
@@ -184,7 +196,7 @@
     {
       "canonical": "deepseek-v4.1-flash",
       "display": "DeepSeek V4.1 Flash",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "DeepSeek",
       "template_provider": "deepseek-v4-pro",
       "release_date": "2026-09-10",
@@ -197,7 +209,7 @@
     {
       "canonical": "gpt-6-astra",
       "display": "GPT-6 Astra",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-09-03",
@@ -210,7 +222,7 @@
     {
       "canonical": "muse-spark-1.3",
       "display": "Muse Spark 1.3",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-09-02",
@@ -222,7 +234,7 @@
     {
       "canonical": "qwen3.8-max",
       "display": "Qwen3.8 Max",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-09-02",
@@ -235,7 +247,7 @@
     {
       "canonical": "gemini-3.8-flash",
       "display": "Gemini 3.8 Flash",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-09-02",
@@ -248,7 +260,7 @@
     {
       "canonical": "claude-fable-5.1",
       "display": "Claude Fable 5.1",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-09-01",
@@ -261,7 +273,7 @@
     {
       "canonical": "glm-5.3-flash",
       "display": "GLM-5.3-Flash",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-08-26",
@@ -275,7 +287,7 @@
     {
       "canonical": "qwen3.8-flash-next",
       "display": "Qwen3.8-Flash-Next",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-08-26",
@@ -287,7 +299,7 @@
     {
       "canonical": "glm-5.3",
       "display": "GLM-5.3",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Z AI",
       "template_provider": "zhipu-glm-5.1",
       "release_date": "2026-08-18",
@@ -300,7 +312,7 @@
     {
       "canonical": "gemini-3.7-flash",
       "display": "Gemini 3.7 Flash",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Google",
       "template_provider": "google-gemini-3.5-flash",
       "release_date": "2026-08-13",
@@ -313,7 +325,7 @@
     {
       "canonical": "deepseek-v4-pro-0813",
       "display": "DeepSeek V4 Pro 0813",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "DeepSeek",
       "template_provider": "deepseek-v4-pro",
       "release_date": "2026-08-13",
@@ -326,7 +338,7 @@
     {
       "canonical": "qwen3.8-2.4t-a95b",
       "display": "Qwen3.8 2.4T A95B",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Alibaba",
       "template_provider": "alibaba-qwen-3.6-max",
       "release_date": "2026-08-12",
@@ -339,7 +351,7 @@
     {
       "canonical": "muse-spark-1.2",
       "display": "Muse Spark 1.2",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Meta",
       "template_provider": "meta-template",
       "release_date": "2026-08-05",
@@ -351,7 +363,7 @@
     {
       "canonical": "claude-opus-5",
       "display": "Claude Opus 5",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-07-24",
@@ -364,7 +376,7 @@
     {
       "canonical": "kimi-k3",
       "display": "Kimi K3",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Kimi",
       "template_provider": "moonshot-kimi-k2.6",
       "release_date": "2026-07-16",
@@ -376,7 +388,7 @@
     {
       "canonical": "gpt-5.6-sol",
       "display": "GPT-5.6 Sol",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -389,7 +401,7 @@
     {
       "canonical": "gpt-5.6-terra",
       "display": "GPT-5.6 Terra",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -402,7 +414,7 @@
     {
       "canonical": "gpt-5.6-luna",
       "display": "GPT-5.6 Luna",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "OpenAI",
       "template_provider": "openai-gpt-5.5",
       "release_date": "2026-07-09",
@@ -415,7 +427,7 @@
     {
       "canonical": "claude-sonnet-5",
       "display": "Claude Sonnet 5",
-      "promoted_at": "2026-10-19",
+      "promoted_at": "2026-10-20",
       "creator": "Anthropic",
       "template_provider": "anthropic-sonnet-4.6",
       "release_date": "2026-06-30",
@@ -427,6 +439,7 @@
     }
   ],
   "decisions": [
+    "  \u2713 MiniMax-M3.1-Flash: promoted as PREVIEW (template=minimax-template, coverage=['aa'])",
     "  \u2713 DeepSeek V4.1 Flash 1017: promoted as PREVIEW (template=deepseek-v4-pro, coverage=['aa', 'openrouter'])",
     "  \u2713 Muse Spark Open: promoted as PREVIEW (template=meta-template, coverage=['aa'])",
     "  \u2713 Muse Wonder Full: promoted as PREVIEW (template=meta-template, coverage=['aa'])",
