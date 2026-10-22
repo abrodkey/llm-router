@@ -11,7 +11,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-      "hf_downloads": 139
+      "hf_downloads": 150
     },
     {
       "base": "Cosmos3-H-Embodied-Nano",
@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Embodied-Nano",
-      "hf_downloads": 33
+      "hf_downloads": 51
     },
     {
       "base": "Cosmos3-H-Dreams",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Dreams",
-      "hf_downloads": 36
+      "hf_downloads": 215
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-D2_s43",
@@ -47,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-      "hf_downloads": 112
+      "hf_downloads": 126
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-S2_s43",
@@ -59,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-      "hf_downloads": 63
+      "hf_downloads": 83
     },
     {
       "base": "DeepSeek V4.1 Flash 1017",
@@ -84,7 +84,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Sentiment-Analysis-7B",
-      "hf_downloads": 123
+      "hf_downloads": 191
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
@@ -96,7 +96,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "hf_downloads": 1012
+      "hf_downloads": 1125
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
@@ -108,7 +108,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "hf_downloads": 639
+      "hf_downloads": 684
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
@@ -120,7 +120,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "hf_downloads": 3062
+      "hf_downloads": 3375
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
@@ -132,7 +132,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "hf_downloads": 7729
+      "hf_downloads": 8406
     },
     {
       "base": "scFM-dataselection",
@@ -156,7 +156,7 @@
         "hf"
       ],
       "hf_id": "nvidia/RFD4-Proteina-prep",
-      "hf_downloads": 14
+      "hf_downloads": 21
     },
     {
       "base": "Nemotron-3.5-Rerank-8B-BF16",
@@ -168,7 +168,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
-      "hf_downloads": 1292
+      "hf_downloads": 1450
     },
     {
       "base": "RFD4-Proteina-Diffusers",
@@ -180,7 +180,7 @@
         "hf"
       ],
       "hf_id": "nvidia/RFD4-Proteina-Diffusers",
-      "hf_downloads": 46
+      "hf_downloads": 81
     },
     {
       "base": "Muse Spark Open",
@@ -213,7 +213,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-123M",
-      "hf_downloads": 1996
+      "hf_downloads": 2219
     },
     {
       "base": "Timestral-28M",
@@ -225,7 +225,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-28M",
-      "hf_downloads": 3629
+      "hf_downloads": 4141
     },
     {
       "base": "Timestral-5M",
@@ -237,7 +237,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-5M",
-      "hf_downloads": 3315
+      "hf_downloads": 3692
     },
     {
       "base": "Timestral-209M",
@@ -249,7 +249,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-209M",
-      "hf_downloads": 5488
+      "hf_downloads": 6194
     },
     {
       "base": "cdf-sim2real-smt-solderlight",
@@ -273,7 +273,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
-      "hf_downloads": 57
+      "hf_downloads": 62
     },
     {
       "base": "Kimodo-SOMA-RP-ArdyRep-v1.2",
@@ -285,7 +285,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
-      "hf_downloads": 99
+      "hf_downloads": 112
     },
     {
       "base": "Kimodo-SOMA-RP-v1.2",
@@ -297,7 +297,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-v1.2",
-      "hf_downloads": 1324
+      "hf_downloads": 1583
     },
     {
       "base": "Cosmos-AnomalyGen-Glass-Nano",
@@ -376,7 +376,7 @@
         "hf"
       ],
       "hf_id": "Qwen/Qwen-Image-2.1-Turbo",
-      "hf_downloads": 29826
+      "hf_downloads": 30766
     },
     {
       "base": "LIDstral-Arabic",
@@ -388,18 +388,7 @@
         "hf"
       ],
       "hf_id": "mistralai/LIDstral-Arabic",
-      "hf_downloads": 162
-    },
-    {
-      "base": "Claude Haiku 5.5",
-      "creator": "Anthropic",
-      "max_intel": null,
-      "release_date": "2026-10-07",
-      "newer_than_our": "2025-10-15",
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "anthropic/claude-haiku-5.5"
+      "hf_downloads": 165
     }
   ]
 }
