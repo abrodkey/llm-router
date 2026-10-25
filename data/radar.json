@@ -23,7 +23,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-      "hf_downloads": 179
+      "hf_downloads": 188
     },
     {
       "base": "Cosmos3-H-Embodied-Nano",
@@ -35,7 +35,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Embodied-Nano",
-      "hf_downloads": 96
+      "hf_downloads": 108
     },
     {
       "base": "Cosmos3-H-Dreams",
@@ -47,7 +47,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Dreams",
-      "hf_downloads": 359
+      "hf_downloads": 643
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-D2_s43",
@@ -59,7 +59,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-      "hf_downloads": 153
+      "hf_downloads": 162
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-S2_s43",
@@ -71,7 +71,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-      "hf_downloads": 112
+      "hf_downloads": 123
     },
     {
       "base": "MiniMax M3.1 Flash",
@@ -107,7 +107,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Sentiment-Analysis-7B",
-      "hf_downloads": 661
+      "hf_downloads": 857
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
@@ -119,7 +119,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "hf_downloads": 1506
+      "hf_downloads": 1677
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
@@ -131,7 +131,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "hf_downloads": 927
+      "hf_downloads": 1021
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
@@ -143,7 +143,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "hf_downloads": 4576
+      "hf_downloads": 4916
     },
     {
       "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
@@ -155,7 +155,7 @@
         "hf"
       ],
       "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "hf_downloads": 10504
+      "hf_downloads": 11311
     },
     {
       "base": "scFM-dataselection",
@@ -191,7 +191,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
-      "hf_downloads": 2019
+      "hf_downloads": 2124
     },
     {
       "base": "RFD4-Proteina-Diffusers",
@@ -203,7 +203,7 @@
         "hf"
       ],
       "hf_id": "nvidia/RFD4-Proteina-Diffusers",
-      "hf_downloads": 147
+      "hf_downloads": 150
     },
     {
       "base": "Muse Spark Open",
@@ -236,7 +236,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-123M",
-      "hf_downloads": 3014
+      "hf_downloads": 3266
     },
     {
       "base": "Timestral-28M",
@@ -248,7 +248,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-28M",
-      "hf_downloads": 5811
+      "hf_downloads": 6540
     },
     {
       "base": "Timestral-5M",
@@ -260,7 +260,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-5M",
-      "hf_downloads": 4735
+      "hf_downloads": 5401
     },
     {
       "base": "Timestral-209M",
@@ -272,7 +272,7 @@
         "hf"
       ],
       "hf_id": "mistralai/Timestral-209M",
-      "hf_downloads": 8731
+      "hf_downloads": 9765
     },
     {
       "base": "cdf-sim2real-smt-solderlight",
@@ -296,7 +296,7 @@
         "hf"
       ],
       "hf_id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-      "hf_downloads": 279
+      "hf_downloads": 288
     },
     {
       "base": "ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
@@ -308,7 +308,7 @@
         "hf"
       ],
       "hf_id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
-      "hf_downloads": 85
+      "hf_downloads": 100
     },
     {
       "base": "Kimodo-SOMA-RP-ArdyRep-v1.2",
@@ -320,7 +320,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
-      "hf_downloads": 148
+      "hf_downloads": 160
     },
     {
       "base": "Kimodo-SOMA-RP-v1.2",
@@ -332,7 +332,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Kimodo-SOMA-RP-v1.2",
-      "hf_downloads": 2331
+      "hf_downloads": 2676
     },
     {
       "base": "Cosmos-AnomalyGen-Glass-Nano",
