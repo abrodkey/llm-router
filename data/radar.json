@@ -22,7 +22,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Metatron-v1",
-      "hf_downloads": 862
+      "hf_downloads": 1207
     },
     {
       "base": "Genie 4",
@@ -68,7 +68,7 @@
         "hf"
       ],
       "hf_id": "microsoft/CogACT-v2-RoboDojo",
-      "hf_downloads": 39
+      "hf_downloads": 43
     },
     {
       "base": "Kimi K3.1 Pro",
@@ -104,7 +104,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-      "hf_downloads": 253
+      "hf_downloads": 266
     },
     {
       "base": "Cosmos3-H-Embodied-Nano",
@@ -116,7 +116,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Embodied-Nano",
-      "hf_downloads": 210
+      "hf_downloads": 226
     },
     {
       "base": "Cosmos3-H-Dreams",
@@ -128,7 +128,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Cosmos3-H-Dreams",
-      "hf_downloads": 957
+      "hf_downloads": 985
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-D2_s43",
@@ -140,7 +140,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-      "hf_downloads": 232
+      "hf_downloads": 245
     },
     {
       "base": "cosmos3-nano-libero10-sdg-export-S2_s43",
@@ -152,7 +152,7 @@
         "hf"
       ],
       "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-      "hf_downloads": 177
+      "hf_downloads": 190
     },
     {
       "base": "MiniMax M3.1 Flash",
@@ -175,7 +175,7 @@
         "hf"
       ],
       "hf_id": "microsoft/Sentiment-Analysis-7B",
-      "hf_downloads": 1979
+      "hf_downloads": 2069
     },
     {
       "base": "DeepSeek V4.1 Flash 1017",
@@ -187,66 +187,6 @@
         "openrouter"
       ],
       "or_id": "deepseek/deepseek-v4.1-flash-1017"
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-      "hf_downloads": 2791
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-      "hf_downloads": 1629
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "hf_downloads": 9021
-    },
-    {
-      "base": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-      "hf_downloads": 18105
-    },
-    {
-      "base": "scFM-dataselection",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-10-16",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/scFM-dataselection",
-      "hf_downloads": 0
     }
   ]
 }
