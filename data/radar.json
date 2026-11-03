@@ -33,7 +33,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Metatron-v1",
-      "hf_downloads": 1327
+      "hf_downloads": 1456
     },
     {
       "base": "Genie 4",
@@ -79,7 +79,7 @@
         "hf"
       ],
       "hf_id": "microsoft/CogACT-v2-RoboDojo",
-      "hf_downloads": 48
+      "hf_downloads": 51
     },
     {
       "base": "Kimi K3.1 Pro",
@@ -104,77 +104,6 @@
       ],
       "hf_id": "nvidia/MotionBricks",
       "hf_downloads": 0
-    },
-    {
-      "base": "cosmos3-nano-libero10-sdg-export-S5_2_s43",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-      "hf_downloads": 281
-    },
-    {
-      "base": "Cosmos3-H-Embodied-Nano",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Cosmos3-H-Embodied-Nano",
-      "hf_downloads": 243
-    },
-    {
-      "base": "Cosmos3-H-Dreams",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/Cosmos3-H-Dreams",
-      "hf_downloads": 1042
-    },
-    {
-      "base": "cosmos3-nano-libero10-sdg-export-D2_s43",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-      "hf_downloads": 262
-    },
-    {
-      "base": "cosmos3-nano-libero10-sdg-export-S2_s43",
-      "creator": "NVIDIA",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-      "hf_downloads": 204
-    },
-    {
-      "base": "MiniMax M3.1 Flash",
-      "creator": "MiniMax",
-      "max_intel": null,
-      "release_date": "2026-10-19",
-      "newer_than_our": null,
-      "sources": [
-        "openrouter"
-      ],
-      "or_id": "minimax/minimax-m3.1-flash"
     }
   ]
 }
