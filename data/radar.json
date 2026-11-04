@@ -15,7 +15,7 @@
     {
       "base": "Gemini 4 Carbon",
       "creator": "Google",
-      "max_intel": 59.4,
+      "max_intel": 60,
       "release_date": "2026-10-28",
       "newer_than_our": "2026-02-19",
       "sources": [
@@ -33,7 +33,7 @@
         "hf"
       ],
       "hf_id": "nvidia/Metatron-v1",
-      "hf_downloads": 1456
+      "hf_downloads": 1560
     },
     {
       "base": "Genie 4",
@@ -48,7 +48,7 @@
     {
       "base": "GPT-6.1 Terra",
       "creator": "OpenAI",
-      "max_intel": 51,
+      "max_intel": 51.3,
       "release_date": "2026-10-26",
       "newer_than_our": "2026-05-05",
       "sources": [
@@ -70,21 +70,9 @@
       "or_id": "openai/gpt-6.1-terra-pro"
     },
     {
-      "base": "CogACT-v2-RoboDojo",
-      "creator": "Microsoft",
-      "max_intel": null,
-      "release_date": "2026-10-25",
-      "newer_than_our": null,
-      "sources": [
-        "hf"
-      ],
-      "hf_id": "microsoft/CogACT-v2-RoboDojo",
-      "hf_downloads": 51
-    },
-    {
       "base": "Kimi K3.1 Pro",
       "creator": "Kimi",
-      "max_intel": 46,
+      "max_intel": 46.5,
       "release_date": "2026-10-23",
       "newer_than_our": null,
       "sources": [
